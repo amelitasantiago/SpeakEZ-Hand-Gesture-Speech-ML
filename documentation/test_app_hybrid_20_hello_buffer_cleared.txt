@@ -1,0 +1,118 @@
+(venv) PS C:\Users\ameli\speakez> $env:WAVE_MIN_AMP_FRAC="0.02"   
+(venv) PS C:\Users\ameli\speakez> $env:WORD_DEBUG="1"   
+(venv) PS C:\Users\ameli\speakez> $env:WORD_MIN_SCORE="0.70"
+(venv) PS C:\Users\ameli\speakez> $env:WORD_MIN_AREA="0.05"
+(venv) PS C:\Users\ameli\speakez> $env:LETTER_SPEAK_MAX_MOTION="0.015"
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py
+2025-10-10 21:38:52.765672: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-10 21:38:53.480431: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ⚠ No user TTS; falling back.
+[SYS] ✓ TTS loaded (Windows SAPI)
+2025-10-10 21:38:56.904422: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[SYS] ⚠ word prediction unavailable: cannot import name 'predict_word' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+[SYS] ✓ Word whitelist loaded (8 items)
+[SYS] ✓ Loaded per-class thresholds (thresholds.json)
+[SYS] MediaPipe Hands ready | complexity=1
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760103537.028667    6776 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760103537.048970    6776 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] ✓ Opened index 0 using backend 700 | shape=(480, 640, 3)
+
+======================================================================
+HYBRID MODE: MediaPipe + Models (letters, words, patterns, wave)
+======================================================================
+Conf>0.72  Window=11  INFER_EVERY=2
+Patterns: ON  Word-ML: OFF  Wave: ON
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+F15: FPS=27.2 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F30: FPS=24.7 | Hand:NO | score=0.95 area=0.156 | Buf:'' | L:0 P:0 R:0
+2025-10-10 21:39:02.557301: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+F45: FPS=19.3 | Hand:YES | score=0.98 area=0.098 | Buf:'' | L:0 P:0 R:4
+[WAVE@56] ✅ 'hello' (amp=0.020, flips=5, open=1.00)
+F60: FPS=18.1 | Hand:YES | score=0.97 area=0.103 | Buf:'' | L:0 P:0 R:7
+F75: FPS=17.1 | Hand:YES | score=0.98 area=0.100 | Buf:'' | L:0 P:0 R:7
+F90: FPS=16.8 | Hand:YES | score=0.98 area=0.088 | Buf:'' | L:0 P:0 R:7
+F105: FPS=16.5 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:9
+F120: FPS=16.3 | Hand:YES | score=0.97 area=0.120 | Buf:'' | L:0 P:0 R:9
+F135: FPS=16.2 | Hand:YES | score=0.98 area=0.088 | Buf:'' | L:0 P:0 R:9
+F150: FPS=16.0 | Hand:YES | score=0.95 area=0.092 | Buf:'' | L:0 P:0 R:9
+F165: FPS=15.9 | Hand:YES | score=0.97 area=0.088 | Buf:'' | L:0 P:0 R:9
+F180: FPS=15.8 | Hand:YES | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:9
+F195: FPS=15.8 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:9
+F210: FPS=15.7 | Hand:YES | score=0.97 area=0.100 | Buf:'' | L:0 P:0 R:9
+F225: FPS=15.7 | Hand:YES | score=0.97 area=0.090 | Buf:'' | L:0 P:0 R:13
+F240: FPS=15.6 | Hand:YES | score=0.96 area=0.100 | Buf:'' | L:0 P:0 R:13
+F255: FPS=15.6 | Hand:YES | score=0.97 area=0.086 | Buf:'' | L:0 P:0 R:13
+F270: FPS=15.5 | Hand:YES | score=0.98 area=0.099 | Buf:'' | L:0 P:0 R:13
+F285: FPS=15.5 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:13
+F300: FPS=15.5 | Hand:YES | score=0.97 area=0.100 | Buf:'' | L:0 P:0 R:13
+F315: FPS=15.4 | Hand:YES | score=0.98 area=0.083 | Buf:'' | L:0 P:0 R:13
+F330: FPS=15.4 | Hand:YES | score=0.97 area=0.085 | Buf:'Q' | L:0 P:0 R:18
+F345: FPS=15.4 | Hand:YES | score=0.97 area=0.098 | Buf:'Q' | L:0 P:0 R:18
+F360: FPS=15.4 | Hand:YES | score=0.97 area=0.092 | Buf:'Q' | L:0 P:0 R:18
+F375: FPS=15.4 | Hand:YES | score=0.98 area=0.094 | Buf:'Q' | L:0 P:0 R:18
+F390: FPS=15.3 | Hand:NO | score=0.00 area=0.000 | Buf:'Q' | L:0 P:0 R:18
+F405: FPS=15.3 | Hand:YES | score=0.97 area=0.109 | Buf:'Q' | L:0 P:0 R:18
+F420: FPS=15.3 | Hand:YES | score=0.98 area=0.098 | Buf:'Q' | L:0 P:0 R:18
+F435: FPS=15.3 | Hand:YES | score=0.96 area=0.103 | Buf:'Q' | L:0 P:0 R:20
+F450: FPS=15.3 | Hand:YES | score=0.97 area=0.092 | Buf:'Q' | L:0 P:0 R:20
+F465: FPS=15.3 | Hand:YES | score=0.00 area=0.000 | Buf:'Q' | L:0 P:0 R:21
+F480: FPS=15.3 | Hand:YES | score=0.95 area=0.082 | Buf:'Q' | L:0 P:0 R:21
+F495: FPS=15.3 | Hand:YES | score=0.99 area=0.124 | Buf:'Q' | L:0 P:0 R:25
+[PATTERN@504] ✅ 'NO' → 'no' | comp='QNO'
+F510: FPS=15.3 | Hand:YES | score=0.99 area=0.121 | Buf:'NO' | L:0 P:1 R:29
+F525: FPS=15.3 | Hand:YES | score=0.98 area=0.113 | Buf:'NONNNNOONN' | L:0 P:1 R:35
+[LETTER@526] ✅ 'N' conf=0.961
+[BUF] Cleared (hand off: streak=8, idle=0.06s)
+F540: FPS=15.2 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:1 P:1 R:36
+F555: FPS=15.2 | Hand:YES | score=0.98 area=0.086 | Buf:'NNNNN' | L:1 P:1 R:40
+[PATTERN@566] ✅ 'ON' → 'on' | comp='NON'
+F570: FPS=15.2 | Hand:YES | score=0.99 area=0.131 | Buf:'N' | L:1 P:2 R:46
+F585: FPS=15.2 | Hand:NO | score=0.62 area=0.021 | Buf:'NN' | L:1 P:2 R:47
+[BUF] Cleared (hand off: streak=26, idle=1.25s)
+F600: FPS=15.2 | Hand:NO | score=0.99 area=0.042 | Buf:'' | L:1 P:2 R:47
+F615: FPS=15.2 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:1 P:2 R:47
+F630: FPS=15.2 | Hand:NO | score=0.98 area=0.051 | Buf:'' | L:1 P:2 R:47
+F645: FPS=15.2 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:1 P:2 R:47
+F660: FPS=15.2 | Hand:NO | score=0.96 area=0.089 | Buf:'' | L:1 P:2 R:47
+F675: FPS=15.2 | Hand:YES | score=0.96 area=0.094 | Buf:'' | L:1 P:2 R:52
+F690: FPS=15.2 | Hand:YES | score=0.95 area=0.080 | Buf:'' | L:1 P:2 R:55
+F705: FPS=15.2 | Hand:YES | score=0.97 area=0.086 | Buf:'' | L:1 P:2 R:55
+F720: FPS=15.2 | Hand:YES | score=0.96 area=0.076 | Buf:'' | L:1 P:2 R:55
+F735: FPS=15.2 | Hand:YES | score=0.97 area=0.080 | Buf:'' | L:1 P:2 R:55
+F750: FPS=15.1 | Hand:YES | score=0.00 area=0.000 | Buf:'' | L:1 P:2 R:55
+F765: FPS=15.2 | Hand:YES | score=0.98 area=0.118 | Buf:'' | L:1 P:2 R:55
+F780: FPS=15.1 | Hand:YES | score=0.98 area=0.116 | Buf:'' | L:1 P:2 R:55
+F795: FPS=15.1 | Hand:YES | score=0.98 area=0.117 | Buf:'' | L:1 P:2 R:55
+F810: FPS=15.1 | Hand:YES | score=0.00 area=0.000 | Buf:'' | L:1 P:2 R:55
+F825: FPS=15.1 | Hand:YES | score=0.98 area=0.094 | Buf:'' | L:1 P:2 R:55
+F840: FPS=15.1 | Hand:YES | score=0.98 area=0.084 | Buf:'' | L:1 P:2 R:55
+F855: FPS=15.1 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:1 P:2 R:55
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Duration: 57.7s | Frames: 864 | FPS: 15.0
+Letters: 1 | Patterns: 2 | Rejections: 55
+Top letter 'N' = 94.1%
+(venv) PS C:\Users\ameli\speakez> 

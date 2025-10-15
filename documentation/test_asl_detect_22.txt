@@ -1,0 +1,287 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-09 11:37:17.560082: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-09 11:37:18.800209: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.17.1 | Eager: True
+[SYS] Loaded config.yaml
+[SYS] ✓ GC module verified
+2025-10-09 11:37:23.209819: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[CAM] Opening camera 0
+[CAM] ✓ Opened: (480, 640, 3)
+[SYS] Starting main loop (press 'q' or ESC to exit)
+[SYS] STRICT ANTI-BIAS MODE:
+[SYS]   - Confidence threshold: 0.90
+[SYS]   - Margin requirement: 0.30
+[SYS]   - Majority window: 7 frames
+[SYS]   - Hand skin threshold: 0.12 (FACE EXCLUDED)
+[SYS]   - Hand motion threshold: 0.025
+[SYS] Pattern matching: ENABLED
+2025-10-09 11:37:29.288815: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@7] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[BUF@8] Grace expired (8f) - clearing buffer
+F15: FPS=21.2 | Hand:NO(0f) Grace:15/8 | m=0.006 s=0.092 | Buf:'' | L:1 P:0 R:0
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpmnk72aim.wav: 'N'
+[TTS] << DONE 'N'
+F30: FPS=24.3 | Hand:NO(0f) Grace:30/8 | m=0.016 s=0.093 | Buf:'' | L:1 P:0 R:0
+F45: FPS=25.9 | Hand:NO(0f) Grace:45/8 | m=0.005 s=0.092 | Buf:'' | L:1 P:0 R:0
+F60: FPS=26.6 | Hand:NO(0f) Grace:60/8 | m=0.005 s=0.094 | Buf:'' | L:1 P:0 R:0
+F75: FPS=27.0 | Hand:NO(0f) Grace:75/8 | m=0.008 s=0.092 | Buf:'' | L:1 P:0 R:0
+F90: FPS=27.3 | Hand:NO(0f) Grace:90/8 | m=0.007 s=0.093 | Buf:'' | L:1 P:0 R:0
+F105: FPS=27.5 | Hand:NO(0f) Grace:105/8 | m=0.007 s=0.091 | Buf:'' | L:1 P:0 R:0
+F120: FPS=27.9 | Hand:NO(0f) Grace:120/8 | m=0.005 s=0.088 | Buf:'' | L:1 P:0 R:0
+F135: FPS=28.0 | Hand:NO(0f) Grace:135/8 | m=0.005 s=0.089 | Buf:'' | L:1 P:0 R:0
+F150: FPS=28.3 | Hand:NO(0f) Grace:150/8 | m=0.006 s=0.088 | Buf:'' | L:1 P:0 R:0
+F165: FPS=28.3 | Hand:NO(0f) Grace:165/8 | m=0.005 s=0.091 | Buf:'' | L:1 P:0 R:0
+F180: FPS=28.5 | Hand:NO(0f) Grace:180/8 | m=0.005 s=0.093 | Buf:'' | L:1 P:0 R:0
+F195: FPS=28.5 | Hand:NO(0f) Grace:195/8 | m=0.006 s=0.095 | Buf:'' | L:1 P:0 R:0
+F210: FPS=28.7 | Hand:NO(0f) Grace:210/8 | m=0.005 s=0.091 | Buf:'' | L:1 P:0 R:0
+F225: FPS=28.7 | Hand:NO(0f) Grace:225/8 | m=0.005 s=0.091 | Buf:'' | L:1 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+F240: FPS=28.8 | Hand:NO(2f) Grace:0/8 | m=0.026 s=0.140 | Buf:'N' | L:1 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[PRED@240] N:1.000
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@245] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmptnmsduk7.wav: 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] << DONE 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[BUF@255] Grace expired (8f) - clearing buffer
+F255: FPS=28.8 | Hand:NO(0f) Grace:8/8 | m=0.009 s=0.131 | Buf:'' | L:2 P:0 R:0
+F270: FPS=28.9 | Hand:NO(0f) Grace:23/8 | m=0.006 s=0.134 | Buf:'' | L:2 P:0 R:0
+F285: FPS=28.9 | Hand:NO(0f) Grace:38/8 | m=0.008 s=0.133 | Buf:'' | L:2 P:0 R:0
+F300: FPS=29.0 | Hand:NO(0f) Grace:53/8 | m=0.007 s=0.131 | Buf:'' | L:2 P:0 R:0
+F315: FPS=28.8 | Hand:NO(0f) Grace:68/8 | m=0.011 s=0.128 | Buf:'' | L:2 P:0 R:0
+F330: FPS=28.9 | Hand:NO(0f) Grace:83/8 | m=0.009 s=0.134 | Buf:'' | L:2 P:0 R:0
+F345: FPS=28.9 | Hand:NO(0f) Grace:98/8 | m=0.021 s=0.137 | Buf:'' | L:2 P:0 R:0
+F360: FPS=29.0 | Hand:NO(0f) Grace:113/8 | m=0.008 s=0.135 | Buf:'' | L:2 P:0 R:0
+F375: FPS=29.0 | Hand:NO(0f) Grace:128/8 | m=0.025 s=0.140 | Buf:'' | L:2 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@382] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpfcvwcbzt.wav: 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[BUF@385] Grace expired (8f) - clearing buffer
+[TTS] << DONE 'N'
+F390: FPS=29.0 | Hand:NO(0f) Grace:13/8 | m=0.008 s=0.157 | Buf:'' | L:3 P:0 R:0
+F405: FPS=29.0 | Hand:NO(0f) Grace:28/8 | m=0.010 s=0.154 | Buf:'' | L:3 P:0 R:0
+F420: FPS=29.1 | Hand:NO(0f) Grace:43/8 | m=0.010 s=0.155 | Buf:'' | L:3 P:0 R:0
+F435: FPS=29.1 | Hand:NO(0f) Grace:58/8 | m=0.013 s=0.145 | Buf:'' | L:3 P:0 R:0
+F450: FPS=29.1 | Hand:NO(0f) Grace:73/8 | m=0.016 s=0.155 | Buf:'' | L:3 P:0 R:0
+F465: FPS=29.1 | Hand:NO(0f) Grace:88/8 | m=0.015 s=0.156 | Buf:'' | L:3 P:0 R:0
+F480: FPS=29.2 | Hand:NO(0f) Grace:103/8 | m=0.012 s=0.158 | Buf:'' | L:3 P:0 R:0
+F495: FPS=29.2 | Hand:NO(0f) Grace:118/8 | m=0.008 s=0.154 | Buf:'' | L:3 P:0 R:0
+F510: FPS=29.2 | Hand:NO(0f) Grace:133/8 | m=0.023 s=0.144 | Buf:'' | L:3 P:0 R:0
+F525: FPS=29.2 | Hand:NO(0f) Grace:148/8 | m=0.019 s=0.111 | Buf:'' | L:3 P:0 R:0
+F540: FPS=29.2 | Hand:NO(0f) Grace:163/8 | m=0.009 s=0.096 | Buf:'' | L:3 P:0 R:0
+F555: FPS=29.2 | Hand:NO(0f) Grace:178/8 | m=0.010 s=0.099 | Buf:'' | L:3 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+F570: FPS=29.3 | Hand:NO(0f) Grace:1/8 | m=0.025 s=0.134 | Buf:'NNNN' | L:3 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[PRED@570] N:1.000
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@572] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpxc2jepmz.wav: 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] << DONE 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[BUF@577] Grace expired (8f) - clearing buffer
+F585: FPS=29.3 | Hand:NO(0f) Grace:16/8 | m=0.010 s=0.143 | Buf:'' | L:4 P:0 R:0
+F600: FPS=29.3 | Hand:NO(0f) Grace:31/8 | m=0.014 s=0.143 | Buf:'' | L:4 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[BUF@610] Grace expired (8f) - clearing buffer
+F615: FPS=29.2 | Hand:NO(0f) Grace:13/8 | m=0.008 s=0.141 | Buf:'' | L:4 P:0 R:0
+F630: FPS=29.2 | Hand:NO(0f) Grace:28/8 | m=0.012 s=0.143 | Buf:'' | L:4 P:0 R:0
+F645: FPS=29.2 | Hand:NO(0f) Grace:43/8 | m=0.011 s=0.152 | Buf:'' | L:4 P:0 R:0
+F660: FPS=29.2 | Hand:NO(0f) Grace:58/8 | m=0.012 s=0.151 | Buf:'' | L:4 P:0 R:0
+F675: FPS=29.2 | Hand:NO(0f) Grace:73/8 | m=0.014 s=0.159 | Buf:'' | L:4 P:0 R:0
+F690: FPS=29.2 | Hand:NO(0f) Grace:88/8 | m=0.009 s=0.165 | Buf:'' | L:4 P:0 R:0
+F705: FPS=29.2 | Hand:NO(0f) Grace:103/8 | m=0.015 s=0.155 | Buf:'' | L:4 P:0 R:0
+F720: FPS=29.2 | Hand:NO(0f) Grace:118/8 | m=0.009 s=0.135 | Buf:'' | L:4 P:0 R:0
+F735: FPS=29.2 | Hand:NO(0f) Grace:133/8 | m=0.008 s=0.138 | Buf:'' | L:4 P:0 R:0
+F750: FPS=29.2 | Hand:NO(0f) Grace:148/8 | m=0.014 s=0.134 | Buf:'' | L:4 P:0 R:0
+F765: FPS=29.2 | Hand:NO(0f) Grace:163/8 | m=0.006 s=0.128 | Buf:'' | L:4 P:0 R:0
+F780: FPS=29.3 | Hand:NO(0f) Grace:178/8 | m=0.010 s=0.126 | Buf:'' | L:4 P:0 R:0
+F795: FPS=29.3 | Hand:NO(0f) Grace:193/8 | m=0.020 s=0.140 | Buf:'' | L:4 P:0 R:0
+F810: FPS=29.3 | Hand:NO(0f) Grace:208/8 | m=0.008 s=0.146 | Buf:'' | L:4 P:0 R:0
+F825: FPS=29.3 | Hand:NO(0f) Grace:223/8 | m=0.020 s=0.150 | Buf:'' | L:4 P:0 R:0
+F840: FPS=29.3 | Hand:NO(0f) Grace:238/8 | m=0.008 s=0.144 | Buf:'' | L:4 P:0 R:0
+F855: FPS=29.3 | Hand:NO(0f) Grace:253/8 | m=0.008 s=0.148 | Buf:'' | L:4 P:0 R:0
+F870: FPS=29.3 | Hand:NO(0f) Grace:268/8 | m=0.008 s=0.158 | Buf:'' | L:4 P:0 R:0
+F885: FPS=29.3 | Hand:NO(0f) Grace:283/8 | m=0.012 s=0.149 | Buf:'' | L:4 P:0 R:0
+F900: FPS=29.3 | Hand:NO(0f) Grace:298/8 | m=0.018 s=0.139 | Buf:'' | L:4 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@908] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpcsajiut0.wav: 'N'
+[BUF@910] Grace expired (8f) - clearing buffer
+[TTS] << DONE 'N'
+F915: FPS=29.3 | Hand:NO(0f) Grace:13/8 | m=0.008 s=0.138 | Buf:'' | L:5 P:0 R:0
+F930: FPS=29.3 | Hand:NO(0f) Grace:28/8 | m=0.011 s=0.140 | Buf:'' | L:5 P:0 R:0
+F945: FPS=29.3 | Hand:NO(0f) Grace:43/8 | m=0.007 s=0.141 | Buf:'' | L:5 P:0 R:0
+F960: FPS=29.3 | Hand:NO(0f) Grace:58/8 | m=0.007 s=0.140 | Buf:'' | L:5 P:0 R:0
+F975: FPS=29.3 | Hand:NO(0f) Grace:73/8 | m=0.008 s=0.151 | Buf:'' | L:5 P:0 R:0
+F990: FPS=29.3 | Hand:NO(0f) Grace:88/8 | m=0.007 s=0.150 | Buf:'' | L:5 P:0 R:0
+F1005: FPS=29.3 | Hand:NO(0f) Grace:103/8 | m=0.009 s=0.150 | Buf:'' | L:5 P:0 R:0
+F1020: FPS=29.3 | Hand:NO(0f) Grace:118/8 | m=0.007 s=0.148 | Buf:'' | L:5 P:0 R:0
+F1035: FPS=29.3 | Hand:NO(0f) Grace:133/8 | m=0.010 s=0.148 | Buf:'' | L:5 P:0 R:0
+F1050: FPS=29.3 | Hand:NO(0f) Grace:148/8 | m=0.009 s=0.146 | Buf:'' | L:5 P:0 R:0
+F1065: FPS=29.3 | Hand:NO(0f) Grace:163/8 | m=0.009 s=0.142 | Buf:'' | L:5 P:0 R:0
+F1080: FPS=29.4 | Hand:NO(0f) Grace:178/8 | m=0.006 s=0.142 | Buf:'' | L:5 P:0 R:0
+F1095: FPS=29.3 | Hand:NO(0f) Grace:193/8 | m=0.013 s=0.151 | Buf:'' | L:5 P:0 R:0
+F1110: FPS=29.4 | Hand:NO(0f) Grace:208/8 | m=0.008 s=0.143 | Buf:'' | L:5 P:0 R:0
+F1125: FPS=29.4 | Hand:NO(0f) Grace:223/8 | m=0.008 s=0.146 | Buf:'' | L:5 P:0 R:0
+F1140: FPS=29.4 | Hand:NO(1f) Grace:0/8 | m=0.025 s=0.150 | Buf:'' | L:5 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[PRED@1140] N:1.000
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@1146] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp_cru80cu.wav: 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] << DONE 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[BUF@1153] Grace expired (8f) - clearing buffer
+F1155: FPS=29.4 | Hand:NO(0f) Grace:10/8 | m=0.010 s=0.121 | Buf:'' | L:6 P:0 R:0
+F1170: FPS=29.4 | Hand:NO(0f) Grace:25/8 | m=0.015 s=0.129 | Buf:'' | L:6 P:0 R:0
+F1185: FPS=29.4 | Hand:NO(0f) Grace:40/8 | m=0.013 s=0.157 | Buf:'' | L:6 P:0 R:0
+F1200: FPS=29.4 | Hand:NO(0f) Grace:55/8 | m=0.015 s=0.140 | Buf:'' | L:6 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@1208] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp2tip7hee.wav: 'N'
+[BUF@1210] Grace expired (8f) - clearing buffer
+[TTS] << DONE 'N'
+F1215: FPS=29.3 | Hand:NO(0f) Grace:13/8 | m=0.008 s=0.126 | Buf:'' | L:7 P:0 R:0
+F1230: FPS=29.3 | Hand:NO(0f) Grace:28/8 | m=0.007 s=0.124 | Buf:'' | L:7 P:0 R:0
+F1245: FPS=29.4 | Hand:NO(0f) Grace:43/8 | m=0.010 s=0.129 | Buf:'' | L:7 P:0 R:0
+F1260: FPS=29.4 | Hand:NO(0f) Grace:58/8 | m=0.008 s=0.130 | Buf:'' | L:7 P:0 R:0
+F1275: FPS=29.4 | Hand:NO(0f) Grace:73/8 | m=0.007 s=0.131 | Buf:'' | L:7 P:0 R:0
+F1290: FPS=29.4 | Hand:NO(0f) Grace:88/8 | m=0.010 s=0.119 | Buf:'' | L:7 P:0 R:0
+F1305: FPS=29.4 | Hand:NO(0f) Grace:103/8 | m=0.012 s=0.124 | Buf:'' | L:7 P:0 R:0
+F1320: FPS=29.4 | Hand:NO(0f) Grace:118/8 | m=0.013 s=0.143 | Buf:'' | L:7 P:0 R:0
+F1335: FPS=29.4 | Hand:NO(0f) Grace:133/8 | m=0.015 s=0.117 | Buf:'' | L:7 P:0 R:0
+F1350: FPS=29.4 | Hand:NO(0f) Grace:148/8 | m=0.015 s=0.096 | Buf:'' | L:7 P:0 R:0
+F1365: FPS=29.4 | Hand:NO(0f) Grace:163/8 | m=0.014 s=0.103 | Buf:'' | L:7 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@1377] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[BUF@1379] Grace expired (8f) - clearing buffer
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpybf7crf8.wav: 'N'
+F1380: FPS=29.4 | Hand:NO(0f) Grace:9/8 | m=0.013 s=0.140 | Buf:'' | L:8 P:0 R:0
+[TTS] << DONE 'N'
+F1395: FPS=29.4 | Hand:NO(0f) Grace:24/8 | m=0.009 s=0.144 | Buf:'' | L:8 P:0 R:0
+F1410: FPS=29.4 | Hand:NO(0f) Grace:39/8 | m=0.008 s=0.146 | Buf:'' | L:8 P:0 R:0
+F1425: FPS=29.4 | Hand:NO(0f) Grace:54/8 | m=0.016 s=0.140 | Buf:'' | L:8 P:0 R:0
+F1440: FPS=29.4 | Hand:NO(0f) Grace:69/8 | m=0.010 s=0.132 | Buf:'' | L:8 P:0 R:0
+F1455: FPS=29.4 | Hand:NO(0f) Grace:84/8 | m=0.008 s=0.130 | Buf:'' | L:8 P:0 R:0
+F1470: FPS=29.4 | Hand:NO(0f) Grace:99/8 | m=0.021 s=0.143 | Buf:'' | L:8 P:0 R:0
+F1485: FPS=29.4 | Hand:NO(0f) Grace:114/8 | m=0.010 s=0.145 | Buf:'' | L:8 P:0 R:0
+F1500: FPS=29.4 | Hand:NO(0f) Grace:129/8 | m=0.010 s=0.144 | Buf:'' | L:8 P:0 R:0
+F1515: FPS=29.4 | Hand:NO(0f) Grace:144/8 | m=0.009 s=0.149 | Buf:'' | L:8 P:0 R:0
+F1530: FPS=29.4 | Hand:NO(0f) Grace:159/8 | m=0.006 s=0.151 | Buf:'' | L:8 P:0 R:0
+F1545: FPS=29.4 | Hand:NO(0f) Grace:174/8 | m=0.008 s=0.150 | Buf:'' | L:8 P:0 R:0
+F1560: FPS=29.4 | Hand:NO(0f) Grace:189/8 | m=0.010 s=0.154 | Buf:'' | L:8 P:0 R:0
+F1575: FPS=29.4 | Hand:NO(0f) Grace:204/8 | m=0.007 s=0.153 | Buf:'' | L:8 P:0 R:0
+F1590: FPS=29.4 | Hand:NO(0f) Grace:219/8 | m=0.008 s=0.154 | Buf:'' | L:8 P:0 R:0
+F1605: FPS=29.4 | Hand:NO(0f) Grace:234/8 | m=0.007 s=0.154 | Buf:'' | L:8 P:0 R:0
+F1620: FPS=29.4 | Hand:NO(0f) Grace:249/8 | m=0.013 s=0.153 | Buf:'' | L:8 P:0 R:0
+F1635: FPS=29.4 | Hand:NO(0f) Grace:264/8 | m=0.011 s=0.149 | Buf:'' | L:8 P:0 R:0
+F1650: FPS=29.4 | Hand:NO(0f) Grace:279/8 | m=0.016 s=0.147 | Buf:'' | L:8 P:0 R:0
+F1665: FPS=29.4 | Hand:NO(0f) Grace:294/8 | m=0.008 s=0.142 | Buf:'' | L:8 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+F1680: FPS=29.4 | Hand:NO(3f) Grace:0/8 | m=0.032 s=0.171 | Buf:'NN' | L:8 P:0 R:0
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[PRED@1680] N:1.000
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[LETTER@1684] ✅ 'N' conf=1.000 margin=1.000 win=7/7 → SPEAK
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpx6uikaq1.wav: 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[TTS] << DONE 'N'
+[CONF][WARN] Could not extract distribution: cannot import name 'letter_model' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+[BUF@1689] Grace expired (8f) - clearing buffer
+F1695: FPS=29.4 | Hand:NO(0f) Grace:14/8 | m=0.021 s=0.072 | Buf:'' | L:9 P:0 R:0
+F1710: FPS=29.4 | Hand:NO(0f) Grace:29/8 | m=0.017 s=0.064 | Buf:'' | L:9 P:0 R:0
+F1725: FPS=29.4 | Hand:NO(0f) Grace:44/8 | m=0.010 s=0.074 | Buf:'' | L:9 P:0 R:0
+F1740: FPS=29.4 | Hand:NO(0f) Grace:59/8 | m=0.012 s=0.076 | Buf:'' | L:9 P:0 R:0
+F1755: FPS=29.4 | Hand:NO(0f) Grace:74/8 | m=0.015 s=0.077 | Buf:'' | L:9 P:0 R:0
+F1770: FPS=29.4 | Hand:NO(0f) Grace:89/8 | m=0.015 s=0.074 | Buf:'' | L:9 P:0 R:0
+F1785: FPS=29.4 | Hand:NO(0f) Grace:104/8 | m=0.008 s=0.075 | Buf:'' | L:9 P:0 R:0
+F1800: FPS=29.4 | Hand:NO(0f) Grace:119/8 | m=0.006 s=0.075 | Buf:'' | L:9 P:0 R:0
+F1815: FPS=29.4 | Hand:NO(0f) Grace:134/8 | m=0.005 s=0.076 | Buf:'' | L:9 P:0 R:0
+F1830: FPS=29.4 | Hand:NO(0f) Grace:149/8 | m=0.013 s=0.076 | Buf:'' | L:9 P:0 R:0
+F1845: FPS=29.4 | Hand:NO(0f) Grace:164/8 | m=0.012 s=0.078 | Buf:'' | L:9 P:0 R:0
+
+[SYS] Interrupted
+[TTS] Worker exited.
+[SYS] Exit
+(venv) PS C:\Users\ameli\speakez> 

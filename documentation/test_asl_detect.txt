@@ -1,0 +1,83 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-08 00:02:57.063801: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 00:02:57.911855: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2025-10-08 00:03:02.382156: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1759852982.385171   19088 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1759852982.405872   19088 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+============================================================
+SpeakEZ - Simple Hybrid System
+============================================================
+
+[1] Opening camera...
+✓ Camera opened successfully
+✓ Camera working: (480, 640, 3)
+
+[2] Starting detection loop...
+
+Controls:
+  S = Speak text
+  C = Clear buffer
+  B = Backspace
+  Q = Quit
+
+============================================================
+Camera window should appear now...
+============================================================
+
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+2025-10-08 00:03:04.082244: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+Frame 30: F (conf=0.94) | Buffer: 'FO'
+Frame 60: O (conf=0.93) | Buffer: 'FOFO'
+Frame 90: O (conf=0.91) | Buffer: 'FOFO'
+Frame 120: O (conf=0.51) | Buffer: 'FOFOSN'
+Frame 150: N (conf=0.51) | Buffer: 'FOFOSNON'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 180: S (conf=0.82) | Buffer: ''
+Frame 210: S (conf=0.44) | Buffer: 'SONS'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 240: N (conf=0.39) | Buffer: ''
+Buffer cleared
+Frame 270: O (conf=0.65) | Buffer: 'SO'
+Buffer cleared
+Frame 300: O (conf=0.94) | Buffer: 'ONO'
+Frame 330: O (conf=0.58) | Buffer: 'ONONO'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 360: O (conf=0.51) | Buffer: ''
+Buffer cleared
+
+🔊 Speaking: 'NO'
+Frame 390: O (conf=0.94) | Buffer: 'NO'
+Frame 420: O (conf=0.97) | Buffer: 'NONO'
+Buffer cleared
+Buffer cleared
+Frame 450: O (conf=0.91) | Buffer: 'O'
+Buffer cleared
+Frame 480: O (conf=0.76) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+Frame 510: O (conf=0.68) | Buffer: 'O'
+Frame 540: O (conf=0.86) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+Frame 570: N (conf=0.99) | Buffer: 'O'
+Frame 600: F (conf=0.65) | Buffer: 'OF'
+Frame 630: F (conf=0.85) | Buffer: 'OF'
+Frame 660: F (conf=0.92) | Buffer: 'OF'
+Frame 690: F (conf=1.00) | Buffer: 'OF'
+Frame 720: F (conf=0.95) | Buffer: 'OF'

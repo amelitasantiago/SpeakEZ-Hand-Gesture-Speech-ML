@@ -1,0 +1,143 @@
+[TTS] module file: C:\Users\ameli\speakez\src\tts.py
+[TTS] func defined in: C:\Users\ameli\speakez\src\tts.py
+[TTS] func name: tts_speak_live
+============================================================
+SpeakEZ - Simple Hybrid System
+============================================================
+
+[1] Opening camera...
+✓ Camera opened successfully
+✓ Camera working: (480, 640, 3)
+
+[2] Starting detection loop...
+
+Controls:
+  S = Speak text
+  C = Clear buffer
+  B = Backspace
+  Q = Quit
+
+============================================================
+Camera window should appear now...
+============================================================
+
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+2025-10-08 01:02:21.259219: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+Frame 30: F (conf=0.90) | Buffer: 'OF'
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+Buffer cleared
+Buffer cleared
+Frame 60: O (conf=1.00) | Buffer: 'O'
+
+🔊 Speaking: 'ON'
+[TTS] COM initialized in worker
+[TTS] Engine ready (SAPI5, file-mode).
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpm7n_xmyd.wav: 'ON'
+Frame 90: N (conf=0.93) | Buffer: 'ON'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmpm7n_xmyd.wav
+Frame 120: N (conf=0.89) | Buffer: 'ON'
+[TTS] << DONE 'ON'
+Buffer cleared
+Frame 150: O (conf=0.99) | Buffer: 'O'
+Frame 180: N (conf=0.64) | Buffer: 'ON'
+
+🔊 Speaking: 'ONO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp413700t6.wav: 'ONO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmp413700t6.wav
+Frame 210: O (conf=0.96) | Buffer: 'ONO'
+Frame 240: O (conf=0.94) | Buffer: 'ONO'
+[TTS] << DONE 'ONO'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 270: O (conf=0.81) | Buffer: 'NO'
+
+🔊 Speaking: 'NO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp7cppeoa2.wav: 'NO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmp7cppeoa2.wav
+Frame 300: N (conf=0.89) | Buffer: 'NON'
+[TTS] << DONE 'NO'
+Frame 330: O (conf=0.94) | Buffer: 'NONO'
+
+🔊 Speaking: 'NONO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpftil7tm5.wav: 'NONO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmpftil7tm5.wav
+Frame 360: O (conf=0.80) | Buffer: 'NONO'
+[TTS] << DONE 'NONO'
+Buffer cleared
+Frame 390: N (conf=0.97) | Buffer: 'N'
+
+🔊 Speaking: 'NO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpnbd7mbfs.wav: 'NO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmpnbd7mbfs.wav
+Frame 420: N (conf=0.58) | Buffer: 'NO'
+[TTS] << DONE 'NO'
+
+🔊 Speaking: 'NONON'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmplp85oivw.wav: 'NONON'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmplp85oivw.wav
+Frame 450: N (conf=0.74) | Buffer: 'NONON'
+Buffer cleared
+Buffer cleared
+[TTS] << DONE 'NONON'
+Frame 480: N (conf=0.64) | Buffer: 'N'
+Frame 510: O (conf=0.92) | Buffer: 'NO'
+
+🔊 Speaking: 'NO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp3jmycn3e.wav: 'NO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmp3jmycn3e.wav
+Frame 540: O (conf=0.99) | Buffer: 'NO'
+[TTS] << DONE 'NO'
+Frame 570: O (conf=0.95) | Buffer: 'NONO'
+
+🔊 Speaking: 'NONO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmppjdbscbn.wav: 'NONO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmppjdbscbn.wav
+Frame 600: O (conf=0.95) | Buffer: 'NONO'
+[TTS] << DONE 'NONO'
+Frame 630: N (conf=0.98) | Buffer: 'NONON'
+Frame 660: N (conf=0.99) | Buffer: 'NONONON'
+Buffer cleared
+Frame 690: N (conf=0.98) | Buffer: 'N'
+
+🔊 Speaking: 'N'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpcrgil2jm.wav: 'N'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmpcrgil2jm.wav
+Frame 720: O (conf=0.52) | Buffer: 'NO'
+[TTS] << DONE 'N'
+
+🔊 Speaking: 'NO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpapd9gewv.wav: 'NO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmpapd9gewv.wav
+Frame 750: O (conf=0.90) | Buffer: 'NO'
+[TTS] << DONE 'NO'
+Frame 780: N (conf=0.78) | Buffer: 'NON'
+
+🔊 Speaking: 'NONONO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp4phr5y2e.wav: 'NONONO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmp4phr5y2e.wav
+Frame 810: O (conf=0.87) | Buffer: 'NONONO'
+Buffer is empty
+Frame 840: O (conf=0.80) | Buffer: 'NONONONO'
+[TTS] << DONE 'NONONO'
+
+🔊 Speaking: 'NONONONO'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpkd5zatze.wav: 'NONONONO'
+[TTS] >> PLAY C:\Users\ameli\AppData\Local\Temp\tmpkd5zatze.wav
+Frame 870: N (conf=0.53) | Buffer: 'NONONONONO'
+Buffer cleared
+[TTS] << DONE 'NONONONO'
+Frame 900: O (conf=0.67) | Buffer: 'NO'
+
+
+Quitting...
+
+============================================================
+Session complete: 913 frames processed
+Final text: 'NO'
+============================================================

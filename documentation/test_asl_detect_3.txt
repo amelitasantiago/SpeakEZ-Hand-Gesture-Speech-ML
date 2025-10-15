@@ -1,0 +1,106 @@
+Requirement already satisfied: mdurl~=0.1 in c:\users\ameli\speakez\venv\lib\site-packages (from markdown-it-py>=2.2.0->rich->keras>=3.2.0->tensorflow-intel==2.17.0->tensorflow==2.*) (0.1.2)
+Using cached ml_dtypes-0.4.1-cp311-cp311-win_amd64.whl (126 kB)
+Installing collected packages: ml-dtypes
+  Attempting uninstall: ml-dtypes
+    Found existing installation: ml_dtypes 0.5.3
+    Uninstalling ml_dtypes-0.5.3:
+      Successfully uninstalled ml_dtypes-0.5.3
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+jax 0.7.2 requires ml_dtypes>=0.5.0, but you have ml-dtypes 0.4.1 which is incompatible.
+jax 0.7.2 requires numpy>=2.0, but you have numpy 1.26.4 which is incompatible.
+jaxlib 0.7.2 requires ml_dtypes>=0.5.0, but you have ml-dtypes 0.4.1 which is incompatible.
+jaxlib 0.7.2 requires numpy>=2.0, but you have numpy 1.26.4 which is incompatible.
+Successfully installed ml-dtypes-0.4.1
+(venv) PS C:\Users\ameli\speakez> pip install pyttsx3 comtypes
+Requirement already satisfied: pyttsx3 in c:\users\ameli\speakez\venv\lib\site-packages (2.99)
+Requirement already satisfied: comtypes in c:\users\ameli\speakez\venv\lib\site-packages (1.4.12)
+Requirement already satisfied: pypiwin32 in c:\users\ameli\speakez\venv\lib\site-packages (from pyttsx3) (223)
+Requirement already satisfied: pywin32 in c:\users\ameli\speakez\venv\lib\site-packages (from pyttsx3) (311)
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+[TTS] module file: C:\Users\ameli\speakez\src\tts.py
+[TTS] func defined in: C:\Users\ameli\speakez\src\tts.py
+[TTS] func name: tts_speak_live
+[TTS] module file: C:\Users\ameli\speakez\src\tts.py
+[TTS] func defined in: C:\Users\ameli\speakez\src\tts.py
+[TTS] func name: tts_speak_live
+2025-10-08 22:20:56.318302: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 22:21:00.193342: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[DET] Could not import inference_.predict_letter: JAX requires ml_dtypes version 0.5 or newer; installed version is 0.4.1.
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:348: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[WORD] Loaded model: word_skel_logreg_8.joblib with labels: ['0', '1', '2', '3', '4', '5', '6', '7']
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:348: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[WORD] No word feature extractor found; word model disabled.
+================================================================
+SpeakEZ - AutoSpeak (WordModel + Fallback Words + Letters) + HandGate
+================================================================
+Keys:  [B]ackspace   [C]lear   [Q]/ESC Quit   (S still works)
+Fallback words: NO, HELLO, STOP (used only if word model is unavailable/low-confidence)
+----------------------------------------------------------------
+Frame 1: - (conf=0.00) | Hand:False | m=1.000 s=0.251 | Buffer:''
+Frame 32: - (conf=0.00) | Hand:False | m=0.016 s=0.225 | Buffer:''
+Frame 62: - (conf=0.00) | Hand:False | m=0.012 s=0.232 | Buffer:''
+Frame 91: - (conf=0.00) | Hand:True | m=0.016 s=0.230 | Buffer:''
+Frame 121: - (conf=0.00) | Hand:False | m=0.002 s=0.229 | Buffer:''
+Frame 151: - (conf=0.00) | Hand:True | m=0.022 s=0.231 | Buffer:''
+Frame 181: - (conf=0.00) | Hand:False | m=0.002 s=0.231 | Buffer:''
+Frame 211: - (conf=0.00) | Hand:False | m=0.001 s=0.230 | Buffer:''
+Frame 241: - (conf=0.00) | Hand:False | m=0.002 s=0.230 | Buffer:''
+Frame 271: - (conf=0.00) | Hand:False | m=0.001 s=0.230 | Buffer:''
+Frame 301: - (conf=0.00) | Hand:False | m=0.001 s=0.229 | Buffer:''
+Frame 331: - (conf=0.00) | Hand:False | m=0.002 s=0.229 | Buffer:''
+Frame 361: - (conf=0.00) | Hand:False | m=0.002 s=0.231 | Buffer:''
+Frame 391: - (conf=0.00) | Hand:False | m=0.001 s=0.231 | Buffer:''
+Frame 421: - (conf=0.00) | Hand:False | m=0.003 s=0.230 | Buffer:''
+Frame 451: - (conf=0.00) | Hand:False | m=0.000 s=0.230 | Buffer:''
+Frame 481: - (conf=0.00) | Hand:False | m=0.001 s=0.230 | Buffer:''
+Frame 511: - (conf=0.00) | Hand:False | m=0.001 s=0.231 | Buffer:''
+Frame 541: - (conf=0.00) | Hand:True | m=0.069 s=0.229 | Buffer:''
+Frame 571: - (conf=0.00) | Hand:True | m=0.036 s=0.236 | Buffer:''
+Frame 601: - (conf=0.00) | Hand:False | m=0.015 s=0.232 | Buffer:''
+Frame 631: - (conf=0.00) | Hand:False | m=0.006 s=0.235 | Buffer:''
+Frame 661: - (conf=0.00) | Hand:False | m=0.009 s=0.239 | Buffer:''
+Frame 691: - (conf=0.00) | Hand:False | m=0.002 s=0.237 | Buffer:''
+Frame 721: - (conf=0.00) | Hand:False | m=0.001 s=0.239 | Buffer:''
+Frame 751: - (conf=0.00) | Hand:False | m=0.004 s=0.239 | Buffer:''
+Frame 782: - (conf=0.00) | Hand:False | m=0.003 s=0.239 | Buffer:''
+Frame 812: - (conf=0.00) | Hand:False | m=0.001 s=0.238 | Buffer:''
+Frame 842: - (conf=0.00) | Hand:False | m=0.000 s=0.238 | Buffer:''
+Frame 872: - (conf=0.00) | Hand:False | m=0.001 s=0.238 | Buffer:''
+Frame 902: - (conf=0.00) | Hand:False | m=0.004 s=0.239 | Buffer:''
+Frame 932: - (conf=0.00) | Hand:False | m=0.000 s=0.238 | Buffer:''
+Frame 962: - (conf=0.00) | Hand:False | m=0.000 s=0.238 | Buffer:''
+Frame 992: - (conf=0.00) | Hand:False | m=0.003 s=0.238 | Buffer:''
+Frame 1022: - (conf=0.00) | Hand:False | m=0.000 s=0.238 | Buffer:''
+Frame 1052: - (conf=0.00) | Hand:False | m=0.000 s=0.238 | Buffer:''
+Frame 1082: - (conf=0.00) | Hand:False | m=0.005 s=0.239 | Buffer:''
+Frame 1112: - (conf=0.00) | Hand:False | m=0.001 s=0.237 | Buffer:''
+Frame 1142: - (conf=0.00) | Hand:True | m=0.288 s=0.210 | Buffer:''
+Frame 1172: - (conf=0.00) | Hand:True | m=0.113 s=0.132 | Buffer:''
+Frame 1202: - (conf=0.00) | Hand:True | m=0.035 s=0.127 | Buffer:''
+Frame 1232: - (conf=0.00) | Hand:False | m=0.008 s=0.128 | Buffer:''
+Frame 1262: - (conf=0.00) | Hand:False | m=0.006 s=0.129 | Buffer:''
+Frame 1292: - (conf=0.00) | Hand:False | m=0.004 s=0.128 | Buffer:''
+Frame 1322: - (conf=0.00) | Hand:True | m=0.037 s=0.131 | Buffer:''
+Frame 1352: - (conf=0.00) | Hand:True | m=0.018 s=0.136 | Buffer:''
+Frame 1382: - (conf=0.00) | Hand:True | m=0.047 s=0.143 | Buffer:''
+Frame 1412: - (conf=0.00) | Hand:False | m=0.009 s=0.142 | Buffer:''
+Frame 1442: - (conf=0.00) | Hand:False | m=0.004 s=0.142 | Buffer:''
+Frame 1472: - (conf=0.00) | Hand:False | m=0.001 s=0.142 | Buffer:''
+Frame 1502: - (conf=0.00) | Hand:True | m=0.021 s=0.139 | Buffer:''
+Frame 1532: - (conf=0.00) | Hand:False | m=0.007 s=0.139 | Buffer:''
+Frame 1562: - (conf=0.00) | Hand:False | m=0.006 s=0.140 | Buffer:''
+Frame 1592: - (conf=0.00) | Hand:False | m=0.004 s=0.140 | Buffer:''
+Frame 1622: - (conf=0.00) | Hand:False | m=0.003 s=0.139 | Buffer:''
+Frame 1652: - (conf=0.00) | Hand:False | m=0.002 s=0.140 | Buffer:''
+Frame 1682: - (conf=0.00) | Hand:True | m=0.015 s=0.142 | Buffer:''
+Frame 1712: - (conf=0.00) | Hand:False | m=0.010 s=0.141 | Buffer:''
+Frame 1742: - (conf=0.00) | Hand:True | m=0.075 s=0.149 | Buffer:''
+Frame 1772: - (conf=0.00) | Hand:True | m=0.048 s=0.174 | Buffer:''
+Frame 1802: - (conf=0.00) | Hand:True | m=0.024 s=0.184 | Buffer:''
+
+Interrupted. Exiting...
+(venv) PS C:\Users\ameli\speakez> 

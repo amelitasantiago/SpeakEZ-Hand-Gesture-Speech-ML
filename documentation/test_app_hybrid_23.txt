@@ -1,0 +1,65 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ⚠ No user TTS; falling back.
+[SYS] ✓ TTS loaded (Windows SAPI)
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:347: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[SYS] ✓ predict_letter(), predict_word() loaded
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+[SYS] ✓ Word whitelist loaded (8 items)
+[SYS] ✓ Loaded per-class thresholds (thresholds.json)
+======================================================================
+HYBRID MODE: MediaPipe + Models (letters, words, patterns, wave)
+======================================================================
+Conf>0.72  Window=11  INFER_EVERY=2
+Patterns: ON  Word-ML: ON  Wave: ON
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760187410.115128    4384 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760187410.145213    4384 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] ✓ Opened index 0 using backend 700 | shape=(480, 640, 3)
+[WAVE@43] ✅ 'hi' (amp=0.126 flips=4 open=1.00)
+[WORD@113] ✅ 'please' (1.00 ≥ 0.93)
+2025-10-11 20:57:02.785199: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[WAVE@127] ✅ 'hello' (amp=0.178 flips=8 open=1.00)
+[WORD@201] ✅ 'please' (1.00 ≥ 0.93)
+[BUF] Cleared (hand off: streak=8, idle=3.55s)
+[WORD@292] ✅ 'please' (1.00 ≥ 0.93)
+[BUF] Cleared (hand off: streak=8, idle=4.23s)
+[WORD@430] ✅ 'please' (1.00 ≥ 0.93)
+[BUF] Cleared (hand off: streak=8, idle=2.39s)
+[WORD@545] ✅ 'please' (1.00 ≥ 0.93)
+[WAVE@608] ✅ 'hi' (amp=0.122 flips=4 open=1.00)
+[WAVE@668] ✅ 'hello' (amp=0.186 flips=10 open=1.00)
+[WORD@732] ✅ 'please' (1.00 ≥ 0.93)
+[WORD@822] ✅ 'please' (1.00 ≥ 0.93)
+[BUF] Cleared (hand off: streak=8, idle=1.97s)
+[WORD@946] ✅ 'please' (1.00 ≥ 0.93)
+[BUF] Cleared (hand off: streak=8, idle=2.10s)
+[BUF] Cleared (hand off: streak=8, idle=6.29s)
+[WORD@1073] ✅ 'please' (1.00 ≥ 0.93)
+[WAVE@1128] ✅ 'hi' (amp=0.085 flips=4 open=1.00)
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Duration: 85.3s | Frames: 1258 | FPS: 14.7
+Letters: 0 | Patterns: 0 | Rejections: 85
+Top letter 'N' = 100.0%
+(venv) PS C:\Users\ameli\speakez> 

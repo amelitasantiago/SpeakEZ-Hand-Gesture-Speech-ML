@@ -1,0 +1,93 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-08 23:06:04.843407: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 23:06:05.683438: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2025-10-08 23:06:08.645570: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1759935968.648644   15808 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1759935968.668683   15808 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[WORD] Using feature extractor inference_.extract_word_features(frame)->features
+[WORD] Loaded model: word_skel_logreg_8.joblib with labels: [0, 1, 2, 3, 4, 5, 6, 7]
+[DET] Using inference_.predict_letter(...)
+Frame 1: FPS=15.2 | Hand:False | m=0.000 s=0.127 | Buffer:''
+Frame 32: FPS=30.8 | Hand:False | m=0.000 s=0.133 | Buffer:''
+Frame 63: FPS=30.1 | Hand:False | m=0.000 s=0.135 | Buffer:''
+Frame 92: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 122: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 152: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 182: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 212: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 242: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 272: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 302: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 332: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 362: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 392: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:''
+Frame 422: FPS=29.6 | Hand:True | m=0.021 s=0.154 | Buffer:''
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+2025-10-08 23:06:27.344954: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[DET] Letter='F' win(5): F,F,F,F,F conf=0.97 → SPEAK
+[TTS][ERR] module 'tts' has no attribute 'speak'
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+[WORD][ERR] Feature/Model pipeline failed: X has 141 features, but LogisticRegression is expecting 170 features as input.
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+Frame 435: FPS=13.0 | Hand:False | m=0.008 s=0.149 | Buffer:'FFFFF'
+
+[SYS] Interrupted by user.

@@ -1,0 +1,53 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-09 10:36:04.921918: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-09 10:36:11.751650: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.17.1 | Eager: True
+[SYS] Loaded config.yaml
+2025-10-09 10:36:39.786234: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[WORD] Loaded model: C:\Users\ameli\speakez\models\final\word_skel_logreg_8.joblib with labels: [0 1 2 3 4 5 6 7]
+[WORD] Using feature extractor: extract_word_features
+[CAM] Attempting to open camera index 0 with backend 700
+[CAM] ✓ Opened successfully: 640x480 @ 30fps
+[CAM] ✓ Test frame captured: shape=(480, 640, 3)
+[SYS] Starting main loop (press 'q' or ESC to exit)
+[SYS] Hand detection: motion>0.020, skin>0.080, warmup>30f, debounce>5f
+[SYS] Word detection: DISABLED | Letter detection: ENABLED
+[SYS] Pattern matching: ENABLED (17 patterns)
+[SYS] Available patterns: HELLO, HELP, HI, NO, NOO, NOOO, OFF, OK, ON, ONE...
+[SYS] Global rate limit: 0.8s between detections
+[SYS] Debug visual: OFF (set DEBUG_VISUAL=true to see skin ROI)
+[SYS] Debug predictions: OFF (set DEBUG_PREDICTIONS=true to log all predictions)
+[SYS] Log interval: 0.5s (~15 frames)
+Frame 15: FPS=32.8 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.121 | Buf:'' | W:0 L:0 P:0
+Frame 30: FPS=31.1 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.121 | Buf:'' | W:0 L:0 P:0
+Frame 45: FPS=30.4 | Hand:False(0f) | m=0.004+0.003=0.007 s=0.155 | Buf:'' | W:0 L:0 P:0
+Frame 60: FPS=30.3 | Hand:False(0f) | m=0.002+0.004=0.006 s=0.185 | Buf:'' | W:0 L:0 P:0
+Frame 75: FPS=29.9 | Hand:False(0f) | m=0.005+0.004=0.009 s=0.191 | Buf:'' | W:0 L:0 P:0
+Frame 90: FPS=29.7 | Hand:False(0f) | m=0.003+0.004=0.007 s=0.195 | Buf:'' | W:0 L:0 P:0
+Frame 105: FPS=29.8 | Hand:False(0f) | m=0.003+0.004=0.007 s=0.198 | Buf:'' | W:0 L:0 P:0
+Frame 120: FPS=29.7 | Hand:False(0f) | m=0.002+0.004=0.006 s=0.187 | Buf:'' | W:0 L:0 P:0
+Frame 135: FPS=29.5 | Hand:False(0f) | m=0.004+0.004=0.008 s=0.192 | Buf:'' | W:0 L:0 P:0
+Frame 150: FPS=29.5 | Hand:False(0f) | m=0.003+0.004=0.007 s=0.192 | Buf:'' | W:0 L:0 P:0
+Frame 165: FPS=29.5 | Hand:False(0f) | m=0.010+0.004=0.013 s=0.193 | Buf:'' | W:0 L:0 P:0
+Frame 180: FPS=29.6 | Hand:False(0f) | m=0.007+0.004=0.010 s=0.187 | Buf:'' | W:0 L:0 P:0
+Frame 195: FPS=29.6 | Hand:False(1f) | m=0.021+0.004=0.025 s=0.182 | Buf:'' | W:0 L:0 P:0
+2025-10-09 10:36:54.032893: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[DET@203] Letter='N' win(5): N,N,N,N,N conf=1.00 hand_frames=9 → SPEAK
+Frame 210: FPS=28.8 | Hand:True(16f) | m=0.020+0.003=0.023 s=0.132 | Buf:'NNNNNNNN' | W:0 L:1 P:0
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmprem58j1_.wav: 'N'
+[TTS] << DONE 'N'
+Frame 225: FPS=28.9 | Hand:False(0f) | m=0.005+0.003=0.009 s=0.160 | Buf:'' | W:0 L:1 P:0
+Frame 240: FPS=28.9 | Hand:False(0f) | m=0.006+0.003=0.009 s=0.168 | Buf:'' | W:0 L:1 P:0
+Frame 255: FPS=29.0 | Hand:False(0f) | m=0.007+0.003=0.010 s=0.169 | Buf:'' | W:0 L:1 P:0
+Frame 270: FPS=28.9 | Hand:False(0f) | m=0.005+0.003=0.008 s=0.172 | Buf:'' | W:0 L:1 P:0
+Frame 285: FPS=28.9 | Hand:False(0f) | m=0.004+0.004=0.008 s=0.176 | Buf:'' | W:0 L:1 P:0
+Frame 300: FPS=29.0 | Hand:False(0f) | m=0.003+0.003=0.006 s=0.172 | Buf:'' | W:0 L:1 P:0
+Traceback (most recent call last):
+  File "C:\Users\ameli\speakez\ui\app_hybrid_simple.py", line 523, in <module>
+    main()
+  File "C:\Users\ameli\speakez\ui\app_hybrid_simple.py", line 464, in main
+    gc.collect()
+    ^^
+NameError: name 'gc' is not defined
+(venv) PS C:\Users\ameli\speakez>

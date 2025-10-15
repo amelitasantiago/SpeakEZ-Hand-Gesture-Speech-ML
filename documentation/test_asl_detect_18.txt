@@ -1,0 +1,89 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-09 10:54:22.678972: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-09 10:54:23.763613: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.17.1 | Eager: True
+[SYS] Loaded config.yaml
+[SYS][WARN] GC module check failed: name 'gc' is not defined
+2025-10-09 10:54:27.616300: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[WORD][WARN] Model load failed: name 'joblib' is not defined
+[CAM] Attempting to open camera index 0 with backend 700
+[CAM] ✓ Opened successfully: 640x480 @ 30fps
+[CAM] ✓ Test frame captured: shape=(480, 640, 3)
+[SYS] Starting main loop (press 'q' or ESC to exit)
+[SYS] Hand detection: motion>0.020, skin>0.080, warmup>30f, debounce>5f
+[SYS] Word detection: DISABLED | Letter detection: ENABLED
+[SYS] Pattern matching: ENABLED (17 patterns)
+[SYS] Available patterns: HELLO, HELP, HI, NO, NOO, NOOO, OFF, OK, ON, ONE...
+[SYS] Global rate limit: 0.8s between detections
+[SYS] Debug visual: OFF (set DEBUG_VISUAL=true to see skin ROI)
+[SYS] Debug predictions: OFF (set DEBUG_PREDICTIONS=true to log all predictions)
+[SYS] Log interval: 0.5s (~15 frames)
+Frame 15: FPS=30.5 | Hand:False(0f) | m=0.006+0.002=0.008 s=0.108 | Buf:'' | W:0 L:0 P:0
+Frame 30: FPS=29.9 | Hand:False(0f) | m=0.003+0.002=0.006 s=0.115 | Buf:'' | W:0 L:0 P:0
+Frame 45: FPS=30.0 | Hand:False(0f) | m=0.004+0.002=0.006 s=0.116 | Buf:'' | W:0 L:0 P:0
+Frame 60: FPS=29.9 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.115 | Buf:'' | W:0 L:0 P:0
+Frame 75: FPS=29.6 | Hand:False(2f) | m=0.031+0.003=0.034 s=0.160 | Buf:'' | W:0 L:0 P:0
+2025-10-09 10:54:36.371370: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+Frame 90: FPS=28.5 | Hand:False(0f) | m=0.004+0.004=0.008 s=0.180 | Buf:'' | W:0 L:0 P:0
+Frame 105: FPS=26.9 | Hand:False(0f) | m=0.014+0.004=0.018 s=0.180 | Buf:'NN' | W:0 L:0 P:0
+Frame 120: FPS=24.5 | Hand:False(1f) | m=0.018+0.003=0.021 s=0.165 | Buf:'' | W:0 L:0 P:0
+Frame 135: FPS=22.9 | Hand:False(0f) | m=0.009+0.003=0.012 s=0.174 | Buf:'' | W:0 L:0 P:0
+Frame 150: FPS=21.6 | Hand:False(0f) | m=0.015+0.003=0.018 s=0.168 | Buf:'' | W:0 L:0 P:0
+Frame 165: FPS=20.8 | Hand:True(5f) | m=0.027+0.004=0.031 s=0.176 | Buf:'' | W:0 L:0 P:0
+[DET@169] Letter='N' win(5): N,N,N,N,N conf=0.98 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpgbrwc1ch.wav: 'N'
+[TTS] << DONE 'N'
+Frame 180: FPS=20.1 | Hand:False(0f) | m=0.015+0.004=0.019 s=0.190 | Buf:'' | W:0 L:1 P:0
+Frame 195: FPS=19.6 | Hand:False(0f) | m=0.006+0.004=0.010 s=0.182 | Buf:'' | W:0 L:1 P:0
+Frame 210: FPS=19.2 | Hand:False(0f) | m=0.010+0.004=0.014 s=0.182 | Buf:'' | W:0 L:1 P:0
+Frame 225: FPS=18.8 | Hand:False(0f) | m=0.004+0.004=0.007 s=0.182 | Buf:'' | W:0 L:1 P:0
+Frame 240: FPS=18.5 | Hand:False(0f) | m=0.010+0.004=0.014 s=0.181 | Buf:'' | W:0 L:1 P:0
+Frame 255: FPS=18.3 | Hand:False(0f) | m=0.007+0.004=0.011 s=0.182 | Buf:'' | W:0 L:1 P:0
+Frame 270: FPS=18.1 | Hand:False(0f) | m=0.011+0.003=0.014 s=0.174 | Buf:'' | W:0 L:1 P:0
+Frame 285: FPS=17.9 | Hand:False(0f) | m=0.004+0.004=0.008 s=0.178 | Buf:'' | W:0 L:1 P:0
+Frame 300: FPS=17.7 | Hand:False(0f) | m=0.010+0.003=0.013 s=0.170 | Buf:'' | W:0 L:1 P:0
+[SYS][WARN] GC failed: name 'gc' is not defined
+Frame 315: FPS=17.5 | Hand:False(0f) | m=0.004+0.003=0.007 s=0.170 | Buf:'' | W:0 L:1 P:0
+Frame 330: FPS=17.4 | Hand:False(0f) | m=0.015+0.004=0.019 s=0.183 | Buf:'' | W:0 L:1 P:0
+Frame 345: FPS=17.3 | Hand:False(0f) | m=0.004+0.004=0.008 s=0.180 | Buf:'' | W:0 L:1 P:0
+Frame 360: FPS=17.2 | Hand:False(1f) | m=0.017+0.004=0.021 s=0.178 | Buf:'' | W:0 L:1 P:0
+Frame 375: FPS=17.1 | Hand:False(0f) | m=0.004+0.003=0.007 s=0.172 | Buf:'' | W:0 L:1 P:0
+Frame 390: FPS=17.0 | Hand:False(0f) | m=0.005+0.003=0.008 s=0.172 | Buf:'' | W:0 L:1 P:0
+Frame 405: FPS=16.9 | Hand:False(0f) | m=0.004+0.003=0.007 s=0.171 | Buf:'' | W:0 L:1 P:0
+Frame 420: FPS=16.8 | Hand:False(0f) | m=0.006+0.003=0.009 s=0.166 | Buf:'' | W:0 L:1 P:0
+Frame 435: FPS=16.7 | Hand:False(0f) | m=0.006+0.003=0.009 s=0.166 | Buf:'' | W:0 L:1 P:0
+Frame 450: FPS=16.7 | Hand:False(0f) | m=0.006+0.003=0.009 s=0.171 | Buf:'' | W:0 L:1 P:0
+Frame 465: FPS=16.6 | Hand:False(0f) | m=0.016+0.004=0.019 s=0.179 | Buf:'' | W:0 L:1 P:0
+Frame 480: FPS=16.6 | Hand:False(0f) | m=0.012+0.004=0.016 s=0.197 | Buf:'' | W:0 L:1 P:0
+Frame 495: FPS=16.5 | Hand:False(0f) | m=0.011+0.004=0.015 s=0.193 | Buf:'' | W:0 L:1 P:0
+Frame 510: FPS=16.5 | Hand:False(0f) | m=0.005+0.004=0.009 s=0.187 | Buf:'' | W:0 L:1 P:0
+Frame 525: FPS=16.4 | Hand:False(0f) | m=0.007+0.003=0.010 s=0.166 | Buf:'' | W:0 L:1 P:0
+Frame 540: FPS=16.4 | Hand:False(4f) | m=0.022+0.003=0.025 s=0.156 | Buf:'' | W:0 L:1 P:0
+Frame 555: FPS=16.3 | Hand:False(2f) | m=0.018+0.003=0.021 s=0.156 | Buf:'' | W:0 L:1 P:0
+Frame 570: FPS=16.3 | Hand:False(0f) | m=0.006+0.003=0.010 s=0.166 | Buf:'' | W:0 L:1 P:0
+Frame 585: FPS=16.3 | Hand:False(0f) | m=0.005+0.003=0.008 s=0.168 | Buf:'' | W:0 L:1 P:0
+Frame 600: FPS=16.2 | Hand:False(0f) | m=0.005+0.003=0.008 s=0.166 | Buf:'' | W:0 L:1 P:0
+[SYS][WARN] GC failed: name 'gc' is not defined
+Frame 615: FPS=16.2 | Hand:False(0f) | m=0.004+0.004=0.007 s=0.179 | Buf:'' | W:0 L:1 P:0
+Frame 630: FPS=16.2 | Hand:False(0f) | m=0.004+0.003=0.007 s=0.172 | Buf:'' | W:0 L:1 P:0
+Frame 645: FPS=16.1 | Hand:False(4f) | m=0.017+0.004=0.021 s=0.180 | Buf:'' | W:0 L:1 P:0
+Frame 660: FPS=16.1 | Hand:False(0f) | m=0.009+0.003=0.013 s=0.174 | Buf:'' | W:0 L:1 P:0
+Frame 675: FPS=16.1 | Hand:False(0f) | m=0.006+0.004=0.009 s=0.176 | Buf:'' | W:0 L:1 P:0
+Frame 690: FPS=16.0 | Hand:False(0f) | m=0.008+0.004=0.012 s=0.186 | Buf:'' | W:0 L:1 P:0
+Frame 705: FPS=16.0 | Hand:False(0f) | m=0.011+0.004=0.014 s=0.187 | Buf:'' | W:0 L:1 P:0
+Frame 720: FPS=16.0 | Hand:False(0f) | m=0.007+0.004=0.011 s=0.195 | Buf:'' | W:0 L:1 P:0
+Frame 735: FPS=16.0 | Hand:False(0f) | m=0.005+0.004=0.009 s=0.196 | Buf:'' | W:0 L:1 P:0
+Frame 750: FPS=16.0 | Hand:False(0f) | m=0.006+0.004=0.010 s=0.198 | Buf:'' | W:0 L:1 P:0
+Frame 765: FPS=15.9 | Hand:False(0f) | m=0.008+0.003=0.010 s=0.141 | Buf:'' | W:0 L:1 P:0
+Frame 780: FPS=15.9 | Hand:False(0f) | m=0.002+0.003=0.005 s=0.140 | Buf:'' | W:0 L:1 P:0
+Frame 795: FPS=15.6 | Hand:False(0f) | m=0.003+0.003=0.006 s=0.142 | Buf:'' | W:0 L:1 P:0
+Frame 810: FPS=15.6 | Hand:False(0f) | m=0.005+0.003=0.007 s=0.142 | Buf:'' | W:0 L:1 P:0
+Frame 825: FPS=15.3 | Hand:False(0f) | m=0.002+0.003=0.005 s=0.144 | Buf:'' | W:0 L:1 P:0
+Frame 840: FPS=15.3 | Hand:False(0f) | m=0.007+0.003=0.010 s=0.140 | Buf:'' | W:0 L:1 P:0
+Frame 855: FPS=15.3 | Hand:False(0f) | m=0.006+0.003=0.008 s=0.138 | Buf:'' | W:0 L:1 P:0
+
+[SYS] Interrupted by user; draining TTS queue...
+[TTS] Worker exited.
+[SYS] Clean exit.
+(venv) PS C:\Users\ameli\speakez> 

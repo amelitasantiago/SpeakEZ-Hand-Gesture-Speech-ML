@@ -1,0 +1,127 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py
+2025-10-10 01:45:56.973694: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-10 01:45:57.559290: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ⚠ TTS fallback mode
+2025-10-10 01:46:00.258954: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[SYS] ✓ predict_letter() loaded from inference_.py
+[SYS] ✓ predict_word()   loaded from inference_.py
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760031960.383575   29704 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760031960.405551   14064 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] ✓ Opened index 0 using backend 700 | shape=(480, 640, 3)
+
+======================================================================
+HYBRID MODE: MediaPipe Detection + Your inference_.py Models
+======================================================================
+Hand Detection: MediaPipe (hysteresis ON)
+Letter Prediction: predict_letter() | Pattern Matching: True
+Word Prediction: ON
+Conf>0.70  Window=9  INFER_EVERY=2
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+F15: FPS=27.7 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F30: FPS=28.8 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F45: FPS=29.1 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F60: FPS=29.4 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F75: FPS=29.2 | Hand:NO | vis=0.00 area=0.177 | Buf:'' | L:0 P:0 R:0
+F90: FPS=26.8 | Hand:NO | vis=0.00 area=0.188 | Buf:'' | L:0 P:0 R:0
+F105: FPS=24.0 | Hand:NO | vis=0.00 area=0.098 | Buf:'' | L:0 P:0 R:0
+F120: FPS=22.2 | Hand:NO | vis=0.00 area=0.098 | Buf:'' | L:0 P:0 R:0
+F135: FPS=21.0 | Hand:NO | vis=0.00 area=0.137 | Buf:'' | L:0 P:0 R:0
+F150: FPS=20.2 | Hand:NO | vis=0.00 area=0.045 | Buf:'' | L:0 P:0 R:0
+F165: FPS=19.6 | Hand:NO | vis=0.00 area=0.040 | Buf:'' | L:0 P:0 R:0
+F180: FPS=19.1 | Hand:NO | vis=0.00 area=0.092 | Buf:'' | L:0 P:0 R:0
+F195: FPS=18.7 | Hand:NO | vis=0.00 area=0.133 | Buf:'' | L:0 P:0 R:0
+F210: FPS=18.4 | Hand:NO | vis=0.00 area=0.152 | Buf:'' | L:0 P:0 R:0
+F225: FPS=18.1 | Hand:NO | vis=0.00 area=0.094 | Buf:'' | L:0 P:0 R:0
+F240: FPS=17.9 | Hand:NO | vis=0.00 area=0.061 | Buf:'' | L:0 P:0 R:0
+F255: FPS=17.7 | Hand:NO | vis=0.00 area=0.052 | Buf:'' | L:0 P:0 R:0
+F270: FPS=17.5 | Hand:NO | vis=0.00 area=0.091 | Buf:'' | L:0 P:0 R:0
+F285: FPS=17.3 | Hand:NO | vis=0.00 area=0.152 | Buf:'' | L:0 P:0 R:0
+F300: FPS=17.2 | Hand:NO | vis=0.00 area=0.107 | Buf:'' | L:0 P:0 R:0
+F315: FPS=17.0 | Hand:NO | vis=0.00 area=0.121 | Buf:'' | L:0 P:0 R:0
+F330: FPS=16.9 | Hand:NO | vis=0.00 area=0.043 | Buf:'' | L:0 P:0 R:0
+F345: FPS=16.8 | Hand:NO | vis=0.00 area=0.040 | Buf:'' | L:0 P:0 R:0
+F360: FPS=16.7 | Hand:NO | vis=0.00 area=0.041 | Buf:'' | L:0 P:0 R:0
+F375: FPS=16.6 | Hand:NO | vis=0.00 area=0.050 | Buf:'' | L:0 P:0 R:0
+F390: FPS=16.6 | Hand:NO | vis=0.00 area=0.053 | Buf:'' | L:0 P:0 R:0
+F405: FPS=16.5 | Hand:NO | vis=0.00 area=0.048 | Buf:'' | L:0 P:0 R:0
+F420: FPS=16.5 | Hand:NO | vis=0.00 area=0.049 | Buf:'' | L:0 P:0 R:0
+F435: FPS=16.4 | Hand:NO | vis=0.00 area=0.057 | Buf:'' | L:0 P:0 R:0
+F450: FPS=16.3 | Hand:NO | vis=0.00 area=0.056 | Buf:'' | L:0 P:0 R:0
+F465: FPS=16.3 | Hand:NO | vis=0.00 area=0.058 | Buf:'' | L:0 P:0 R:0
+F480: FPS=16.3 | Hand:NO | vis=0.00 area=0.119 | Buf:'' | L:0 P:0 R:0
+F495: FPS=16.2 | Hand:NO | vis=0.00 area=0.120 | Buf:'' | L:0 P:0 R:0
+F510: FPS=16.2 | Hand:NO | vis=0.00 area=0.124 | Buf:'' | L:0 P:0 R:0
+F525: FPS=16.1 | Hand:NO | vis=0.00 area=0.095 | Buf:'' | L:0 P:0 R:0
+F540: FPS=16.1 | Hand:NO | vis=0.00 area=0.097 | Buf:'' | L:0 P:0 R:0
+F555: FPS=16.1 | Hand:NO | vis=0.00 area=0.097 | Buf:'' | L:0 P:0 R:0
+F570: FPS=16.0 | Hand:NO | vis=0.00 area=0.071 | Buf:'' | L:0 P:0 R:0
+F585: FPS=16.0 | Hand:NO | vis=0.00 area=0.054 | Buf:'' | L:0 P:0 R:0
+F600: FPS=16.0 | Hand:NO | vis=0.00 area=0.106 | Buf:'' | L:0 P:0 R:0
+F615: FPS=15.9 | Hand:NO | vis=0.00 area=0.107 | Buf:'' | L:0 P:0 R:0
+F630: FPS=15.9 | Hand:NO | vis=0.00 area=0.168 | Buf:'' | L:0 P:0 R:0
+F645: FPS=15.9 | Hand:NO | vis=0.00 area=0.163 | Buf:'' | L:0 P:0 R:0
+F660: FPS=15.9 | Hand:NO | vis=0.00 area=0.154 | Buf:'' | L:0 P:0 R:0
+F675: FPS=15.8 | Hand:NO | vis=0.00 area=0.145 | Buf:'' | L:0 P:0 R:0
+F690: FPS=15.8 | Hand:NO | vis=0.00 area=0.154 | Buf:'' | L:0 P:0 R:0
+F705: FPS=15.8 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F720: FPS=15.8 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F735: FPS=15.8 | Hand:NO | vis=0.00 area=0.156 | Buf:'' | L:0 P:0 R:0
+F750: FPS=15.7 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F765: FPS=15.7 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F780: FPS=15.7 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F795: FPS=15.7 | Hand:NO | vis=0.00 area=0.274 | Buf:'' | L:0 P:0 R:0
+F810: FPS=15.7 | Hand:NO | vis=0.00 area=0.137 | Buf:'' | L:0 P:0 R:0
+F825: FPS=15.7 | Hand:NO | vis=0.00 area=0.341 | Buf:'' | L:0 P:0 R:0
+F840: FPS=15.7 | Hand:NO | vis=0.00 area=0.333 | Buf:'' | L:0 P:0 R:0
+F855: FPS=15.6 | Hand:NO | vis=0.00 area=0.273 | Buf:'' | L:0 P:0 R:0
+F870: FPS=15.6 | Hand:NO | vis=0.00 area=0.314 | Buf:'' | L:0 P:0 R:0
+F885: FPS=15.6 | Hand:NO | vis=0.00 area=0.291 | Buf:'' | L:0 P:0 R:0
+F900: FPS=15.6 | Hand:NO | vis=0.00 area=0.269 | Buf:'' | L:0 P:0 R:0
+F915: FPS=15.6 | Hand:NO | vis=0.00 area=0.223 | Buf:'' | L:0 P:0 R:0
+F930: FPS=15.6 | Hand:NO | vis=0.00 area=0.222 | Buf:'' | L:0 P:0 R:0
+F945: FPS=15.6 | Hand:NO | vis=0.00 area=0.222 | Buf:'' | L:0 P:0 R:0
+F960: FPS=15.5 | Hand:NO | vis=0.00 area=0.219 | Buf:'' | L:0 P:0 R:0
+F975: FPS=15.5 | Hand:NO | vis=0.00 area=0.218 | Buf:'' | L:0 P:0 R:0
+F990: FPS=15.5 | Hand:NO | vis=0.00 area=0.212 | Buf:'' | L:0 P:0 R:0
+F1005: FPS=15.5 | Hand:NO | vis=0.00 area=0.210 | Buf:'' | L:0 P:0 R:0
+F1020: FPS=15.5 | Hand:NO | vis=0.00 area=0.210 | Buf:'' | L:0 P:0 R:0
+F1035: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F1050: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F1065: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F1080: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F1095: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F1110: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F1125: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F1140: FPS=15.5 | Hand:NO | vis=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+
+[SYS] KeyboardInterrupt — shutting down cleanly.
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Duration: 74.5s | Frames: 1142 | FPS: 15.3
+Letters: 0 | Patterns: 0 | Rejections: 0
+(venv) PS C:\Users\ameli\speakez>
+
+

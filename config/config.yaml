@@ -1,0 +1,37 @@
+# config/config.yaml - Configuration file for SpeakEZ
+
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  splits_path: "data/splits"
+
+paths:
+  # Letter model paths
+  letter_model: "models/final/asl_baseline_cnn_128_final.h5"
+  letter_classes: "models/final/classes_letters.json"
+  
+  # Word model paths
+  word_logreg: "models/final/word_skel_logreg_8.joblib"
+  word_thresholds: "models/final/word_thresholds.json"
+  word_subset: "models/final/words_subset.json"
+  word_prototypes: "models/final/word_prototypes.npz"
+
+ui:
+  # Letter detection settings
+  letters_smooth_N: 3  # Require N consecutive frames to agree before updating
+  webcam_mirror: false  # Set to true if camera is mirrored
+  letter_conf_threshold: 0.25  # Lower = more sensitive (was 0.30)
+  
+  # Word detection thresholds
+  prob_threshold_default: 0.25  # Minimum probability to accept prediction
+  top2_margin_default: 0.05     # Required margin between top 2 predictions
+  agreement_default: false      # Require prototype agreement
+
+  FRAME_FREEZE_EPS: 0.3
+
+# Model training settings (for reference)
+model:
+  img_size: 128
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001

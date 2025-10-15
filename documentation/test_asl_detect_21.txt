@@ -1,0 +1,175 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-09 11:31:21.467560: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-09 11:31:22.600915: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.17.1 | Eager: True
+[SYS] Loaded config.yaml
+[SYS] ✓ GC module verified
+2025-10-09 11:31:26.505278: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[CAM] Opening camera 0
+[CAM] ✓ Opened: (480, 640, 3)
+[SYS] Starting main loop (press 'q' or ESC to exit)
+[SYS] Enhanced diagnostics enabled:
+[SYS]   - Confidence margin check: 0.25
+[SYS]   - Buffer grace period: 10 frames
+[SYS]   - Visual confidence bars: True
+[SYS]   - Prediction logging: True
+[SYS] Pattern matching: ENABLED (13 patterns)
+2025-10-09 11:31:31.772595: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+Frame 15: FPS=20.3 | Hand:False(0f) Grace:15/10 | m=0.019 s=0.119 | Buf:'' | L:0 P:0
+Frame 30: FPS=24.1 | Hand:False(0f) Grace:30/10 | m=0.010 s=0.125 | Buf:'' | L:0 P:0
+Frame 45: FPS=25.8 | Hand:False(0f) Grace:45/10 | m=0.007 s=0.121 | Buf:'' | L:0 P:0
+Frame 60: FPS=26.7 | Hand:False(0f) Grace:60/10 | m=0.007 s=0.127 | Buf:'' | L:0 P:0
+Frame 75: FPS=27.3 | Hand:False(0f) Grace:75/10 | m=0.006 s=0.128 | Buf:'' | L:0 P:0
+Frame 90: FPS=27.4 | Hand:False(0f) Grace:90/10 | m=0.009 s=0.133 | Buf:'' | L:0 P:0
+Frame 105: FPS=27.6 | Hand:False(0f) Grace:5/10 | m=0.015 s=0.178 | Buf:'' | L:0 P:0
+[PRED@105] N:1.00 | hand=False
+Frame 120: FPS=27.9 | Hand:False(0f) Grace:20/10 | m=0.007 s=0.174 | Buf:'' | L:0 P:0
+Frame 135: FPS=28.0 | Hand:False(0f) Grace:35/10 | m=0.009 s=0.167 | Buf:'' | L:0 P:0
+Frame 150: FPS=28.3 | Hand:False(0f) Grace:50/10 | m=0.009 s=0.179 | Buf:'' | L:0 P:0
+Frame 165: FPS=28.3 | Hand:False(0f) Grace:65/10 | m=0.008 s=0.179 | Buf:'' | L:0 P:0
+Frame 180: FPS=28.5 | Hand:False(0f) Grace:80/10 | m=0.008 s=0.181 | Buf:'' | L:0 P:0
+Frame 195: FPS=28.5 | Hand:False(0f) Grace:95/10 | m=0.007 s=0.173 | Buf:'' | L:0 P:0
+Frame 210: FPS=28.7 | Hand:False(0f) Grace:110/10 | m=0.007 s=0.169 | Buf:'' | L:0 P:0
+Frame 225: FPS=28.7 | Hand:False(0f) Grace:125/10 | m=0.007 s=0.184 | Buf:'' | L:0 P:0
+Frame 240: FPS=28.8 | Hand:False(0f) Grace:140/10 | m=0.007 s=0.184 | Buf:'' | L:0 P:0
+Frame 255: FPS=28.8 | Hand:False(0f) Grace:155/10 | m=0.010 s=0.172 | Buf:'' | L:0 P:0
+Frame 270: FPS=28.9 | Hand:False(0f) Grace:170/10 | m=0.008 s=0.190 | Buf:'' | L:0 P:0
+Frame 285: FPS=28.9 | Hand:False(0f) Grace:185/10 | m=0.012 s=0.179 | Buf:'' | L:0 P:0
+Frame 300: FPS=29.0 | Hand:False(0f) Grace:200/10 | m=0.017 s=0.177 | Buf:'' | L:0 P:0
+Frame 315: FPS=28.8 | Hand:False(0f) Grace:13/10 | m=0.008 s=0.168 | Buf:'' | L:0 P:0
+Frame 330: FPS=28.9 | Hand:False(0f) Grace:28/10 | m=0.018 s=0.174 | Buf:'' | L:0 P:0
+Frame 345: FPS=28.9 | Hand:False(0f) Grace:43/10 | m=0.009 s=0.175 | Buf:'' | L:0 P:0
+Frame 360: FPS=28.9 | Hand:False(0f) Grace:58/10 | m=0.012 s=0.184 | Buf:'' | L:0 P:0
+Frame 375: FPS=29.0 | Hand:False(0f) Grace:73/10 | m=0.007 s=0.173 | Buf:'' | L:0 P:0
+Frame 390: FPS=29.0 | Hand:False(0f) Grace:88/10 | m=0.008 s=0.172 | Buf:'' | L:0 P:0
+Frame 405: FPS=29.0 | Hand:True(5f)  | m=0.022 s=0.188 | Buf:'' | L:0 P:0
+[PRED@405] N:1.00 | hand=True
+Frame 420: FPS=29.0 | Hand:False(0f) Grace:15/10 | m=0.008 s=0.184 | Buf:'' | L:0 P:0
+Frame 435: FPS=29.1 | Hand:False(0f) Grace:30/10 | m=0.010 s=0.192 | Buf:'' | L:0 P:0
+Frame 450: FPS=29.1 | Hand:False(0f) Grace:45/10 | m=0.009 s=0.186 | Buf:'' | L:0 P:0
+Frame 465: FPS=29.1 | Hand:False(0f) Grace:60/10 | m=0.008 s=0.181 | Buf:'' | L:0 P:0
+Frame 480: FPS=29.1 | Hand:False(0f) Grace:75/10 | m=0.008 s=0.192 | Buf:'' | L:0 P:0
+Frame 495: FPS=29.2 | Hand:False(0f) Grace:90/10 | m=0.011 s=0.192 | Buf:'' | L:0 P:0
+Frame 510: FPS=29.2 | Hand:False(0f) Grace:8/10 | m=0.010 s=0.155 | Buf:'' | L:0 P:0
+[PRED@510] N:0.58 | hand=False
+Frame 525: FPS=29.2 | Hand:True(7f)  | m=0.079 s=0.129 | Buf:'' | L:0 P:0
+[PRED@525] N:1.00 | hand=True
+Frame 540: FPS=29.2 | Hand:False(0f) Grace:3/10 | m=0.014 s=0.128 | Buf:'' | L:0 P:0
+[PRED@540] N:1.00 | hand=False
+Frame 555: FPS=29.2 | Hand:True(15f)  | m=0.022 s=0.185 | Buf:'' | L:0 P:0
+[PRED@555] N:1.00 | hand=True
+Frame 570: FPS=29.2 | Hand:False(0f) Grace:1/10 | m=0.013 s=0.167 | Buf:'' | L:0 P:0
+[PRED@570] N:1.00 | hand=False
+Frame 585: FPS=29.2 | Hand:False(0f) Grace:16/10 | m=0.008 s=0.164 | Buf:'' | L:0 P:0
+Frame 600: FPS=29.2 | Hand:False(0f) Grace:31/10 | m=0.011 s=0.160 | Buf:'' | L:0 P:0
+Frame 615: FPS=29.1 | Hand:False(0f) Grace:13/10 | m=0.007 s=0.162 | Buf:'' | L:0 P:0
+Frame 630: FPS=29.1 | Hand:False(0f) Grace:28/10 | m=0.009 s=0.164 | Buf:'' | L:0 P:0
+Frame 645: FPS=29.1 | Hand:False(0f) Grace:43/10 | m=0.008 s=0.163 | Buf:'' | L:0 P:0
+Frame 660: FPS=29.1 | Hand:False(0f) Grace:58/10 | m=0.007 s=0.166 | Buf:'' | L:0 P:0
+Frame 675: FPS=29.1 | Hand:False(0f) Grace:73/10 | m=0.009 s=0.171 | Buf:'' | L:0 P:0
+Frame 690: FPS=29.1 | Hand:False(0f) Grace:88/10 | m=0.009 s=0.174 | Buf:'' | L:0 P:0
+Frame 705: FPS=29.2 | Hand:False(1f) Grace:0/10 | m=0.022 s=0.169 | Buf:'' | L:0 P:0
+[PRED@705] N:1.00 | hand=False
+Frame 720: FPS=29.2 | Hand:False(0f) Grace:11/10 | m=0.011 s=0.158 | Buf:'' | L:0 P:0
+Frame 735: FPS=29.2 | Hand:False(0f) Grace:26/10 | m=0.012 s=0.159 | Buf:'' | L:0 P:0
+Frame 750: FPS=29.2 | Hand:False(0f) Grace:41/10 | m=0.010 s=0.170 | Buf:'' | L:0 P:0
+Frame 765: FPS=29.2 | Hand:False(0f) Grace:56/10 | m=0.017 s=0.169 | Buf:'' | L:0 P:0
+Frame 780: FPS=29.2 | Hand:False(0f) Grace:4/10 | m=0.012 s=0.170 | Buf:'' | L:0 P:0
+[PRED@780] N:1.00 | hand=False
+Frame 795: FPS=29.2 | Hand:False(0f) Grace:19/10 | m=0.009 s=0.171 | Buf:'' | L:0 P:0
+Frame 810: FPS=29.2 | Hand:False(0f) Grace:34/10 | m=0.009 s=0.169 | Buf:'' | L:0 P:0
+Frame 825: FPS=29.2 | Hand:False(0f) Grace:49/10 | m=0.008 s=0.168 | Buf:'' | L:0 P:0
+Frame 840: FPS=29.3 | Hand:False(0f) Grace:64/10 | m=0.011 s=0.165 | Buf:'' | L:0 P:0
+Frame 855: FPS=29.3 | Hand:False(0f) Grace:79/10 | m=0.010 s=0.163 | Buf:'' | L:0 P:0
+Frame 870: FPS=29.3 | Hand:False(0f) Grace:94/10 | m=0.007 s=0.160 | Buf:'' | L:0 P:0
+Frame 885: FPS=29.3 | Hand:False(0f) Grace:109/10 | m=0.014 s=0.168 | Buf:'' | L:0 P:0
+Frame 900: FPS=29.3 | Hand:False(0f) Grace:124/10 | m=0.010 s=0.165 | Buf:'' | L:0 P:0
+Frame 915: FPS=29.2 | Hand:False(0f) Grace:13/10 | m=0.014 s=0.164 | Buf:'' | L:0 P:0
+Frame 930: FPS=29.2 | Hand:False(0f) Grace:28/10 | m=0.007 s=0.165 | Buf:'' | L:0 P:0
+Frame 945: FPS=29.2 | Hand:False(0f) Grace:43/10 | m=0.007 s=0.163 | Buf:'' | L:0 P:0
+Frame 960: FPS=29.2 | Hand:False(0f) Grace:58/10 | m=0.011 s=0.166 | Buf:'' | L:0 P:0
+Frame 975: FPS=29.2 | Hand:False(0f) Grace:73/10 | m=0.019 s=0.160 | Buf:'' | L:0 P:0
+Frame 990: FPS=29.2 | Hand:False(0f) Grace:11/10 | m=0.010 s=0.159 | Buf:'' | L:0 P:0
+Frame 1005: FPS=29.2 | Hand:False(0f) Grace:26/10 | m=0.008 s=0.153 | Buf:'' | L:0 P:0
+Frame 1020: FPS=29.3 | Hand:False(0f) Grace:41/10 | m=0.008 s=0.147 | Buf:'' | L:0 P:0
+Frame 1035: FPS=29.3 | Hand:False(0f) Grace:56/10 | m=0.010 s=0.148 | Buf:'' | L:0 P:0
+Frame 1050: FPS=29.3 | Hand:False(0f) Grace:71/10 | m=0.008 s=0.160 | Buf:'' | L:0 P:0
+Frame 1065: FPS=29.3 | Hand:False(0f) Grace:86/10 | m=0.008 s=0.160 | Buf:'' | L:0 P:0
+Frame 1080: FPS=29.3 | Hand:False(0f) Grace:101/10 | m=0.008 s=0.161 | Buf:'' | L:0 P:0
+Frame 1095: FPS=29.3 | Hand:False(0f) Grace:116/10 | m=0.007 s=0.161 | Buf:'' | L:0 P:0
+Frame 1110: FPS=29.3 | Hand:False(0f) Grace:131/10 | m=0.007 s=0.165 | Buf:'' | L:0 P:0
+Frame 1125: FPS=29.3 | Hand:False(0f) Grace:146/10 | m=0.010 s=0.173 | Buf:'' | L:0 P:0
+Frame 1140: FPS=29.3 | Hand:False(0f) Grace:161/10 | m=0.008 s=0.171 | Buf:'' | L:0 P:0
+Frame 1155: FPS=29.3 | Hand:False(0f) Grace:6/10 | m=0.016 s=0.172 | Buf:'' | L:0 P:0
+[PRED@1155] N:1.00 | hand=False
+Frame 1170: FPS=29.3 | Hand:False(0f) Grace:21/10 | m=0.007 s=0.177 | Buf:'' | L:0 P:0
+Frame 1185: FPS=29.3 | Hand:False(0f) Grace:36/10 | m=0.015 s=0.167 | Buf:'' | L:0 P:0
+Frame 1200: FPS=29.3 | Hand:False(0f) Grace:51/10 | m=0.016 s=0.162 | Buf:'' | L:0 P:0
+Frame 1215: FPS=29.3 | Hand:False(0f) Grace:13/10 | m=0.011 s=0.162 | Buf:'' | L:0 P:0
+Frame 1230: FPS=29.3 | Hand:False(0f) Grace:28/10 | m=0.008 s=0.164 | Buf:'' | L:0 P:0
+Frame 1245: FPS=29.3 | Hand:False(0f) Grace:43/10 | m=0.010 s=0.164 | Buf:'' | L:0 P:0
+Frame 1260: FPS=29.3 | Hand:False(0f) Grace:58/10 | m=0.008 s=0.164 | Buf:'' | L:0 P:0
+Frame 1275: FPS=29.3 | Hand:False(0f) Grace:73/10 | m=0.010 s=0.165 | Buf:'' | L:0 P:0
+Frame 1290: FPS=29.3 | Hand:False(0f) Grace:88/10 | m=0.009 s=0.159 | Buf:'' | L:0 P:0
+Frame 1305: FPS=29.3 | Hand:False(0f) Grace:103/10 | m=0.008 s=0.161 | Buf:'' | L:0 P:0
+Frame 1320: FPS=29.3 | Hand:False(0f) Grace:118/10 | m=0.008 s=0.160 | Buf:'' | L:0 P:0
+Frame 1335: FPS=29.3 | Hand:False(0f) Grace:133/10 | m=0.008 s=0.159 | Buf:'' | L:0 P:0
+Frame 1350: FPS=29.3 | Hand:False(0f) Grace:148/10 | m=0.008 s=0.158 | Buf:'' | L:0 P:0
+Frame 1365: FPS=29.3 | Hand:False(0f) Grace:163/10 | m=0.007 s=0.159 | Buf:'' | L:0 P:0
+Frame 1380: FPS=29.3 | Hand:False(0f) Grace:178/10 | m=0.007 s=0.160 | Buf:'' | L:0 P:0
+Frame 1395: FPS=29.3 | Hand:False(0f) Grace:193/10 | m=0.007 s=0.158 | Buf:'' | L:0 P:0
+Frame 1410: FPS=29.4 | Hand:False(0f) Grace:208/10 | m=0.009 s=0.158 | Buf:'' | L:0 P:0
+Frame 1425: FPS=29.4 | Hand:False(0f) Grace:223/10 | m=0.007 s=0.159 | Buf:'' | L:0 P:0
+Frame 1440: FPS=29.4 | Hand:False(0f) Grace:238/10 | m=0.010 s=0.160 | Buf:'' | L:0 P:0
+Frame 1455: FPS=29.4 | Hand:False(0f) Grace:253/10 | m=0.009 s=0.163 | Buf:'' | L:0 P:0
+Frame 1470: FPS=29.4 | Hand:False(0f) Grace:268/10 | m=0.008 s=0.158 | Buf:'' | L:0 P:0
+Frame 1485: FPS=29.4 | Hand:False(0f) Grace:283/10 | m=0.008 s=0.157 | Buf:'' | L:0 P:0
+Frame 1500: FPS=29.4 | Hand:False(0f) Grace:298/10 | m=0.009 s=0.163 | Buf:'' | L:0 P:0
+Frame 1515: FPS=29.3 | Hand:True(5f)  | m=0.024 s=0.173 | Buf:'' | L:0 P:0
+[PRED@1515] N:1.00 | hand=True
+Frame 1530: FPS=29.3 | Hand:False(0f) Grace:13/10 | m=0.009 s=0.172 | Buf:'' | L:0 P:0
+Frame 1545: FPS=29.4 | Hand:False(0f) Grace:28/10 | m=0.009 s=0.174 | Buf:'' | L:0 P:0
+Frame 1560: FPS=29.4 | Hand:False(0f) Grace:43/10 | m=0.014 s=0.168 | Buf:'' | L:0 P:0
+Frame 1575: FPS=29.4 | Hand:False(0f) Grace:58/10 | m=0.009 s=0.158 | Buf:'' | L:0 P:0
+Frame 1590: FPS=29.4 | Hand:False(0f) Grace:73/10 | m=0.008 s=0.159 | Buf:'' | L:0 P:0
+Frame 1605: FPS=29.4 | Hand:False(4f) Grace:0/10 | m=0.026 s=0.177 | Buf:'' | L:0 P:0
+[PRED@1605] N:1.00 | hand=False
+Frame 1620: FPS=29.4 | Hand:False(0f) Grace:11/10 | m=0.010 s=0.177 | Buf:'' | L:0 P:0
+Frame 1635: FPS=29.4 | Hand:False(0f) Grace:26/10 | m=0.008 s=0.176 | Buf:'' | L:0 P:0
+Frame 1650: FPS=29.4 | Hand:True(7f)  | m=0.027 s=0.128 | Buf:'' | L:0 P:0
+[PRED@1650] N:1.00 | hand=True
+Frame 1665: FPS=29.4 | Hand:False(0f) Grace:15/10 | m=0.011 s=0.126 | Buf:'' | L:0 P:0
+Frame 1680: FPS=29.4 | Hand:False(0f) Grace:30/10 | m=0.008 s=0.132 | Buf:'' | L:0 P:0
+Frame 1695: FPS=29.4 | Hand:False(0f) Grace:45/10 | m=0.008 s=0.133 | Buf:'' | L:0 P:0
+Frame 1710: FPS=29.4 | Hand:False(0f) Grace:60/10 | m=0.008 s=0.131 | Buf:'' | L:0 P:0
+Frame 1725: FPS=29.4 | Hand:False(0f) Grace:75/10 | m=0.008 s=0.131 | Buf:'' | L:0 P:0
+Frame 1740: FPS=29.4 | Hand:False(0f) Grace:90/10 | m=0.006 s=0.131 | Buf:'' | L:0 P:0
+Frame 1755: FPS=29.4 | Hand:False(0f) Grace:105/10 | m=0.007 s=0.131 | Buf:'' | L:0 P:0
+Frame 1770: FPS=29.4 | Hand:False(0f) Grace:120/10 | m=0.008 s=0.131 | Buf:'' | L:0 P:0
+Frame 1785: FPS=29.4 | Hand:False(0f) Grace:135/10 | m=0.006 s=0.129 | Buf:'' | L:0 P:0
+Frame 1800: FPS=29.4 | Hand:False(0f) Grace:150/10 | m=0.006 s=0.131 | Buf:'' | L:0 P:0
+Frame 1815: FPS=29.3 | Hand:False(0f) Grace:165/10 | m=0.006 s=0.134 | Buf:'' | L:0 P:0
+Frame 1830: FPS=29.3 | Hand:False(0f) Grace:180/10 | m=0.006 s=0.131 | Buf:'' | L:0 P:0
+Frame 1845: FPS=29.4 | Hand:False(0f) Grace:195/10 | m=0.006 s=0.132 | Buf:'' | L:0 P:0
+Frame 1860: FPS=29.4 | Hand:False(0f) Grace:210/10 | m=0.006 s=0.133 | Buf:'' | L:0 P:0
+Frame 1875: FPS=29.4 | Hand:False(0f) Grace:225/10 | m=0.006 s=0.133 | Buf:'' | L:0 P:0
+Frame 1890: FPS=29.4 | Hand:False(0f) Grace:240/10 | m=0.006 s=0.135 | Buf:'' | L:0 P:0
+Frame 1905: FPS=29.4 | Hand:False(0f) Grace:255/10 | m=0.008 s=0.133 | Buf:'' | L:0 P:0
+Frame 1920: FPS=29.4 | Hand:False(0f) Grace:270/10 | m=0.007 s=0.128 | Buf:'' | L:0 P:0
+Frame 1935: FPS=29.4 | Hand:False(0f) Grace:285/10 | m=0.006 s=0.129 | Buf:'' | L:0 P:0
+Frame 1950: FPS=29.4 | Hand:False(0f) Grace:300/10 | m=0.008 s=0.124 | Buf:'' | L:0 P:0
+Frame 1965: FPS=29.4 | Hand:False(0f) Grace:315/10 | m=0.008 s=0.126 | Buf:'' | L:0 P:0
+Frame 1980: FPS=29.4 | Hand:False(0f) Grace:330/10 | m=0.006 s=0.126 | Buf:'' | L:0 P:0
+Frame 1995: FPS=29.4 | Hand:False(0f) Grace:345/10 | m=0.007 s=0.126 | Buf:'' | L:0 P:0
+Frame 2010: FPS=29.4 | Hand:False(0f) Grace:360/10 | m=0.006 s=0.126 | Buf:'' | L:0 P:0
+Frame 2025: FPS=29.4 | Hand:False(0f) Grace:375/10 | m=0.007 s=0.129 | Buf:'' | L:0 P:0
+Frame 2040: FPS=29.4 | Hand:False(0f) Grace:390/10 | m=0.006 s=0.131 | Buf:'' | L:0 P:0
+Frame 2055: FPS=29.4 | Hand:False(0f) Grace:405/10 | m=0.007 s=0.135 | Buf:'' | L:0 P:0
+Frame 2070: FPS=29.4 | Hand:False(0f) Grace:420/10 | m=0.008 s=0.129 | Buf:'' | L:0 P:0
+Frame 2085: FPS=29.4 | Hand:False(0f) Grace:435/10 | m=0.009 s=0.131 | Buf:'' | L:0 P:0
+
+[SYS] Interrupted by user
+[TTS] Worker exited.
+[SYS] Clean exit.
+(venv) PS C:\Users\ameli\speakez>

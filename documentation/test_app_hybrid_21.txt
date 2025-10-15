@@ -1,0 +1,54 @@
+(venv) PS C:\Users\ameli\speakez> set WORD_MIN_SCORE=0.95
+(venv) PS C:\Users\ameli\speakez> set WORD_MIN_AREA=0.12
+(venv) PS C:\Users\ameli\speakez> set WORD_OPEN_FRAC_MIN=0.65
+(venv) PS C:\Users\ameli\speakez> set WORD_STABLE_FRAMES=4
+(venv) PS C:\Users\ameli\speakez> set WORD_SKIN_MIN_FRAC=0.08
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py    
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ⚠ No user TTS; falling back.
+[SYS] ✓ TTS loaded (Windows SAPI)
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:347: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[SYS] ✓ predict_letter(), predict_word() loaded
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+[SYS] ✓ Word whitelist loaded (8 items)
+[SYS] ✓ Loaded per-class thresholds (thresholds.json)
+======================================================================
+HYBRID MODE: MediaPipe + Models (letters, words, patterns, wave)
+======================================================================
+Conf>0.72  Window=11  INFER_EVERY=2
+Patterns: ON  Word-ML: ON  Wave: ON
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760187066.398206   16524 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760187066.427997   16524 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] ✓ Opened index 0 using backend 700 | shape=(480, 640, 3)
+[WAVE@112] ✅ 'hi' (amp=0.112 flips=4 open=1.00)
+[WAVE@188] ✅ 'hi' (amp=0.123 flips=4 open=1.00)
+[WAVE@259] ✅ 'hi' (amp=0.134 flips=4 open=1.00)
+2025-10-11 20:51:33.468160: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[WORD@346] ✅ 'please' (1.00 ≥ 0.93)
+Traceback (most recent call last):
+  File "C:\Users\ameli\speakez\ui\app_hybrid.py", line 691, in <module>
+    main()
+  File "C:\Users\ameli\speakez\ui\app_hybrid.py", line 488, in main
+    idle_s = time.time() - max(last_letter_said_at.values(), last_word_spoken_at, last_word_ml_at, 0)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'float' and 'dict_values'
+(venv) PS C:\Users\ameli\speakez> 

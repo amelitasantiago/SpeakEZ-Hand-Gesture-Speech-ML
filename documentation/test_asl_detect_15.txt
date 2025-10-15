@@ -1,0 +1,51 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-09 01:12:07.847041: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-09 01:12:08.719023: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.17.1 | Eager: True
+[SYS] Loaded config.yaml
+2025-10-09 01:12:11.427476: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[WORD] Loaded model: C:\Users\ameli\speakez\models\final\word_skel_logreg_8.joblib with labels: [0 1 2 3 4 5 6 7]
+[WORD] Using feature extractor: extract_word_features
+[CAM] Attempting to open camera index 0 with backend 700
+[CAM] ✓ Opened successfully: 640x480 @ 30fps
+[CAM] ✓ Test frame captured: shape=(480, 640, 3)
+[SYS] Starting main loop (press 'q' or ESC to exit)
+[SYS] Hand detection: motion>0.020, skin>0.080, warmup>30f, debounce>5f
+[SYS] Word detection: DISABLED | Letter detection: ENABLED
+[SYS] Global rate limit: 0.8s between detections
+[SYS] Debug visual: OFF (set DEBUG_VISUAL=true to see skin ROI)
+[SYS] Debug predictions: OFF (set DEBUG_PREDICTIONS=true to log all predictions)
+[SYS] Log interval: 0.5s (~15 frames)
+Frame 15: FPS=30.1 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.092 | Buf:'' | W:0 L:0
+Frame 30: FPS=30.2 | Hand:False(0f) | m=0.004+0.002=0.006 s=0.106 | Buf:'' | W:0 L:0
+Frame 45: FPS=23.2 | Hand:False(0f) | m=0.007+0.003=0.010 s=0.167 | Buf:'' | W:0 L:0
+Frame 60: FPS=19.8 | Hand:False(0f) | m=0.010+0.003=0.013 s=0.156 | Buf:'' | W:0 L:0
+Frame 75: FPS=19.0 | Hand:False(2f) | m=0.053+0.004=0.056 s=0.178 | Buf:'' | W:0 L:0
+2025-10-09 01:12:20.011102: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[DET@82] Letter='N' win(5): N,N,N,N,N conf=0.57 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp0018tt63.wav: 'N'
+[TTS] << DONE 'N'
+Frame 90: FPS=18.0 | Hand:False(0f) | m=0.012+0.005=0.017 s=0.234 | Buf:'' | W:0 L:1
+Frame 105: FPS=17.5 | Hand:True(5f) | m=0.016+0.005=0.021 s=0.238 | Buf:'' | W:0 L:1
+Frame 120: FPS=17.1 | Hand:False(1f) | m=0.021+0.005=0.026 s=0.246 | Buf:'' | W:0 L:1
+Frame 135: FPS=16.8 | Hand:False(0f) | m=0.011+0.005=0.016 s=0.244 | Buf:'' | W:0 L:1
+Frame 150: FPS=16.6 | Hand:False(0f) | m=0.005+0.005=0.010 s=0.253 | Buf:'' | W:0 L:1
+Frame 165: FPS=16.4 | Hand:False(0f) | m=0.014+0.005=0.019 s=0.245 | Buf:'' | W:0 L:1
+Frame 180: FPS=16.3 | Hand:False(0f) | m=0.005+0.005=0.010 s=0.247 | Buf:'' | W:0 L:1
+Frame 195: FPS=16.2 | Hand:False(0f) | m=0.013+0.005=0.018 s=0.259 | Buf:'' | W:0 L:1
+Frame 210: FPS=16.1 | Hand:False(0f) | m=0.013+0.005=0.018 s=0.255 | Buf:'' | W:0 L:1
+Frame 225: FPS=16.0 | Hand:False(0f) | m=0.014+0.005=0.019 s=0.249 | Buf:'' | W:0 L:1
+Frame 240: FPS=16.0 | Hand:False(0f) | m=0.010+0.005=0.015 s=0.244 | Buf:'' | W:0 L:1
+Frame 255: FPS=15.9 | Hand:False(0f) | m=0.010+0.005=0.014 s=0.245 | Buf:'' | W:0 L:1
+Frame 270: FPS=15.8 | Hand:False(0f) | m=0.005+0.005=0.010 s=0.233 | Buf:'' | W:0 L:1
+Frame 285: FPS=15.8 | Hand:False(0f) | m=0.012+0.005=0.017 s=0.227 | Buf:'' | W:0 L:1
+Frame 300: FPS=15.8 | Hand:False(2f) | m=0.026+0.005=0.031 s=0.254 | Buf:'' | W:0 L:1
+Traceback (most recent call last):
+  File "C:\Users\ameli\speakez\ui\app_hybrid_simple.py", line 427, in <module>
+    main()
+  File "C:\Users\ameli\speakez\ui\app_hybrid_simple.py", line 374, in main
+    gc.collect()
+    ^^
+NameError: name 'gc' is not defined
+(venv) PS C:\Users\ameli\speakez>

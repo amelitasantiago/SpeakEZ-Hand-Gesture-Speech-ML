@@ -1,0 +1,178 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-09 01:05:38.514973: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-09 01:05:39.411256: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.17.1 | Eager: True
+[SYS] Loaded config.yaml
+2025-10-09 01:05:42.061990: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[WORD] Loaded model: C:\Users\ameli\speakez\models\final\word_skel_logreg_8.joblib with labels: [0 1 2 3 4 5 6 7]
+[WORD] Using feature extractor: extract_word_features
+[CAM] Attempting to open camera index 0 with backend 700
+[CAM] ✓ Opened successfully: 640x480 @ 30fps
+[CAM] ✓ Test frame captured: shape=(480, 640, 3)
+[SYS] Starting main loop (press 'q' or ESC to exit)
+[SYS] Hand detection: motion>0.020, skin>0.080, warmup>30f, debounce>5f
+[SYS] Word detection: DISABLED | Letter detection: ENABLED
+[SYS] Global rate limit: 0.8s between detections
+[SYS] Debug visual: OFF (set DEBUG_VISUAL=true to see skin ROI)
+[SYS] Log interval: 0.5s (~15 frames)
+Frame 15: FPS=30.7 | Hand:False(0f) | m=0.003+0.002=0.006 s=0.113 | Buf:'' | W:0 L:0
+Frame 30: FPS=30.7 | Hand:False(0f) | m=0.003+0.002=0.006 s=0.120 | Buf:'' | W:0 L:0
+Frame 45: FPS=30.5 | Hand:False(0f) | m=0.005+0.002=0.007 s=0.124 | Buf:'' | W:0 L:0
+Frame 60: FPS=30.3 | Hand:False(0f) | m=0.002+0.002=0.005 s=0.124 | Buf:'' | W:0 L:0
+Frame 75: FPS=29.9 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.123 | Buf:'' | W:0 L:0
+Frame 90: FPS=29.8 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.121 | Buf:'' | W:0 L:0
+Frame 105: FPS=29.7 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.119 | Buf:'' | W:0 L:0
+Frame 120: FPS=29.7 | Hand:False(0f) | m=0.003+0.002=0.005 s=0.121 | Buf:'' | W:0 L:0
+Frame 135: FPS=29.7 | Hand:False(0f) | m=0.003+0.002=0.006 s=0.123 | Buf:'' | W:0 L:0
+Frame 150: FPS=29.8 | Hand:False(0f) | m=0.003+0.002=0.006 s=0.125 | Buf:'' | W:0 L:0
+Frame 165: FPS=29.7 | Hand:False(0f) | m=0.009+0.003=0.013 s=0.166 | Buf:'' | W:0 L:0
+Frame 180: FPS=29.7 | Hand:False(0f) | m=0.003+0.003=0.006 s=0.157 | Buf:'' | W:0 L:0
+Frame 195: FPS=29.7 | Hand:False(0f) | m=0.006+0.003=0.009 s=0.159 | Buf:'' | W:0 L:0
+Frame 210: FPS=29.7 | Hand:False(0f) | m=0.005+0.003=0.009 s=0.162 | Buf:'' | W:0 L:0
+Frame 225: FPS=29.7 | Hand:False(0f) | m=0.011+0.004=0.014 s=0.179 | Buf:'' | W:0 L:0
+Frame 240: FPS=29.7 | Hand:False(0f) | m=0.004+0.004=0.008 s=0.195 | Buf:'' | W:0 L:0
+Frame 255: FPS=29.7 | Hand:False(0f) | m=0.004+0.004=0.007 s=0.198 | Buf:'' | W:0 L:0
+Frame 270: FPS=29.7 | Hand:False(0f) | m=0.007+0.004=0.011 s=0.190 | Buf:'' | W:0 L:0
+Frame 285: FPS=29.7 | Hand:False(0f) | m=0.007+0.003=0.010 s=0.170 | Buf:'' | W:0 L:0
+Frame 300: FPS=29.7 | Hand:False(0f) | m=0.004+0.003=0.007 s=0.164 | Buf:'' | W:0 L:0
+Frame 315: FPS=29.7 | Hand:False(0f) | m=0.007+0.003=0.011 s=0.166 | Buf:'' | W:0 L:0
+2025-10-09 01:05:57.553500: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+Frame 330: FPS=29.5 | Hand:True(8f) | m=0.031+0.004=0.036 s=0.225 | Buf:'OOO' | W:0 L:0
+[DET@331] Letter='O' win(5): O,O,O,O,O conf=1.00 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp6qytbrf0.wav: 'O'
+[TTS] << DONE 'O'
+Frame 345: FPS=29.5 | Hand:True(8f) | m=0.017+0.004=0.021 s=0.193 | Buf:'OOF' | W:0 L:1
+Frame 360: FPS=29.5 | Hand:False(0f) | m=0.005+0.004=0.009 s=0.192 | Buf:'' | W:0 L:1
+Frame 375: FPS=29.3 | Hand:False(0f) | m=0.009+0.004=0.013 s=0.192 | Buf:'' | W:0 L:1
+Frame 390: FPS=28.2 | Hand:False(0f) | m=0.004+0.004=0.008 s=0.203 | Buf:'' | W:0 L:1
+Frame 405: FPS=27.3 | Hand:False(0f) | m=0.003+0.004=0.007 s=0.207 | Buf:'' | W:0 L:1
+Frame 420: FPS=26.5 | Hand:False(0f) | m=0.006+0.004=0.010 s=0.198 | Buf:'' | W:0 L:1
+Frame 435: FPS=25.8 | Hand:False(0f) | m=0.011+0.004=0.015 s=0.215 | Buf:'' | W:0 L:1
+Frame 450: FPS=25.2 | Hand:False(0f) | m=0.012+0.004=0.016 s=0.206 | Buf:'' | W:0 L:1
+[DET@461] Letter='F' win(5): O,F,F,N,F conf=0.87 hand_frames=10 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpd336itjt.wav: 'F'
+[TTS] << DONE 'F'
+Frame 465: FPS=24.7 | Hand:True(14f) | m=0.022+0.004=0.026 s=0.220 | Buf:'NFFFF' | W:0 L:2
+Frame 480: FPS=24.2 | Hand:False(0f) | m=0.008+0.004=0.012 s=0.215 | Buf:'' | W:0 L:2
+Frame 495: FPS=23.7 | Hand:False(0f) | m=0.004+0.005=0.008 s=0.226 | Buf:'' | W:0 L:2
+Frame 510: FPS=23.3 | Hand:False(0f) | m=0.014+0.005=0.018 s=0.230 | Buf:'' | W:0 L:2
+Frame 525: FPS=23.0 | Hand:False(0f) | m=0.004+0.005=0.008 s=0.239 | Buf:'' | W:0 L:2
+Frame 540: FPS=22.6 | Hand:False(0f) | m=0.010+0.005=0.015 s=0.237 | Buf:'' | W:0 L:2
+Frame 555: FPS=22.3 | Hand:False(0f) | m=0.006+0.005=0.011 s=0.249 | Buf:'' | W:0 L:2
+Frame 570: FPS=22.1 | Hand:False(0f) | m=0.008+0.004=0.013 s=0.224 | Buf:'' | W:0 L:2
+Frame 585: FPS=21.8 | Hand:False(0f) | m=0.006+0.005=0.011 s=0.239 | Buf:'' | W:0 L:2
+Frame 600: FPS=21.5 | Hand:False(0f) | m=0.005+0.005=0.009 s=0.230 | Buf:'' | W:0 L:2
+Frame 615: FPS=21.3 | Hand:False(0f) | m=0.008+0.005=0.012 s=0.226 | Buf:'' | W:0 L:2
+Frame 630: FPS=21.1 | Hand:False(0f) | m=0.008+0.005=0.013 s=0.236 | Buf:'' | W:0 L:2
+Frame 645: FPS=20.9 | Hand:False(0f) | m=0.008+0.005=0.012 s=0.230 | Buf:'' | W:0 L:2
+Frame 660: FPS=20.7 | Hand:False(0f) | m=0.004+0.005=0.009 s=0.240 | Buf:'' | W:0 L:2
+Frame 675: FPS=20.5 | Hand:False(0f) | m=0.003+0.004=0.008 s=0.219 | Buf:'' | W:0 L:2
+Frame 690: FPS=20.4 | Hand:False(0f) | m=0.006+0.005=0.011 s=0.238 | Buf:'' | W:0 L:2
+Frame 705: FPS=20.2 | Hand:False(0f) | m=0.013+0.005=0.019 s=0.257 | Buf:'' | W:0 L:2
+Frame 720: FPS=20.1 | Hand:False(1f) | m=0.022+0.005=0.027 s=0.240 | Buf:'' | W:0 L:2
+Frame 735: FPS=19.9 | Hand:False(0f) | m=0.013+0.005=0.017 s=0.239 | Buf:'' | W:0 L:2
+Frame 750: FPS=19.8 | Hand:False(0f) | m=0.011+0.005=0.016 s=0.249 | Buf:'' | W:0 L:2
+Frame 765: FPS=19.7 | Hand:False(0f) | m=0.009+0.005=0.015 s=0.255 | Buf:'' | W:0 L:2
+Frame 780: FPS=19.6 | Hand:False(1f) | m=0.017+0.005=0.022 s=0.253 | Buf:'' | W:0 L:2
+Frame 795: FPS=19.5 | Hand:False(1f) | m=0.017+0.005=0.021 s=0.236 | Buf:'' | W:0 L:2
+Frame 810: FPS=19.4 | Hand:False(0f) | m=0.005+0.005=0.010 s=0.253 | Buf:'' | W:0 L:2
+Frame 825: FPS=19.3 | Hand:False(0f) | m=0.005+0.005=0.011 s=0.254 | Buf:'' | W:0 L:2
+Frame 840: FPS=19.2 | Hand:False(0f) | m=0.010+0.005=0.015 s=0.256 | Buf:'' | W:0 L:2
+Frame 855: FPS=19.1 | Hand:False(0f) | m=0.011+0.005=0.016 s=0.233 | Buf:'' | W:0 L:2
+Frame 870: FPS=19.0 | Hand:False(0f) | m=0.010+0.005=0.015 s=0.237 | Buf:'' | W:0 L:2
+Frame 885: FPS=18.9 | Hand:True(7f) | m=0.020+0.005=0.025 s=0.260 | Buf:'NN' | W:0 L:2
+[DET@887] Letter='N' win(5): N,N,N,N,N conf=0.99 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpmkssmk8e.wav: 'N'
+[TTS] << DONE 'N'
+Frame 900: FPS=18.8 | Hand:False(0f) | m=0.015+0.005=0.020 s=0.262 | Buf:'' | W:0 L:3
+Frame 915: FPS=18.7 | Hand:False(0f) | m=0.003+0.005=0.008 s=0.258 | Buf:'' | W:0 L:3
+Frame 930: FPS=18.7 | Hand:False(0f) | m=0.007+0.005=0.012 s=0.261 | Buf:'' | W:0 L:3
+Frame 945: FPS=18.6 | Hand:False(0f) | m=0.009+0.005=0.014 s=0.264 | Buf:'' | W:0 L:3
+Frame 960: FPS=18.5 | Hand:False(0f) | m=0.003+0.005=0.008 s=0.254 | Buf:'' | W:0 L:3
+Frame 975: FPS=18.4 | Hand:False(0f) | m=0.008+0.005=0.013 s=0.251 | Buf:'' | W:0 L:3
+Frame 990: FPS=18.4 | Hand:False(0f) | m=0.012+0.005=0.016 s=0.239 | Buf:'' | W:0 L:3
+Frame 1005: FPS=18.3 | Hand:True(5f) | m=0.021+0.005=0.026 s=0.238 | Buf:'' | W:0 L:3
+[DET@1009] Letter='N' win(5): N,N,N,N,N conf=0.95 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpwanabcel.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1020: FPS=18.3 | Hand:False(0f) | m=0.015+0.005=0.020 s=0.244 | Buf:'' | W:0 L:4
+Frame 1035: FPS=18.2 | Hand:False(0f) | m=0.006+0.005=0.011 s=0.245 | Buf:'' | W:0 L:4
+Frame 1050: FPS=18.2 | Hand:False(0f) | m=0.003+0.005=0.009 s=0.255 | Buf:'' | W:0 L:4
+Frame 1065: FPS=18.1 | Hand:False(0f) | m=0.009+0.005=0.014 s=0.249 | Buf:'' | W:0 L:4
+Frame 1080: FPS=18.0 | Hand:False(2f) | m=0.017+0.005=0.022 s=0.261 | Buf:'' | W:0 L:4
+Frame 1095: FPS=18.0 | Hand:True(5f) | m=0.021+0.005=0.026 s=0.256 | Buf:'' | W:0 L:4
+[DET@1099] Letter='N' win(5): O,N,N,N,N conf=0.66 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpp9va0_vh.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1110: FPS=18.0 | Hand:False(0f) | m=0.004+0.005=0.009 s=0.253 | Buf:'' | W:0 L:5
+Frame 1125: FPS=17.9 | Hand:True(6f) | m=0.019+0.005=0.025 s=0.255 | Buf:'N' | W:0 L:5
+[DET@1128] Letter='N' win(5): N,N,N,N,N conf=0.91 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpl9ouncdz.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1140: FPS=17.9 | Hand:False(0f) | m=0.005+0.005=0.010 s=0.250 | Buf:'' | W:0 L:6
+Frame 1155: FPS=17.8 | Hand:False(0f) | m=0.006+0.005=0.011 s=0.270 | Buf:'' | W:0 L:6
+Frame 1170: FPS=17.8 | Hand:False(0f) | m=0.014+0.005=0.019 s=0.268 | Buf:'' | W:0 L:6
+Frame 1185: FPS=17.7 | Hand:False(0f) | m=0.013+0.005=0.019 s=0.272 | Buf:'' | W:0 L:6
+Frame 1200: FPS=17.7 | Hand:False(0f) | m=0.004+0.005=0.009 s=0.268 | Buf:'' | W:0 L:6
+Frame 1215: FPS=17.7 | Hand:False(0f) | m=0.011+0.005=0.017 s=0.275 | Buf:'' | W:0 L:6
+Frame 1230: FPS=17.6 | Hand:False(0f) | m=0.010+0.005=0.015 s=0.275 | Buf:'' | W:0 L:6
+Frame 1245: FPS=17.6 | Hand:False(0f) | m=0.005+0.006=0.011 s=0.276 | Buf:'' | W:0 L:6
+Frame 1260: FPS=17.5 | Hand:False(0f) | m=0.005+0.005=0.011 s=0.274 | Buf:'' | W:0 L:6
+Frame 1275: FPS=17.5 | Hand:True(5f) | m=0.016+0.006=0.022 s=0.276 | Buf:'' | W:0 L:6
+Frame 1290: FPS=17.5 | Hand:False(0f) | m=0.011+0.006=0.017 s=0.281 | Buf:'' | W:0 L:6
+Frame 1305: FPS=17.4 | Hand:False(0f) | m=0.008+0.006=0.014 s=0.281 | Buf:'' | W:0 L:6
+Frame 1320: FPS=17.4 | Hand:False(0f) | m=0.007+0.005=0.012 s=0.253 | Buf:'' | W:0 L:6
+Frame 1335: FPS=17.4 | Hand:False(0f) | m=0.006+0.005=0.011 s=0.243 | Buf:'' | W:0 L:6
+Frame 1350: FPS=17.3 | Hand:False(0f) | m=0.012+0.005=0.017 s=0.265 | Buf:'' | W:0 L:6
+Frame 1365: FPS=17.3 | Hand:False(0f) | m=0.011+0.005=0.016 s=0.274 | Buf:'' | W:0 L:6
+Frame 1380: FPS=17.3 | Hand:False(0f) | m=0.010+0.006=0.016 s=0.278 | Buf:'' | W:0 L:6
+Frame 1395: FPS=17.3 | Hand:False(2f) | m=0.015+0.006=0.021 s=0.277 | Buf:'' | W:0 L:6
+Frame 1410: FPS=17.2 | Hand:False(0f) | m=0.010+0.005=0.015 s=0.255 | Buf:'' | W:0 L:6
+[DET@1424] Letter='N' win(5): N,N,N,N,N conf=0.88 hand_frames=9 → SPEAK
+Frame 1425: FPS=17.2 | Hand:True(10f) | m=0.018+0.005=0.024 s=0.255 | Buf:'NNNNN' | W:0 L:7
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpvmld1zzc.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1440: FPS=17.2 | Hand:False(0f) | m=0.013+0.005=0.018 s=0.254 | Buf:'' | W:0 L:7
+Frame 1455: FPS=17.2 | Hand:False(4f) | m=0.020+0.005=0.025 s=0.265 | Buf:'' | W:0 L:7
+Frame 1470: FPS=17.1 | Hand:False(0f) | m=0.011+0.005=0.017 s=0.261 | Buf:'' | W:0 L:7
+Frame 1485: FPS=17.1 | Hand:False(0f) | m=0.007+0.005=0.012 s=0.266 | Buf:'' | W:0 L:7
+Frame 1500: FPS=17.1 | Hand:False(0f) | m=0.007+0.005=0.012 s=0.258 | Buf:'' | W:0 L:7
+Frame 1515: FPS=17.1 | Hand:False(0f) | m=0.014+0.005=0.019 s=0.240 | Buf:'N' | W:0 L:7
+Frame 1530: FPS=17.0 | Hand:False(0f) | m=0.015+0.005=0.019 s=0.236 | Buf:'' | W:0 L:7
+[DET@1539] Letter='N' win(5): N,N,N,N,N conf=0.64 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpw9bnp33t.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1545: FPS=17.0 | Hand:True(15f) | m=0.020+0.005=0.025 s=0.243 | Buf:'OOOOO' | W:0 L:8
+Frame 1560: FPS=17.0 | Hand:False(0f) | m=0.012+0.005=0.017 s=0.249 | Buf:'' | W:0 L:8
+[DET@1569] Letter='N' win(5): N,N,N,N,N conf=0.94 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp1xjwufta.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1575: FPS=17.0 | Hand:False(0f) | m=0.009+0.005=0.014 s=0.262 | Buf:'' | W:0 L:9
+Frame 1590: FPS=16.9 | Hand:False(0f) | m=0.011+0.005=0.016 s=0.266 | Buf:'' | W:0 L:9
+[DET@1600] Letter='O' win(5): O,N,N,O,O conf=0.70 hand_frames=10 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp70ic5wsx.wav: 'O'
+[TTS] << DONE 'O'
+Frame 1605: FPS=16.9 | Hand:False(0f) | m=0.004+0.006=0.010 s=0.284 | Buf:'' | W:0 L:10
+Frame 1620: FPS=16.9 | Hand:True(8f) | m=0.023+0.005=0.028 s=0.256 | Buf:'NNN' | W:0 L:10
+[DET@1621] Letter='N' win(5): N,N,N,N,N conf=0.90 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpltkc5s7_.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1635: FPS=16.9 | Hand:False(0f) | m=0.011+0.005=0.016 s=0.261 | Buf:'' | W:0 L:11
+Frame 1650: FPS=16.9 | Hand:True(7f) | m=0.016+0.006=0.021 s=0.281 | Buf:'NN' | W:0 L:11
+[DET@1652] Letter='N' win(5): N,N,N,N,N conf=1.00 hand_frames=9 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp7ymxtxmn.wav: 'N'
+[TTS] << DONE 'N'
+Frame 1665: FPS=16.8 | Hand:False(0f) | m=0.005+0.006=0.010 s=0.289 | Buf:'' | W:0 L:12
+Frame 1680: FPS=16.8 | Hand:True(5f) | m=0.018+0.005=0.022 s=0.225 | Buf:'' | W:0 L:12
+Frame 1695: FPS=16.8 | Hand:False(0f) | m=0.004+0.005=0.008 s=0.226 | Buf:'' | W:0 L:12
+
+[SYS] ===== SESSION SUMMARY =====
+[SYS] Duration: 101.5s | Frames: 1698 | Avg FPS: 16.7
+[SYS] Word detections: 0
+[SYS] Letter detections: 12
+[SYS] Total detections: 12
+[SYS] Letter breakdown: {'O': 1, 'F': 1, 'N': 1}
+[SYS] ============================
+
+(venv) PS C:\Users\ameli\speakez>

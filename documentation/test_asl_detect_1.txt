@@ -1,0 +1,140 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-08 00:43:02.480223: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 00:43:03.293261: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2025-10-08 00:43:06.600738: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1759855386.602740   21396 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1759855386.623745   26124 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[TTS] module file: C:\Users\ameli\speakez\src\tts.py
+[TTS] func defined in: C:\Users\ameli\speakez\src\tts.py
+[TTS] func name: tts_speak_live
+============================================================
+SpeakEZ - Simple Hybrid System
+============================================================
+
+[1] Opening camera...
+✓ Camera opened successfully
+✓ Camera working: (480, 640, 3)
+
+[2] Starting detection loop...
+
+Controls:
+  S = Speak text
+  C = Clear buffer
+  B = Backspace
+  Q = Quit
+
+============================================================
+Camera window should appear now...
+============================================================
+
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+2025-10-08 00:43:08.195425: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+Frame 30: O (conf=1.00) | Buffer: 'OF'
+Buffer cleared
+Buffer cleared
+Frame 60: O (conf=1.00) | Buffer: 'O'
+Frame 90: O (conf=1.00) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+[TTS] COM initialized in worker
+[TTS] Engine ready (SAPI5).
+[TTS] >> SAY: 'O'
+Frame 120: O (conf=0.99) | Buffer: 'O'
+[TTS] << DONE: 'O'
+Frame 150: N (conf=0.95) | Buffer: 'ON'
+
+🔊 Speaking: 'ON'
+[TTS] >> SAY: 'ON'
+[TTS] << DONE: 'ON'
+Frame 180: N (conf=0.92) | Buffer: 'ON'
+
+🔊 Speaking: 'ON'
+[TTS] >> SAY: 'ON'
+[TTS] << DONE: 'ON'
+
+🔊 Speaking: 'ON'
+[TTS] >> SAY: 'ON'
+[TTS] << DONE: 'ON'
+Frame 210: N (conf=0.91) | Buffer: 'ON'
+
+🔊 Speaking: 'ON'
+[TTS] >> SAY: 'ON'
+[TTS] << DONE: 'ON'
+
+🔊 Speaking: 'ON'
+[TTS] >> SAY: 'ON'
+Buffer cleared
+[TTS] << DONE: 'ON'
+Frame 240: N (conf=0.82) | Buffer: 'N'
+
+🔊 Speaking: 'N'
+[TTS] >> SAY: 'N'
+[TTS] << DONE: 'N'
+
+🔊 Speaking: 'N'
+[TTS] >> SAY: 'N'
+[TTS] << DONE: 'N'
+Frame 270: N (conf=0.74) | Buffer: 'N'
+Frame 300: N (conf=0.92) | Buffer: 'N'
+Frame 330: O (conf=0.89) | Buffer: 'NO'
+
+🔊 Speaking: 'NO'
+[TTS] >> SAY: 'NO'
+[TTS] << DONE: 'NO'
+
+🔊 Speaking: 'NO'
+[TTS] >> SAY: 'NO'
+[TTS] << DONE: 'NO'
+Frame 360: O (conf=0.90) | Buffer: 'NO'
+
+🔊 Speaking: 'NO'
+[TTS] >> SAY: 'NO'
+[TTS] << DONE: 'NO'
+Buffer cleared
+
+🔊 Speaking: 'O'
+[TTS] >> SAY: 'O'
+Frame 390: O (conf=0.95) | Buffer: 'O'
+[TTS] << DONE: 'O'
+
+🔊 Speaking: 'O'
+[TTS] >> SAY: 'O'
+[TTS] << DONE: 'O'
+Buffer cleared
+Buffer cleared
+Frame 420: O (conf=0.84) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+[TTS] >> SAY: 'O'
+[TTS] << DONE: 'O'
+
+🔊 Speaking: 'O'
+[TTS] >> SAY: 'O'
+[TTS] << DONE: 'O'
+Buffer cleared
+Frame 450: O (conf=0.93) | Buffer: 'O'
+Buffer cleared
+
+🔊 Speaking: 'O'
+[TTS] >> SAY: 'O'
+[TTS] << DONE: 'O'
+Frame 480: F (conf=0.99) | Buffer: 'ONF'
+Frame 510: F (conf=0.86) | Buffer: 'ONF'
+Frame 540: F (conf=0.91) | Buffer: 'ONF'
+
+
+Quitting...
+
+============================================================
+Session complete: 556 frames processed
+Final text: 'ONF'
+============================================================
+(venv) PS C:\Users\ameli\speakez> 

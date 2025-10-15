@@ -1,0 +1,464 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py
+2025-10-10 00:30:27.250980: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-10 00:30:27.829782: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ✓ TTS loaded
+2025-10-10 00:30:30.654024: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[SYS] ✓ predict_letter() loaded from inference_.py
+[SYS] ⚠ predict_word() not available: cannot import name 'predict_word' from 'inference_' (C:\Users\ameli\speakez\src\inference_.py)
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: word_skel_logreg_8.joblib
+  Found: asl_baseline_cnn_128_final.h5
+  Found: asl_baseline_cnn_192.h5
+  Found: best_asl_baseline.h5
+  Found: best_asl_baseline_10_128_.95.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: best_word_mnet_tavg.h5
+
+[CAM] ✓ Opened: (480, 640, 3)
+
+======================================================================
+HYBRID MODE: MediaPipe Detection + Your inference_.py Models
+======================================================================
+Hand Detection: MediaPipe (reliable)
+Letter Prediction: YOUR predict_letter() function
+Word Prediction: Disabled
+
+Thresholds:
+  Confidence: 0.70
+  Margin: 0.15
+  Majority window: 7 frames
+
+Features:
+  Letter detection: ON
+  Word detection: OFF
+  Pattern matching: ON
+
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760027434.780416   26776 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760027434.805318   19096 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+2025-10-10 00:30:34.912842: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[LETTER@7] ✅ 'O' conf=0.900 margin=0.900
+[BUF@8] Grace expired - clearing
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpy2esc0xj.wav: 'O'
+[TTS] << DONE 'O'
+F15: FPS=20.1 | Hand:NO(0f) Grace:15/8f | Buf:'' | L:1 P:0 R:0
+F30: FPS=24.2 | Hand:NO(0f) Grace:30/8f | Buf:'' | L:1 P:0 R:0
+F45: FPS=25.6 | Hand:NO(0f) Grace:45/8f | Buf:'' | L:1 P:0 R:0
+F60: FPS=26.6 | Hand:NO(0f) Grace:60/8f | Buf:'' | L:1 P:0 R:0
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+[LETTER@71] ✅ 'O' conf=0.973 margin=0.973
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpuui3f18d.wav: 'O'
+[TTS] << DONE 'O'
+F75: FPS=26.8 | Hand:YES(11f)  | Buf:'OOOOOOOOOO' | L:2 P:0 R:0
+[PRED@75] O:0.870 | hand=True
+F90: FPS=27.2 | Hand:YES(26f)  | Buf:'OOOOOOOOOO' | L:2 P:0 R:0
+[PRED@90] O:0.846 | hand=True
+F105: FPS=27.6 | Hand:YES(41f)  | Buf:'OOOOOOOOOO' | L:2 P:0 R:0
+[PRED@105] O:0.854 | hand=True
+F120: FPS=27.8 | Hand:YES(56f)  | Buf:'OOOOOOOOOO' | L:2 P:0 R:10
+[PRED@120] F:0.645 | hand=True
+[LETTER@122] ✅ 'O' conf=0.709 margin=0.709
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp_bhe4jbz.wav: 'O'
+[TTS] << DONE 'O'
+F135: FPS=28.0 | Hand:YES(71f)  | Buf:'OOOOOOOOOO' | L:3 P:0 R:12
+[PRED@135] O:0.900 | hand=True
+[PATTERN@147] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpvzyoic4w.wav: 'off'
+F150: FPS=28.2 | Hand:YES(86f)  | Buf:'OO' | L:3 P:1 R:17
+[PRED@150] F:0.712 | hand=True
+[TTS] << DONE 'off'
+F165: FPS=28.4 | Hand:YES(101f)  | Buf:'FFFFFFFFFF' | L:3 P:1 R:22
+[PRED@165] F:0.786 | hand=True
+[LETTER@172] ✅ 'F' conf=0.908 margin=0.908
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp0o_6oau4.wav: 'F'
+[TTS] << DONE 'F'
+F180: FPS=28.4 | Hand:YES(116f)  | Buf:'FFFFFFFFFF' | L:4 P:1 R:22
+[PRED@180] F:0.779 | hand=True
+F195: FPS=28.5 | Hand:YES(131f)  | Buf:'FFFFFFFFFF' | L:4 P:1 R:23
+[PRED@195] F:0.953 | hand=True
+F210: FPS=28.6 | Hand:YES(146f)  | Buf:'FFFFFFFFFO' | L:4 P:1 R:33
+[PRED@210] O:0.864 | hand=True
+[PATTERN@216] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp3nby3qm0.wav: 'off'
+[TTS] << DONE 'off'
+F225: FPS=28.7 | Hand:YES(161f)  | Buf:'FFFFFFFF' | L:4 P:2 R:37
+[PRED@225] F:0.880 | hand=True
+F240: FPS=28.8 | Hand:YES(176f)  | Buf:'FFFFFFFFFF' | L:4 P:2 R:45
+[PRED@240] F:0.529 | hand=True
+[LETTER@241] ✅ 'F' conf=0.796 margin=0.796
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpovd1mns6.wav: 'F'
+[TTS] << DONE 'F'
+F255: FPS=28.8 | Hand:YES(191f)  | Buf:'FFFFFFFFFF' | L:5 P:2 R:46
+[PRED@255] F:0.871 | hand=True
+F270: FPS=28.8 | Hand:YES(206f)  | Buf:'FFFFFFFFFF' | L:5 P:2 R:46
+[PRED@270] F:0.906 | hand=True
+F285: FPS=28.9 | Hand:YES(221f)  | Buf:'FFFFFFFFFF' | L:5 P:2 R:47
+[PRED@285] F:0.811 | hand=True
+[LETTER@286] ✅ 'F' conf=0.764 margin=0.764
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpgubke470.wav: 'F'
+[TTS] << DONE 'F'
+F300: FPS=28.9 | Hand:YES(236f)  | Buf:'FFFFFFFFFF' | L:6 P:2 R:52
+[PRED@300] F:0.928 | hand=True
+F315: FPS=28.7 | Hand:YES(251f)  | Buf:'FFFFFFFFFF' | L:6 P:2 R:62
+[PRED@315] F:0.733 | hand=True
+[LETTER@323] ✅ 'O' conf=0.761 margin=0.761
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpcnzdz8bv.wav: 'O'
+[TTS] << DONE 'O'
+F330: FPS=28.8 | Hand:YES(266f)  | Buf:'OOOOOOOOOO' | L:7 P:2 R:65
+[PRED@330] O:0.851 | hand=True
+F345: FPS=28.8 | Hand:YES(281f)  | Buf:'OOOOOOOOOO' | L:7 P:2 R:65
+[PRED@345] O:0.798 | hand=True
+F360: FPS=28.9 | Hand:YES(296f)  | Buf:'OOOOOOOOOO' | L:7 P:2 R:68
+[PRED@360] O:0.660 | hand=True
+[REJECT@360] 'O' - conf(0.66<0.7) | 2nd:'?'(0.000)
+[LETTER@373] ✅ 'O' conf=0.719 margin=0.719
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp99y857ed.wav: 'O'
+F375: FPS=28.9 | Hand:YES(311f)  | Buf:'OOOOOOOOOO' | L:8 P:2 R:81
+[PRED@375] O:0.808 | hand=True
+[TTS] << DONE 'O'
+F390: FPS=28.9 | Hand:YES(326f)  | Buf:'OOOOOOOOOO' | L:8 P:2 R:84
+[PRED@390] O:0.786 | hand=True
+F405: FPS=28.9 | Hand:YES(341f)  | Buf:'OOOOOOOOOO' | L:8 P:2 R:87
+[PRED@405] O:0.650 | hand=True
+[REJECT@405] 'O' - conf(0.65<0.7) | 2nd:'?'(0.000)
+[LETTER@419] ✅ 'O' conf=0.901 margin=0.901
+F420: FPS=29.0 | Hand:YES(356f)  | Buf:'OOOOOOOOOO' | L:9 P:2 R:93
+[PRED@420] O:0.966 | hand=True
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp8wi55_tx.wav: 'O'
+[TTS] << DONE 'O'
+F435: FPS=29.0 | Hand:YES(371f)  | Buf:'OOOOOOOOOO' | L:9 P:2 R:93
+[PRED@435] O:0.989 | hand=True
+F450: FPS=29.0 | Hand:YES(386f)  | Buf:'OOOOOOOOOO' | L:9 P:2 R:93
+[PRED@450] O:0.984 | hand=True
+[LETTER@464] ✅ 'O' conf=0.986 margin=0.986
+F465: FPS=29.0 | Hand:YES(401f)  | Buf:'OOOOOOOOOO' | L:10 P:2 R:93
+[PRED@465] O:0.988 | hand=True
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmphvlk063q.wav: 'O'
+[TTS] << DONE 'O'
+F480: FPS=29.1 | Hand:YES(416f)  | Buf:'OOOOOOOOOO' | L:10 P:2 R:93
+[PRED@480] O:0.988 | hand=True
+F495: FPS=29.1 | Hand:YES(431f)  | Buf:'OOOOOOOOOO' | L:10 P:2 R:93
+[PRED@495] O:0.989 | hand=True
+F510: FPS=29.1 | Hand:YES(446f)  | Buf:'OOOOOOOOOO' | L:10 P:2 R:93
+[PRED@510] O:0.991 | hand=True
+[LETTER@510] ✅ 'O' conf=0.991 margin=0.991
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpftq9uqc4.wav: 'O'
+[TTS] << DONE 'O'
+F525: FPS=29.1 | Hand:YES(461f)  | Buf:'OOOOOOOOOO' | L:11 P:2 R:93
+[PRED@525] O:0.992 | hand=True
+F540: FPS=29.1 | Hand:YES(476f)  | Buf:'OOOOOOOOOO' | L:11 P:2 R:93
+[PRED@540] O:0.976 | hand=True
+F555: FPS=29.1 | Hand:YES(491f)  | Buf:'OOOOOOOOOO' | L:11 P:2 R:98
+[PRED@555] O:0.888 | hand=True
+[LETTER@555] ✅ 'O' conf=0.888 margin=0.888
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpoh9g3jq0.wav: 'O'
+[TTS] << DONE 'O'
+F570: FPS=29.2 | Hand:YES(506f)  | Buf:'OOOOOOOOOF' | L:12 P:2 R:102
+[PRED@570] O:0.703 | hand=True
+[PATTERN@580] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpck31te5c.wav: 'off'
+[TTS] << DONE 'off'
+F585: FPS=29.2 | Hand:YES(521f)  | Buf:'OOOO' | L:12 P:3 R:107
+[PRED@585] O:0.809 | hand=True
+F600: FPS=29.2 | Hand:YES(536f)  | Buf:'OOOOOFFF' | L:12 P:3 R:118
+[PRED@600] F:0.537 | hand=True
+[PATTERN@604] ✅ 'OFF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpds9h5_wd.wav: 'off'
+[TTS] << DONE 'off'
+F615: FPS=29.1 | Hand:YES(551f)  | Buf:'OOOOOOOO' | L:12 P:4 R:124
+[PRED@615] O:0.741 | hand=True
+F630: FPS=29.1 | Hand:YES(566f)  | Buf:'OOOOOOOFFF' | L:12 P:4 R:127
+[PRED@630] F:0.692 | hand=True
+[REJECT@630] 'F' - conf(0.69<0.7) | 2nd:'?'(0.000)
+[LETTER@638] ✅ 'F' conf=0.884 margin=0.884
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpnumazdnt.wav: 'F'
+[TTS] << DONE 'F'
+F645: FPS=29.1 | Hand:YES(581f)  | Buf:'OOFFFFFFFF' | L:13 P:4 R:132
+[PRED@645] F:0.503 | hand=True
+F660: FPS=29.1 | Hand:YES(596f)  | Buf:'FFFFFFFFFF' | L:13 P:4 R:140
+[PRED@660] F:0.863 | hand=True
+F675: FPS=29.1 | Hand:YES(611f)  | Buf:'FFFFFFFFFF' | L:13 P:4 R:140
+[PRED@675] F:0.860 | hand=True
+F690: FPS=29.1 | Hand:YES(626f)  | Buf:'FFFFFFFFFF' | L:13 P:4 R:148
+[PRED@690] O:0.567 | hand=True
+[LETTER@691] ✅ 'F' conf=0.728 margin=0.728
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp57ft7z3n.wav: 'F'
+[TTS] << DONE 'F'
+F705: FPS=29.1 | Hand:YES(641f)  | Buf:'FFFFFFFFFF' | L:14 P:4 R:156
+[PRED@705] F:0.443 | hand=True
+F720: FPS=29.1 | Hand:YES(656f)  | Buf:'FFFFFFFFFO' | L:14 P:4 R:165
+[PRED@720] O:0.701 | hand=True
+[PATTERN@722] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp9g2ipnwp.wav: 'off'
+[TTS] << DONE 'off'
+F735: FPS=29.1 | Hand:YES(671f)  | Buf:'FF' | L:14 P:5 R:176
+[PRED@735] O:0.583 | hand=True
+F750: FPS=29.2 | Hand:YES(686f)  | Buf:'FFOOO' | L:14 P:5 R:188
+[PRED@750] O:0.920 | hand=True
+[LETTER@751] ✅ 'O' conf=0.857 margin=0.857
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpv33erq8c.wav: 'O'
+[TTS] << DONE 'O'
+F765: FPS=29.2 | Hand:YES(701f)  | Buf:'FFOOOOOOOO' | L:15 P:5 R:198
+[PRED@765] F:0.631 | hand=True
+[REJECT@765] 'F' - conf(0.63<0.7) | 2nd:'?'(0.000)
+[PATTERN@779] ✅ 'OFF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpfvsbndfg.wav: 'off'
+F780: FPS=29.2 | Hand:YES(716f)  | Buf:'' | L:15 P:6 R:207
+[PRED@780] F:0.651 | hand=True
+[TTS] << DONE 'off'
+F795: FPS=29.2 | Hand:YES(731f)  | Buf:'FOOOOOOOOO' | L:15 P:6 R:211
+[PRED@795] O:0.943 | hand=True
+[LETTER@803] ✅ 'O' conf=0.941 margin=0.941
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpinvkr451.wav: 'O'
+[TTS] << DONE 'O'
+F810: FPS=29.2 | Hand:YES(746f)  | Buf:'OOOOOOOOOO' | L:16 P:6 R:211
+[PRED@810] O:0.763 | hand=True
+F825: FPS=29.2 | Hand:YES(761f)  | Buf:'OOOOOOOOOO' | L:16 P:6 R:211
+[PRED@825] O:0.963 | hand=True
+F840: FPS=29.2 | Hand:YES(776f)  | Buf:'OOOOOOOOOO' | L:16 P:6 R:211
+[PRED@840] O:0.804 | hand=True
+[LETTER@850] ✅ 'O' conf=0.798 margin=0.798
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp6sbkmzl5.wav: 'O'
+[TTS] << DONE 'O'
+F855: FPS=29.2 | Hand:YES(791f)  | Buf:'OOOOOOOOOO' | L:17 P:6 R:219
+[PRED@855] O:0.782 | hand=True
+F870: FPS=29.2 | Hand:YES(806f)  | Buf:'OOOOOOOOOO' | L:17 P:6 R:222
+[PRED@870] O:0.667 | hand=True
+F885: FPS=29.3 | Hand:YES(821f)  | Buf:'OOOOOOOOOO' | L:17 P:6 R:230
+[PRED@885] O:0.858 | hand=True
+[LETTER@896] ✅ 'O' conf=0.764 margin=0.764
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp6azlswhi.wav: 'O'
+[TTS] << DONE 'O'
+F900: FPS=29.3 | Hand:YES(836f)  | Buf:'OOOOOOOOOO' | L:18 P:6 R:230
+[PRED@900] O:0.836 | hand=True
+F915: FPS=29.2 | Hand:YES(851f)  | Buf:'OOOOOOOOOO' | L:18 P:6 R:235
+[PRED@915] O:0.761 | hand=True
+F930: FPS=29.2 | Hand:YES(866f)  | Buf:'OOOOOOOOOO' | L:18 P:6 R:236
+[PRED@930] O:0.951 | hand=True
+[LETTER@939] ✅ 'O' conf=0.934 margin=0.934
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp8zx9gomw.wav: 'O'
+[TTS] << DONE 'O'
+F945: FPS=29.2 | Hand:YES(881f)  | Buf:'OOOOOOOOOO' | L:19 P:6 R:236
+[PRED@945] O:0.925 | hand=True
+F960: FPS=29.2 | Hand:YES(896f)  | Buf:'OOOOOOOOOO' | L:19 P:6 R:236
+[PRED@960] O:0.925 | hand=True
+F975: FPS=29.2 | Hand:YES(911f)  | Buf:'OOOOOOOOOO' | L:19 P:6 R:238
+[PRED@975] F:0.568 | hand=True
+[PATTERN@981] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpzbr7v5zf.wav: 'off'
+[TTS] << DONE 'off'
+F990: FPS=29.1 | Hand:YES(926f)  | Buf:'OO' | L:19 P:7 R:250
+[PRED@990] O:0.816 | hand=True
+[LETTER@1002] ✅ 'O' conf=0.876 margin=0.876
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpfvkkb5_f.wav: 'O'
+F1005: FPS=29.1 | Hand:YES(941f)  | Buf:'OOOOOOOOOO' | L:20 P:7 R:250
+[TTS] << DONE 'O'
+[PRED@1005] O:0.884 | hand=True
+F1020: FPS=29.0 | Hand:YES(956f)  | Buf:'OOOOOOOOOO' | L:20 P:7 R:250
+[PRED@1020] O:0.974 | hand=True
+F1035: FPS=29.0 | Hand:YES(971f)  | Buf:'OOOOOOOOOO' | L:20 P:7 R:250
+[PRED@1035] O:0.976 | hand=True
+[LETTER@1042] ✅ 'O' conf=0.980 margin=0.980
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpnl5j5860.wav: 'O'
+[TTS] << DONE 'O'
+F1050: FPS=29.0 | Hand:YES(986f)  | Buf:'OOOOOOOOOO' | L:21 P:7 R:250
+[PRED@1050] O:0.965 | hand=True
+F1065: FPS=29.0 | Hand:YES(1001f)  | Buf:'OOOOOOOOOO' | L:21 P:7 R:250
+[PRED@1065] O:0.959 | hand=True
+F1080: FPS=29.0 | Hand:YES(1016f)  | Buf:'OOOOOOOOOO' | L:21 P:7 R:250
+[PRED@1080] O:0.886 | hand=True
+[LETTER@1087] ✅ 'O' conf=0.870 margin=0.870
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpl2wh8z9e.wav: 'O'
+[TTS] << DONE 'O'
+F1095: FPS=29.0 | Hand:YES(1031f)  | Buf:'OOOOOOOOOO' | L:22 P:7 R:252
+[PRED@1095] O:0.716 | hand=True
+F1110: FPS=29.0 | Hand:YES(1046f)  | Buf:'OOOOOOOOOO' | L:22 P:7 R:253
+[PRED@1110] O:0.868 | hand=True
+F1125: FPS=29.0 | Hand:YES(1061f)  | Buf:'OOOOOOOOOO' | L:22 P:7 R:253
+[PRED@1125] O:0.853 | hand=True
+[LETTER@1132] ✅ 'O' conf=0.848 margin=0.848
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmphui_jdwy.wav: 'O'
+[TTS] << DONE 'O'
+F1140: FPS=29.0 | Hand:YES(1076f)  | Buf:'OOOOOOOOOO' | L:23 P:7 R:253
+[PRED@1140] O:0.948 | hand=True
+F1155: FPS=28.9 | Hand:YES(1091f)  | Buf:'OOOOOOOOOO' | L:23 P:7 R:253
+[PRED@1155] O:0.956 | hand=True
+F1170: FPS=28.9 | Hand:YES(1106f)  | Buf:'OOOOOOOOOO' | L:23 P:7 R:253
+[PRED@1170] O:0.977 | hand=True
+[LETTER@1171] ✅ 'O' conf=0.978 margin=0.978
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp5i82lbso.wav: 'O'
+[TTS] << DONE 'O'
+F1185: FPS=28.9 | Hand:YES(1121f)  | Buf:'OOOOOOOOOO' | L:24 P:7 R:253
+[PRED@1185] O:0.934 | hand=True
+F1200: FPS=28.9 | Hand:YES(1136f)  | Buf:'OOOOOOOOOO' | L:24 P:7 R:253
+[PRED@1200] O:0.962 | hand=True
+[LETTER@1209] ✅ 'O' conf=0.939 margin=0.939
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp_mnlwt6o.wav: 'O'
+[TTS] << DONE 'O'
+F1215: FPS=28.8 | Hand:YES(1151f)  | Buf:'OOOOOOOOOO' | L:25 P:7 R:253
+[PRED@1215] O:0.853 | hand=True
+F1230: FPS=28.8 | Hand:YES(1166f)  | Buf:'OOOOOOOOOO' | L:25 P:7 R:253
+[PRED@1230] O:0.947 | hand=True
+F1245: FPS=28.8 | Hand:YES(1181f)  | Buf:'OOOOOOOOOO' | L:25 P:7 R:253
+[PRED@1245] O:0.999 | hand=True
+[LETTER@1254] ✅ 'O' conf=0.997 margin=0.997
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpdw9ys3ii.wav: 'O'
+[TTS] << DONE 'O'
+F1260: FPS=28.8 | Hand:YES(1196f)  | Buf:'OOOOOOOOOO' | L:26 P:7 R:253
+[PRED@1260] O:0.992 | hand=True
+F1275: FPS=28.8 | Hand:YES(1211f)  | Buf:'OOOOOOOOOO' | L:26 P:7 R:253
+[PRED@1275] O:0.946 | hand=True
+F1290: FPS=28.8 | Hand:YES(1226f)  | Buf:'OOOOOOOOOO' | L:26 P:7 R:253
+[PRED@1290] O:0.986 | hand=True
+[LETTER@1300] ✅ 'O' conf=0.955 margin=0.955
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpjs5ejlln.wav: 'O'
+[TTS] << DONE 'O'
+F1305: FPS=28.8 | Hand:YES(1241f)  | Buf:'OOOOOOOOOO' | L:27 P:7 R:253
+[PRED@1305] O:0.978 | hand=True
+F1320: FPS=28.9 | Hand:YES(1256f)  | Buf:'OOOOOOOOOO' | L:27 P:7 R:253
+[PRED@1320] O:0.974 | hand=True
+F1335: FPS=28.9 | Hand:YES(1271f)  | Buf:'OOOOOOOOOO' | L:27 P:7 R:253
+[PRED@1335] O:0.993 | hand=True
+[LETTER@1343] ✅ 'O' conf=0.973 margin=0.973
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpj74pg34q.wav: 'O'
+[TTS] << DONE 'O'
+F1350: FPS=28.8 | Hand:YES(1286f)  | Buf:'OOOOOOOOOO' | L:28 P:7 R:253
+[PRED@1350] O:0.986 | hand=True
+F1365: FPS=28.8 | Hand:YES(1301f)  | Buf:'OOOOOOOOOO' | L:28 P:7 R:253
+[PRED@1365] O:0.989 | hand=True
+F1380: FPS=28.8 | Hand:YES(1316f)  | Buf:'OOOOOOOOOO' | L:28 P:7 R:253
+[PRED@1380] O:0.653 | hand=True
+[PATTERN@1384] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmphu6tl3gz.wav: 'off'
+[TTS] << DONE 'off'
+F1395: FPS=28.8 | Hand:YES(1331f)  | Buf:'FOO' | L:28 P:8 R:264
+[PRED@1395] F:0.589 | hand=True
+[REJECT@1395] 'F' - conf(0.59<0.7) | 2nd:'?'(0.000)
+[PATTERN@1408] ✅ 'OFF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp_zzd4yx1.wav: 'off'
+F1410: FPS=28.8 | Hand:YES(1346f)  | Buf:'O' | L:28 P:9 R:270
+[PRED@1410] O:0.819 | hand=True
+[TTS] << DONE 'off'
+F1425: FPS=28.8 | Hand:YES(1361f)  | Buf:'OOO' | L:28 P:9 R:283
+[PRED@1425] O:0.513 | hand=True
+[LETTER@1432] ✅ 'O' conf=0.915 margin=0.915
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp5ktagmvm.wav: 'O'
+[TTS] << DONE 'O'
+F1440: FPS=28.8 | Hand:YES(1376f)  | Buf:'OOOOOOOOOO' | L:29 P:9 R:288
+[PRED@1440] O:0.762 | hand=True
+F1455: FPS=28.8 | Hand:YES(1391f)  | Buf:'OOOOOOOOOO' | L:29 P:9 R:293
+[PRED@1455] O:0.788 | hand=True
+F1470: FPS=28.8 | Hand:YES(1406f)  | Buf:'OOOOOOOOOO' | L:29 P:9 R:302
+[PRED@1470] O:0.775 | hand=True
+[LETTER@1478] ✅ 'O' conf=0.759 margin=0.759
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpdh_sipri.wav: 'O'
+[TTS] << DONE 'O'
+F1485: FPS=28.8 | Hand:YES(1421f)  | Buf:'OOOOOOOOOO' | L:30 P:9 R:312
+[PRED@1485] O:0.507 | hand=True
+[REJECT@1485] 'O' - conf(0.51<0.7) | 2nd:'?'(0.000)
+F1500: FPS=28.8 | Hand:YES(1436f)  | Buf:'FOOOOOOOOO' | L:30 P:9 R:317
+[PRED@1500] O:0.872 | hand=True
+[PATTERN@1512] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp08nc08dt.wav: 'off'
+[TTS] << DONE 'off'
+F1515: FPS=28.8 | Hand:YES(1451f)  | Buf:'' | L:30 P:10 R:322
+[PRED@1515] O:0.720 | hand=True
+F1530: FPS=28.8 | Hand:YES(1466f)  | Buf:'OOOOOOOOOO' | L:30 P:10 R:327
+[PRED@1530] F:0.546 | hand=True
+[REJECT@1530] 'F' - conf(0.55<0.7) | 2nd:'?'(0.000)
+[PATTERN@1536] ✅ 'OFF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpsdsps6vx.wav: 'off'
+[TTS] << DONE 'off'
+F1545: FPS=28.8 | Hand:YES(1481f)  | Buf:'OOOOOOOO' | L:30 P:11 R:330
+[PRED@1545] O:0.622 | hand=True
+F1560: FPS=28.8 | Hand:YES(1496f)  | Buf:'OFFFFFOOOO' | L:30 P:11 R:335
+[PRED@1560] O:0.940 | hand=True
+[LETTER@1560] ✅ 'O' conf=0.940 margin=0.940
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpoakhkxzp.wav: 'O'
+[TTS] << DONE 'O'
+F1575: FPS=28.8 | Hand:YES(1511f)  | Buf:'OOOOOOOFFO' | L:31 P:11 R:342
+[PRED@1575] F:0.798 | hand=True
+[PATTERN@1582] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpybm6mz52.wav: 'off'
+[TTS] << DONE 'off'
+F1590: FPS=28.8 | Hand:YES(1526f)  | Buf:'OOOOOOO' | L:31 P:12 R:342
+[PRED@1590] O:0.972 | hand=True
+[LETTER@1604] ✅ 'O' conf=0.904 margin=0.904
+F1605: FPS=28.8 | Hand:YES(1541f)  | Buf:'OFOOOOOOOO' | L:32 P:12 R:343
+[PRED@1605] O:0.885 | hand=True
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpwxb_vzht.wav: 'O'
+[TTS] << DONE 'O'
+F1620: FPS=28.8 | Hand:YES(1556f)  | Buf:'OOOFFFFFFF' | L:32 P:12 R:345
+[PRED@1620] F:0.816 | hand=True
+F1635: FPS=28.8 | Hand:YES(1571f)  | Buf:'FFFFOOOOOO' | L:32 P:12 R:351
+[PRED@1635] O:0.836 | hand=True
+[LETTER@1647] ✅ 'O' conf=0.860 margin=0.860
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpyjhn00zy.wav: 'O'
+F1650: FPS=28.7 | Hand:YES(1586f)  | Buf:'OOOOOOOOOO' | L:33 P:12 R:354
+[PRED@1650] O:0.835 | hand=True
+[TTS] << DONE 'O'
+F1665: FPS=28.8 | Hand:YES(1601f)  | Buf:'OOOOOOOOOO' | L:33 P:12 R:354
+[PRED@1665] O:0.917 | hand=True
+[PATTERN@1678] ✅ 'OF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpz7lizr3m.wav: 'off'
+F1680: FPS=28.8 | Hand:YES(1616f)  | Buf:'' | L:33 P:13 R:360
+[PRED@1680] O:0.816 | hand=True
+[TTS] << DONE 'off'
+F1695: FPS=28.8 | Hand:YES(1631f)  | Buf:'OOOOOOOOO' | L:33 P:13 R:366
+[PRED@1695] O:0.710 | hand=True
+[PATTERN@1703] ✅ 'OFF' → 'off'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpbprz8kz0.wav: 'off'
+[TTS] << DONE 'off'
+F1710: FPS=28.8 | Hand:YES(1646f)  | Buf:'OOOO' | L:33 P:14 R:371
+[PRED@1710] O:0.989 | hand=True
+F1725: FPS=28.8 | Hand:YES(1661f)  | Buf:'OOOOOOOOOF' | L:33 P:14 R:374
+[PRED@1725] O:0.642 | hand=True
+[LETTER@1727] ✅ 'O' conf=0.746 margin=0.746
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp94x6e3xr.wav: 'O'
+[TTS] << DONE 'O'
+F1740: FPS=28.8 | Hand:YES(1676f)  | Buf:'OOOOOOFOOO' | L:34 P:14 R:386
+[PRED@1740] O:0.656 | hand=True
+F1755: FPS=28.8 | Hand:YES(1691f)  | Buf:'OOFFFFFOOO' | L:34 P:14 R:393
+[PRED@1755] O:0.945 | hand=True
+F1770: FPS=28.8 | Hand:NO(0f) Grace:3/8f | Buf:'OOOOOOOOOO' | L:34 P:14 R:396
+[PRED@1770] F:0.621 | hand=False
+[BUF@1775] Grace expired - clearing
+F1785: FPS=28.8 | Hand:NO(2f) Grace:0/8f | Buf:'' | L:34 P:14 R:402
+[PRED@1785] O:0.945 | hand=False
+[LETTER@1791] ✅ 'O' conf=0.886 margin=0.886
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpqw1602hx.wav: 'O'
+[TTS] << DONE 'O'
+F1800: FPS=28.8 | Hand:YES(17f)  | Buf:'OOOOOOOOOO' | L:35 P:14 R:402
+[PRED@1800] O:0.975 | hand=True
+F1815: FPS=28.7 | Hand:YES(32f)  | Buf:'OOOOOOOOOO' | L:35 P:14 R:404
+[PRED@1815] O:0.986 | hand=True
+[BUF@1826] Grace expired - clearing
+F1830: FPS=28.7 | Hand:NO(0f) Grace:12/8f | Buf:'' | L:35 P:14 R:413
+F1845: FPS=28.7 | Hand:NO(0f) Grace:27/8f | Buf:'' | L:35 P:14 R:413
+F1860: FPS=28.7 | Hand:NO(0f) Grace:42/8f | Buf:'' | L:35 P:14 R:413
+F1875: FPS=28.7 | Hand:NO(0f) Grace:57/8f | Buf:'' | L:35 P:14 R:413
+F1890: FPS=28.7 | Hand:NO(0f) Grace:72/8f | Buf:'' | L:35 P:14 R:413
+F1905: FPS=28.7 | Hand:NO(0f) Grace:87/8f | Buf:'' | L:35 P:14 R:413
+F1920: FPS=28.7 | Hand:NO(0f) Grace:102/8f | Buf:'' | L:35 P:14 R:413
+F1935: FPS=28.7 | Hand:NO(0f) Grace:117/8f | Buf:'' | L:35 P:14 R:413
+F1950: FPS=28.7 | Hand:NO(0f) Grace:132/8f | Buf:'' | L:35 P:14 R:413
+F1965: FPS=28.7 | Hand:NO(0f) Grace:147/8f | Buf:'' | L:35 P:14 R:413
+F1980: FPS=28.8 | Hand:NO(0f) Grace:162/8f | Buf:'' | L:35 P:14 R:413
+F1995: FPS=28.8 | Hand:NO(0f) Grace:177/8f | Buf:'' | L:35 P:14 R:413
+F2010: FPS=28.8 | Hand:NO(0f) Grace:192/8f | Buf:'' | L:35 P:14 R:413
+F2025: FPS=28.8 | Hand:NO(0f) Grace:207/8f | Buf:'' | L:35 P:14 R:413
+
+[SYS] Interrupted
+[TTS] Worker exited.
+(venv) PS C:\Users\ameli\speakez>

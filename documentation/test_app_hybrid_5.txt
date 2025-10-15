@@ -1,0 +1,259 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py
+2025-10-10 01:34:57.826214: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-10 01:34:58.411958: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ✓ TTS loaded
+2025-10-10 01:35:01.173019: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[SYS] ✓ predict_letter() loaded from inference_.py
+[SYS] ✓ predict_word()   loaded from inference_.py
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760031301.286871   19364 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760031301.307287   19364 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] ✓ Opened index 0 using backend 700 | shape=(480, 640, 3)
+
+======================================================================
+HYBRID MODE: MediaPipe Detection + Your inference_.py Models
+======================================================================
+Hand Detection: MediaPipe
+Letter Prediction: predict_letter()
+Word Prediction: OFF
+Conf>0.70  Margin>0.15  Window=9
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+F15: FPS=27.6 | Hand:NO | Buf:'' | L:0 P:0 R:0
+F30: FPS=28.8 | Hand:NO | Buf:'' | L:0 P:0 R:0
+F45: FPS=29.0 | Hand:NO | Buf:'' | L:0 P:0 R:0
+F60: FPS=29.3 | Hand:NO | Buf:'' | L:0 P:0 R:0
+F75: FPS=29.3 | Hand:NO | Buf:'' | L:0 P:0 R:0
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+2025-10-10 01:35:08.568823: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[PATTERN@86] ✅ 'ON' → 'on'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp5xgyaijm.wav: 'on'
+[TTS] << DONE 'on'
+F90: FPS=26.0 | Hand:YES | Buf:'S' | L:0 P:1 R:2
+[LETTER@101] ✅ 'N' conf=0.727
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpsm4g8wjq.wav: 'N'
+[TTS] << DONE 'N'
+F105: FPS=23.5 | Hand:YES | Buf:'NNNNNNNNNS' | L:1 P:1 R:6
+[PATTERN@118] ✅ 'ON' → 'on'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpq0_w1egv.wav: 'on'
+[TTS] << DONE 'on'
+F120: FPS=21.6 | Hand:YES | Buf:'' | L:1 P:2 R:14
+F135: FPS=20.5 | Hand:YES | Buf:'NOONONNNNN' | L:1 P:2 R:19
+[PATTERN@135] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpot8soqlt.wav: 'no'
+[TTS] << DONE 'no'
+F150: FPS=19.7 | Hand:YES | Buf:'NNNNNNSSS' | L:1 P:3 R:24
+[LETTER@162] ✅ 'N' conf=0.990
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpjoyepj80.wav: 'N'
+[TTS] << DONE 'N'
+F165: FPS=19.2 | Hand:YES | Buf:'SSNNNNNNNN' | L:2 P:3 R:29
+F180: FPS=18.8 | Hand:YES | Buf:'NNNNNNNNNN' | L:2 P:3 R:29
+[LETTER@193] ✅ 'S' conf=0.711
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpivzcknei.wav: 'S'
+[TTS] << DONE 'S'
+F195: FPS=18.4 | Hand:YES | Buf:'NNSSNSSSSS' | L:3 P:3 R:34
+[PATTERN@207] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp46ynfzef.wav: 'no'
+[TTS] << DONE 'no'
+F210: FPS=18.1 | Hand:YES | Buf:'NN' | L:3 P:4 R:35
+[LETTER@221] ✅ 'N' conf=0.962
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpi8cvp3av.wav: 'N'
+[TTS] << DONE 'N'
+F225: FPS=17.9 | Hand:YES | Buf:'NONNONNNNN' | L:4 P:4 R:38
+[PATTERN@237] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp2wuqpmne.wav: 'no'
+[TTS] << DONE 'no'
+F240: FPS=17.7 | Hand:YES | Buf:'' | L:4 P:5 R:43
+F255: FPS=17.5 | Hand:YES | Buf:'NONNONONNN' | L:4 P:5 R:48
+[LETTER@260] ✅ 'N' conf=0.983
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpbvydkucn.wav: 'N'
+[TTS] << DONE 'N'
+F270: FPS=17.3 | Hand:YES | Buf:'NONNNNONNN' | L:5 P:5 R:51
+[PATTERN@274] ✅ 'NOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmptxq2unjx.wav: 'no'
+[TTS] << DONE 'no'
+F285: FPS=17.2 | Hand:YES | Buf:'NOONNNN' | L:5 P:6 R:54
+[PATTERN@290] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpokmpvaue.wav: 'no'
+[TTS] << DONE 'no'
+F300: FPS=17.0 | Hand:YES | Buf:'ONNNNNNN' | L:5 P:7 R:57
+[LETTER@304] ✅ 'N' conf=0.832
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmplb6bn6fu.wav: 'N'
+[TTS] << DONE 'N'
+F315: FPS=16.9 | Hand:YES | Buf:'NNNNNNOONN' | L:6 P:7 R:62
+[PATTERN@319] ✅ 'NOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpzjkdk4os.wav: 'no'
+[TTS] << DONE 'no'
+F330: FPS=16.8 | Hand:YES | Buf:'NNNNONON' | L:6 P:8 R:65
+[PATTERN@333] ✅ 'NOOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmprddqfumh.wav: 'no'
+[TTS] << DONE 'no'
+F345: FPS=16.7 | Hand:YES | Buf:'ONOONOSS' | L:6 P:9 R:68
+[PATTERN@350] ✅ 'NOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpddxa3lnm.wav: 'no'
+[TTS] << DONE 'no'
+F360: FPS=16.6 | Hand:YES | Buf:'NNNNNNNN' | L:6 P:10 R:70
+[LETTER@364] ✅ 'N' conf=0.987
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpyvb0gmud.wav: 'N'
+[TTS] << DONE 'N'
+F375: FPS=16.5 | Hand:YES | Buf:'ONNNNNSNNN' | L:7 P:10 R:72
+[PATTERN@383] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpbhgwghd5.wav: 'no'
+[TTS] << DONE 'no'
+F390: FPS=16.5 | Hand:YES | Buf:'NN' | L:7 P:11 R:77
+[PATTERN@397] ✅ 'NOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpso0_l0ve.wav: 'no'
+[TTS] << DONE 'no'
+F405: FPS=16.4 | Hand:YES | Buf:'NNNOO' | L:7 P:12 R:79
+[PATTERN@412] ✅ 'NOOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpxw12j6qs.wav: 'no'
+[TTS] << DONE 'no'
+F420: FPS=16.3 | Hand:YES | Buf:'NOOO' | L:7 P:13 R:85
+[PATTERN@426] ✅ 'ON' → 'on'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpg_36s2xt.wav: 'on'
+[TTS] << DONE 'on'
+F435: FPS=16.3 | Hand:YES | Buf:'NONNNNN' | L:7 P:14 R:86
+[LETTER@440] ✅ 'N' conf=1.000
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpormrl6py.wav: 'N'
+[TTS] << DONE 'N'
+F450: FPS=16.3 | Hand:YES | Buf:'NNNNNNNNNN' | L:8 P:14 R:88
+[PATTERN@462] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpnxt4283r.wav: 'no'
+[TTS] << DONE 'no'
+F465: FPS=16.2 | Hand:YES | Buf:'NO' | L:8 P:15 R:89
+[LETTER@478] ✅ 'N' conf=1.000
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpsgh7v7xx.wav: 'N'
+[TTS] << DONE 'N'
+F480: FPS=16.2 | Hand:YES | Buf:'ONNONNNNNO' | L:9 P:15 R:95
+[PATTERN@492] ✅ 'ON' → 'on'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpufa3uzhb.wav: 'on'
+[TTS] << DONE 'on'
+F495: FPS=16.1 | Hand:YES | Buf:'NN' | L:9 P:16 R:98
+F510: FPS=16.1 | Hand:YES | Buf:'NNNNNNNNNN' | L:9 P:16 R:104
+[LETTER@516] ✅ 'N' conf=0.744
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpsfijzocr.wav: 'N'
+[TTS] << DONE 'N'
+F525: FPS=16.1 | Hand:YES | Buf:'NNNNNNNNNN' | L:10 P:16 R:109
+[PATTERN@532] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpboezbh0s.wav: 'no'
+[TTS] << DONE 'no'
+F540: FPS=16.0 | Hand:YES | Buf:'NNNOS' | L:10 P:17 R:111
+[LETTER@549] ✅ 'O' conf=0.827
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp2jk8xnih.wav: 'O'
+[TTS] << DONE 'O'
+F555: FPS=16.0 | Hand:YES | Buf:'OOOOONNNNS' | L:11 P:17 R:116
+[LETTER@563] ✅ 'S' conf=1.000
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpu9ukecyb.wav: 'S'
+[TTS] << DONE 'S'
+F570: FPS=16.0 | Hand:YES | Buf:'NSSSNNONNO' | L:12 P:17 R:117
+[PATTERN@578] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpb46tt2pl.wav: 'no'
+[TTS] << DONE 'no'
+F585: FPS=15.9 | Hand:YES | Buf:'OOONNO' | L:12 P:18 R:122
+[LETTER@593] ✅ 'N' conf=0.971
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp1c3lh7jx.wav: 'N'
+[TTS] << DONE 'N'
+F600: FPS=15.9 | Hand:YES | Buf:'NONNNNNNNN' | L:13 P:18 R:126
+[PATTERN@608] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpt3wj763b.wav: 'no'
+[TTS] << DONE 'no'
+F615: FPS=15.9 | Hand:YES | Buf:'NSSSN' | L:13 P:19 R:127
+[PATTERN@622] ✅ 'NOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmphr9v62uh.wav: 'no'
+[TTS] << DONE 'no'
+F630: FPS=15.8 | Hand:YES | Buf:'NN' | L:13 P:20 R:136
+[PATTERN@637] ✅ 'ON' → 'on'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp4mi_cy9j.wav: 'on'
+[TTS] << DONE 'on'
+F645: FPS=15.8 | Hand:YES | Buf:'ONONOOO' | L:13 P:21 R:139
+[PATTERN@653] ✅ 'NOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmphc030lrp.wav: 'no'
+[TTS] << DONE 'no'
+F660: FPS=15.8 | Hand:YES | Buf:'OONOOO' | L:13 P:22 R:140
+[PATTERN@669] ✅ 'NOOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpt47vgmi4.wav: 'no'
+[TTS] << DONE 'no'
+F675: FPS=15.8 | Hand:YES | Buf:'OOS' | L:13 P:23 R:149
+[PATTERN@684] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpcik9x1pe.wav: 'no'
+[TTS] << DONE 'no'
+F690: FPS=15.8 | Hand:YES | Buf:'OOONN' | L:13 P:24 R:150
+[PATTERN@699] ✅ 'NOOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp4akkyv8n.wav: 'no'
+[TTS] << DONE 'no'
+F705: FPS=15.7 | Hand:YES | Buf:'ONONN' | L:13 P:25 R:152
+[PATTERN@714] ✅ 'NOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp6b23i70s.wav: 'no'
+[TTS] << DONE 'no'
+F720: FPS=15.7 | Hand:YES | Buf:'OOO' | L:13 P:26 R:158
+[PATTERN@729] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpltetg1xq.wav: 'no'
+[TTS] << DONE 'no'
+F735: FPS=15.7 | Hand:YES | Buf:'OONO' | L:13 P:27 R:164
+[PATTERN@746] ✅ 'NOOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpy1oebrdq.wav: 'no'
+[TTS] << DONE 'no'
+F750: FPS=15.7 | Hand:YES | Buf:'NO' | L:13 P:28 R:172
+[PATTERN@761] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpnvn75052.wav: 'no'
+[TTS] << DONE 'no'
+F765: FPS=15.7 | Hand:YES | Buf:'ONO' | L:13 P:29 R:175
+[PATTERN@776] ✅ 'NOOO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmprjtq2ypk.wav: 'no'
+[TTS] << DONE 'no'
+F780: FPS=15.7 | Hand:YES | Buf:'NO' | L:13 P:30 R:182
+[LETTER@790] ✅ 'O' conf=0.782
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpeu2pro6m.wav: 'O'
+[TTS] << DONE 'O'
+F795: FPS=15.7 | Hand:YES | Buf:'OOOONONOON' | L:14 P:30 R:185
+[PATTERN@805] ✅ 'ON' → 'on'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp3sd5olp9.wav: 'on'
+[TTS] << DONE 'on'
+F810: FPS=15.6 | Hand:YES | Buf:'NNNN' | L:14 P:31 R:189
+[PATTERN@822] ✅ 'NO' → 'no'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp43zy6mss.wav: 'no'
+[TTS] << DONE 'no'
+F825: FPS=15.6 | Hand:NO | Buf:'N' | L:14 P:32 R:196
+F840: FPS=15.6 | Hand:NO | Buf:'N' | L:14 P:32 R:196
+F855: FPS=15.6 | Hand:NO | Buf:'N' | L:14 P:32 R:196
+F870: FPS=15.6 | Hand:NO | Buf:'N' | L:14 P:32 R:196
+F885: FPS=15.6 | Hand:NO | Buf:'N' | L:14 P:32 R:196
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Duration: 58.5s | Frames: 900 | FPS: 15.4
+Letters: 14 | Patterns: 32 | Rejections: 196
+Top letter 'N' = 65.5%
+Traceback (most recent call last):
+  File "C:\Users\ameli\speakez\ui\app_hybrid.py", line 310, in <module>
+    main()
+  File "C:\Users\ameli\speakez\ui\app_hybrid.py", line 207, in main
+    results = hands.process(rgb)
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ameli\speakez\venv\Lib\site-packages\mediapipe\python\solutions\hands.py", line 153, in process
+    return super().process(input_data={'image': image})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ameli\speakez\venv\Lib\site-packages\mediapipe\python\solution_base.py", line 340, in process
+    self._graph.wait_until_idle()
+KeyboardInterrupt
+(venv) PS C:\Users\ameli\speakez>
+

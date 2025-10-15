@@ -1,0 +1,39 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-08 23:56:43.342447: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 23:56:44.152367: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-08 23:56:46.754338: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[DET] Using inference_.predict_letter(...)
+[WORD] Loaded model: word_skel_logreg_8.joblib with labels: [0, 1, 2, 3, 4, 5, 6, 7]
+[WORD] Using feature extractor inference_.extract_word_features(frame)->features
+Frame 1: FPS=12.1 | Hand:False | m=0.000 s=0.171 | Buffer:''
+Frame 31: FPS=29.3 | Hand:False | m=0.001 s=0.172 | Buffer:''
+Frame 61: FPS=29.3 | Hand:False | m=0.000 s=0.169 | Buffer:''
+2025-10-08 23:56:54.035921: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[DET] Letter='F' win(5): F,F,F,F,F conf=1.00 → SPEAK
+[WORD] Top=6 p=1.00 hold=6/6 → SPEAK
+Frame 86: FPS=24.9 | Hand:True | m=0.034 s=0.209 | Buffer:'FFFFF'
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpus5eatrf.wav: 'F'
+[TTS] << DONE 'F'
+Exception in thread TTS-Worker:
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\ameli\speakez\src\tts.py", line 34, in _worker
+    text = (text or "").strip()
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.int64' object has no attribute 'strip'
+Frame 116: FPS=29.8 | Hand:False | m=0.017 s=0.213 | Buffer:'FFFFF'
+Frame 146: FPS=29.8 | Hand:False | m=0.000 s=0.218 | Buffer:'FFFFF'
+[WORD] Top=6 p=1.00 hold=6/6 → SPEAK
+[DET] Letter='F' win(5): F,F,F,F,F conf=1.00 → SPEAK
+Frame 176: FPS=29.7 | Hand:False | m=0.005 s=0.226 | Buffer:'FFFFF'
+[DET] Letter='F' win(5): F,F,F,F,F conf=1.00 → SPEAK
+Frame 206: FPS=29.8 | Hand:True | m=0.022 s=0.243 | Buffer:'FFFFF'
+[WORD] Top=6 p=1.00 hold=6/6 → SPEAK
+Frame 236: FPS=29.8 | Hand:False | m=0.002 s=0.229 | Buffer:'FFFFO'
+Frame 266: - (frozen) | Hand:False | m=0.000 s=0.000 | Buffer:'FFFFO'
+[WORD] Top=6 p=1.00 hold=6/6 → SPEAK
+[DET] Letter='F' win(5): F,F,F,O,F conf=0.97 → SPEAK

@@ -1,0 +1,16 @@
+(venv) PS C:\Users\ameli\speakez> $env:WORD_DEBUG="1"
+(venv) PS C:\Users\ameli\speakez> $env:WORD_MIN_SCORE="0.70"
+(venv) PS C:\Users\ameli\speakez> $env:WORD_MIN_AREA="0.05"
+(venv) PS C:\Users\ameli\speakez> $env:LETTER_SPEAK_MAX_MOTION="0.015"
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py
+[DET][ERR] inference_.predict_* import failed: No module named 'src'
+[SYS] ✓ thresholds loaded (thresholds.json)
+[SYS] ✓ Word whitelist loaded (8 items)
+2025-10-10 20:55:47.097177: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-10 20:55:47.895877: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760100952.144171   22428 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760100952.165077   22428 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '

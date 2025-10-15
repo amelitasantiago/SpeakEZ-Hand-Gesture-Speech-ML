@@ -1,0 +1,219 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-07 23:37:21.586987: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-07 23:37:22.797946: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2025-10-07 23:37:27.698560: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1759851447.702180   25224 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1759851447.745199    2552 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+============================================================
+SpeakEZ - Simple Hybrid System
+============================================================
+
+[1] Opening camera...
+✓ Camera opened successfully
+✓ Camera working: (480, 640, 3)
+
+[2] Starting detection loop...
+
+Controls:
+  S = Speak text
+  C = Clear buffer
+  B = Backspace
+  Q = Quit
+
+============================================================
+Camera window should appear now...
+============================================================
+
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+2025-10-07 23:37:30.434103: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+Frame 30: O (conf=1.00) | Buffer: 'FOFO'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 60: O (conf=1.00) | Buffer: ''
+Buffer cleared
+Frame 90: O (conf=1.00) | Buffer: 'O'
+Frame 120: O (conf=1.00) | Buffer: 'O'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 150: O (conf=0.90) | Buffer: ''
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 180: O (conf=0.97) | Buffer: ''
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 210: O (conf=0.97) | Buffer: 'O'
+Buffer cleared
+Frame 240: O (conf=0.99) | Buffer: 'O'
+Frame 270: O (conf=1.00) | Buffer: 'O'
+Frame 300: O (conf=1.00) | Buffer: 'O'
+Frame 330: O (conf=0.99) | Buffer: 'O'
+Buffer cleared
+Frame 360: O (conf=0.99) | Buffer: ''
+Buffer cleared
+Frame 390: O (conf=1.00) | Buffer: 'O'
+Frame 420: O (conf=0.98) | Buffer: 'O'
+Frame 450: O (conf=0.57) | Buffer: 'ON'
+Frame 480: O (conf=0.65) | Buffer: 'ONO'
+Buffer cleared
+Buffer cleared
+Frame 510: O (conf=0.75) | Buffer: ''
+Buffer cleared
+Frame 540: O (conf=0.88) | Buffer: 'O'
+Frame 570: O (conf=0.37) | Buffer: 'OSOSO'
+Buffer cleared
+Buffer cleared
+Frame 600: O (conf=0.82) | Buffer: ''
+Buffer cleared
+Frame 630: O (conf=0.51) | Buffer: 'O'
+Buffer cleared
+Frame 660: N (conf=0.56) | Buffer: 'O'
+Buffer cleared
+Frame 690: O (conf=0.75) | Buffer: 'O'
+Buffer cleared
+Buffer cleared
+Frame 720: O (conf=0.84) | Buffer: 'O'
+Buffer cleared
+Buffer cleared
+Frame 750: O (conf=0.90) | Buffer: 'O'
+Buffer cleared
+
+🔊 Speaking: 'O'
+Frame 780: O (conf=0.93) | Buffer: 'O'
+Frame 810: O (conf=0.74) | Buffer: 'O'
+Frame 840: O (conf=0.90) | Buffer: 'O'
+Frame 870: O (conf=0.58) | Buffer: 'OL'
+Frame 900: O (conf=0.63) | Buffer: 'OLOL'
+
+🔊 Speaking: 'OLOLOLO'
+
+🔊 Speaking: 'OLOLOLO'
+
+🔊 Speaking: 'OLOLOLO'
+Frame 930: O (conf=1.00) | Buffer: 'OLOLOLO'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 960: O (conf=1.00) | Buffer: 'O'
+Frame 990: O (conf=0.71) | Buffer: 'O'
+Frame 1020: O (conf=0.60) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Frame 1050: O (conf=0.69) | Buffer: 'O'
+Frame 1080: S (conf=1.00) | Buffer: 'OS'
+Frame 1110: O (conf=1.00) | Buffer: 'OSO'
+Frame 1140: O (conf=0.93) | Buffer: 'OSOS'
+Frame 1170: O (conf=0.59) | Buffer: 'OSOSO'
+Frame 1200: F (conf=0.93) | Buffer: 'OSOSOSO'
+Frame 1230: F (conf=0.92) | Buffer: 'OSOSOSOF'
+Frame 1260: O (conf=0.88) | Buffer: 'OSOSOSOFO'
+
+🔊 Speaking: 'OSOSOSOFO'
+Frame 1290: O (conf=0.71) | Buffer: 'OSOSOSOFO'
+Frame 1320: O (conf=0.97) | Buffer: 'OSOSOSOFO'
+
+🔊 Speaking: 'OSOSOSOFO'
+Buffer cleared
+
+🔊 Speaking: 'O'
+Frame 1350: O (conf=0.95) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+
+🔊 Speaking: 'O'
+
+🔊 Speaking: 'O'
+Frame 1380: O (conf=0.99) | Buffer: 'O'
+Frame 1410: O (conf=0.66) | Buffer: 'O'
+
+🔊 Speaking: 'ONO'
+Frame 1440: O (conf=0.63) | Buffer: 'ONO'
+Buffer cleared
+
+🔊 Speaking: 'ONO'
+Frame 1470: O (conf=0.74) | Buffer: 'ONO'
+Buffer cleared
+Frame 1500: O (conf=0.87) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+Buffer cleared
+Frame 1530: O (conf=0.72) | Buffer: 'O'
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+Buffer cleared
+
+🔊 Speaking: 'O'
+Frame 1560: O (conf=0.75) | Buffer: 'O'
+Buffer cleared
+
+🔊 Speaking: 'O'
+Frame 1590: N (conf=0.52) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+Frame 1620: O (conf=0.93) | Buffer: 'O'
+
+🔊 Speaking: 'O'
+Buffer cleared
+Buffer cleared
+Frame 1650: O (conf=0.79) | Buffer: ''
+Buffer cleared
+Buffer cleared
+Frame 1680: F (conf=0.56) | Buffer: 'OF'
+
+
+Quitting...
+
+============================================================
+Session complete: 1701 frames processed
+Final text: 'OFOFOF'
+============================================================

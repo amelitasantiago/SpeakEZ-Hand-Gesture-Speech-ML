@@ -1,0 +1,85 @@
+ValueError: could not convert string to float: '0.015  REM Increased from 0.010 to allow slight motion'
+(venv) PS C:\Users\ameli\speakez> .\launching.bat
+[SYS] TF 2.16.1 | Eager: True
+[SYS] âœ“ MediaPipe available
+[SYS] âœ“ Loaded config.yaml
+[SYS] âš  No user TTS; falling back.
+[SYS] âœ“ TTS loaded (Windows SAPI)
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:347: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[SYS] âœ“ predict_letter(), predict_word() loaded
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds - Copy (2).json
+  Found: thresholds - Copy.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+[SYS] âœ“ Word whitelist loaded (8 items)
+[SYS] âœ“ Loaded per-class thresholds (thresholds.json)
+======================================================================
+HYBRID MODE: MediaPipe + Models (letters, words, patterns, wave)
+======================================================================
+Conf>0.72  Window=15  INFER_EVERY=1
+Patterns: ON  Word-ML: ON  Wave: ON
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760259560.302984    3656 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760259560.330896    3656 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] âœ“ Opened index 0 using backend 700 | shape=(480, 640, 3)
+[WAVE@120] âœ… 'hi' (amp=0.108 flips=4 open=1.00)
+2025-10-12 16:59:35.491309: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[WORD?] cand='please' conf=1.00 need=0.93 wl=Y score=0.99 area=0.152 motion_ok=Y
+[WORD@193] âœ… 'please' (1.00 â‰¥ 0.93)
+[LETTER@208] âœ… 'N' conf=0.935
+[BUF] Cleared (hand off: streak=27, idle=2.54s)
+[WORD?] cand='please' conf=1.00 need=0.93 wl=Y score=0.98 area=0.106 motion_ok=Y
+[WORD@283] âœ… 'please' (1.00 â‰¥ 0.93)
+[PATTERN@312] âœ… 'NO' â†’ 'no' | comp='SOSOSOSNO'
+[BUF] Cleared (hand off: streak=8, idle=4.86s)
+[WAVE@412] âœ… 'hello' (amp=0.254 flips=5 open=1.00)
+[WAVE@484] âœ… 'hi' (amp=0.194 flips=4 open=1.00)
+[WAVE@561] âœ… 'hello' (amp=0.070 flips=12 open=1.00)
+[WORD?] cand='please' conf=1.00 need=0.93 wl=Y score=1.00 area=0.110 motion_ok=Y
+[WORD@654] âœ… 'please' (1.00 â‰¥ 0.93)
+[LETTER@695] âœ… 'O' conf=0.938
+[PATTERN@728] âœ… 'ON' â†’ 'on' | comp='OSOSOSOSOSOSOSOSOSOSOSON'
+[WORD?] cand='please' conf=1.00 need=0.93 wl=Y score=0.99 area=0.104 motion_ok=Y
+[WORD@743] âœ… 'please' (1.00 â‰¥ 0.93)
+[WAVE@757] âœ… 'hello' (amp=0.079 flips=5 open=0.75)
+[WAVE@822] âœ… 'hello' (amp=0.070 flips=6 open=1.00)
+[WORD?] cand='please' conf=1.00 need=0.93 wl=Y score=0.94 area=0.135 motion_ok=Y
+[WORD@883] âœ… 'please' (1.00 â‰¥ 0.93)
+[LETTER@898] âœ… 'O' conf=0.983
+[WORD?] cand='please' conf=1.00 need=0.93 wl=Y score=0.90 area=0.170 motion_ok=Y
+[WORD@972] âœ… 'please' (1.00 â‰¥ 0.93)
+[WAVE@1004] âœ… 'hello' (amp=0.079 flips=6 open=1.00)
+[WAVE@1065] âœ… 'hi' (amp=0.095 flips=4 open=1.00)
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Duration: 72.8s | Frames: 1096 | FPS: 15.0
+Letters: 3 | Patterns: 2 | Rejections: 104
+Top letter 'O' = 48.4%
+Words: 16 | Unique: 5
+  please: 6
+  hello: 5
+  hi: 3
+  no: 1
+  on: 1
+Letters (top 10):
+  O: 78
+  S: 44
+  N: 39
+(venv) PS C:\Users\ameli\speakez>

@@ -1,0 +1,245 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid.py
+2025-10-10 02:33:20.393419: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-10 02:33:20.897894: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ⚠ No user TTS; falling back.
+[SYS] ✓ TTS loaded (Windows SAPI)
+2025-10-10 02:33:23.544021: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[SYS] ✓ predict_letter(), predict_word() loaded
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+[SYS] MediaPipe Hands ready | complexity=1
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760034803.657443    1776 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760034803.676506    1776 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] ✓ Opened index 0 using backend 700 | shape=(480, 640, 3)
+
+======================================================================
+HYBRID MODE: MediaPipe + Models (letters, words, patterns)
+======================================================================
+Conf>0.72  Window=11  INFER_EVERY=2
+Patterns: ON  Word-ML: ON
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+F15: FPS=25.4 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F30: FPS=27.5 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F45: FPS=23.0 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F60: FPS=20.3 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+F75: FPS=18.9 | Hand:NO | score=0.00 area=0.000 | Buf:'' | L:0 P:0 R:0
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+2025-10-10 02:33:32.414205: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:347: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[WORD@84] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F90: FPS=17.2 | Hand:YES | score=0.97 area=0.082 | Buf:'NNNN' | L:0 P:0 R:0
+[PATTERN@96] ✅ 'NO' → 'no' | comp='NO'
+F105: FPS=16.8 | Hand:YES | score=0.97 area=0.081 | Buf:'NNNN' | L:0 P:1 R:1
+F120: FPS=16.5 | Hand:YES | score=0.97 area=0.083 | Buf:'NNNNNNNNN' | L:0 P:1 R:3
+[LETTER@122] ✅ 'N' conf=0.884
+F135: FPS=16.3 | Hand:YES | score=0.95 area=0.095 | Buf:'NNNNNNNNNNNN' | L:1 P:1 R:3
+F150: FPS=16.2 | Hand:YES | score=0.97 area=0.135 | Buf:'NNNNNNNNNNNN' | L:1 P:1 R:4
+[WORD@160] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F165: FPS=16.1 | Hand:YES | score=0.95 area=0.113 | Buf:'NNNNNNNNNNNN' | L:1 P:1 R:6
+[LETTER@176] ✅ 'N' conf=0.974
+F180: FPS=16.0 | Hand:YES | score=0.98 area=0.147 | Buf:'NNNNNNNNNNNN' | L:2 P:1 R:7
+[PATTERN@192] ✅ 'ON' → 'on' | comp='NON'
+F195: FPS=15.9 | Hand:YES | score=0.99 area=0.099 | Buf:'' | L:2 P:2 R:10
+F210: FPS=15.8 | Hand:NO | score=1.00 area=0.040 | Buf:'NNSN' | L:2 P:2 R:10
+F225: FPS=15.8 | Hand:YES | score=0.99 area=0.110 | Buf:'NNSNNNNN' | L:2 P:2 R:10
+[LETTER@230] ✅ 'N' conf=1.000
+[WORD@236] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F240: FPS=15.7 | Hand:YES | score=0.99 area=0.107 | Buf:'NNNNNNNNNNNN' | L:3 P:2 R:10
+F255: FPS=15.7 | Hand:YES | score=0.99 area=0.121 | Buf:'NNNNNNNNNNNN' | L:3 P:2 R:11
+F270: FPS=15.6 | Hand:YES | score=0.99 area=0.146 | Buf:'NNNNNNNNNNNN' | L:3 P:2 R:11
+[LETTER@276] ✅ 'N' conf=0.999
+F285: FPS=15.6 | Hand:YES | score=0.91 area=0.080 | Buf:'NNNNNNNNONON' | L:4 P:2 R:13
+[PATTERN@290] ✅ 'NO' → 'no' | comp='NONONO'
+F300: FPS=15.6 | Hand:YES | score=0.95 area=0.099 | Buf:'NNN' | L:4 P:3 R:14
+[WORD@312] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F315: FPS=15.5 | Hand:YES | score=0.99 area=0.049 | Buf:'NNNNNNNNNNN' | L:4 P:3 R:14
+F330: FPS=15.5 | Hand:NO | score=0.99 area=0.043 | Buf:'NNNNNNNNNNNN' | L:4 P:3 R:14
+F345: FPS=15.4 | Hand:NO | score=0.99 area=0.045 | Buf:'NNNNNNNNNNNN' | L:4 P:3 R:14
+F360: FPS=15.4 | Hand:NO | score=0.99 area=0.043 | Buf:'NNNNNNNNNNNN' | L:4 P:3 R:14
+F375: FPS=15.4 | Hand:NO | score=1.00 area=0.054 | Buf:'NNNNNNNNNNNN' | L:4 P:3 R:14
+F390: FPS=15.4 | Hand:NO | score=0.99 area=0.034 | Buf:'NNNNNNNNNNNN' | L:4 P:3 R:14
+[LETTER@398] ✅ 'N' conf=0.909
+[WORD@400] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F405: FPS=15.4 | Hand:YES | score=0.98 area=0.111 | Buf:'NNNNNNNNNNNN' | L:5 P:3 R:15
+F420: FPS=15.4 | Hand:YES | score=0.99 area=0.111 | Buf:'NNNNNNNNNNNN' | L:5 P:3 R:18
+F435: FPS=15.4 | Hand:YES | score=0.99 area=0.111 | Buf:'NNNNNNNNNNNN' | L:5 P:3 R:18
+[PATTERN@444] ✅ 'ON' → 'on' | comp='NON'
+F450: FPS=15.3 | Hand:YES | score=0.98 area=0.104 | Buf:'NN' | L:5 P:4 R:19
+F465: FPS=15.3 | Hand:YES | score=0.99 area=0.104 | Buf:'NNNNNNNNNN' | L:5 P:4 R:19
+F480: FPS=15.3 | Hand:NO | score=0.99 area=0.043 | Buf:'NNNNNNNNNONN' | L:5 P:4 R:19
+F495: FPS=15.3 | Hand:NO | score=0.99 area=0.042 | Buf:'NNNNNNNNNONN' | L:5 P:4 R:19
+F510: FPS=15.3 | Hand:NO | score=0.99 area=0.045 | Buf:'NNNNNNNNNONN' | L:5 P:4 R:19
+[LETTER@522] ✅ 'N' conf=0.990
+[WORD@522] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F525: FPS=15.3 | Hand:YES | score=0.98 area=0.349 | Buf:'NNNNNNNONNNN' | L:6 P:4 R:19
+F540: FPS=15.3 | Hand:YES | score=0.98 area=0.203 | Buf:'NNNONNNNNNON' | L:6 P:4 R:22
+F555: FPS=15.3 | Hand:YES | score=0.98 area=0.186 | Buf:'NNONNNNNNNNN' | L:6 P:4 R:22
+[PATTERN@564] ✅ 'NO' → 'no' | comp='NO'
+F570: FPS=15.3 | Hand:YES | score=0.98 area=0.200 | Buf:'TT' | L:6 P:5 R:24
+F585: FPS=15.3 | Hand:YES | score=0.97 area=0.226 | Buf:'TTOOONNOO' | L:6 P:5 R:25
+[LETTER@588] ✅ 'O' conf=0.973
+[WORD@598] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F600: FPS=15.3 | Hand:YES | score=0.98 area=0.198 | Buf:'ONNOOOOOOOOO' | L:7 P:5 R:25
+F615: FPS=15.2 | Hand:YES | score=0.99 area=0.093 | Buf:'NOOOOOOOOONO' | L:7 P:5 R:31
+F630: FPS=15.2 | Hand:NO | score=1.00 area=0.044 | Buf:'OOOOOOONONON' | L:7 P:5 R:31
+F645: FPS=15.2 | Hand:NO | score=1.00 area=0.053 | Buf:'OOOOOOONONON' | L:7 P:5 R:31
+[PATTERN@654] ✅ 'ON' → 'on' | comp='ONONON'
+F660: FPS=15.2 | Hand:YES | score=0.98 area=0.079 | Buf:'' | L:7 P:6 R:33
+F675: FPS=15.2 | Hand:YES | score=0.99 area=0.064 | Buf:'NNNNOOON' | L:7 P:6 R:33
+F690: FPS=15.2 | Hand:YES | score=0.98 area=0.074 | Buf:'NNNNOOONNN' | L:7 P:6 R:38
+[WORD@694] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F705: FPS=15.2 | Hand:YES | score=0.99 area=0.161 | Buf:'ONNNONNNNNNN' | L:7 P:6 R:38
+[LETTER@708] ✅ 'N' conf=0.836
+F720: FPS=15.2 | Hand:YES | score=0.97 area=0.145 | Buf:'NONNNNNNNNNN' | L:8 P:6 R:42
+F735: FPS=15.2 | Hand:YES | score=0.98 area=0.130 | Buf:'NNNNNNNNNNNN' | L:8 P:6 R:45
+[PATTERN@744] ✅ 'NO' → 'no' | comp='NO'
+F750: FPS=15.2 | Hand:YES | score=0.98 area=0.133 | Buf:'NN' | L:8 P:7 R:47
+F765: FPS=15.2 | Hand:YES | score=0.98 area=0.116 | Buf:'NNONTONN' | L:8 P:7 R:49
+[WORD@774] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F780: FPS=15.2 | Hand:YES | score=0.97 area=0.135 | Buf:'NONTONNNNNNN' | L:8 P:7 R:51
+[LETTER@788] ✅ 'N' conf=0.997
+F795: FPS=15.2 | Hand:YES | score=0.96 area=0.054 | Buf:'NNNNNNNNNNNO' | L:9 P:7 R:53
+F810: FPS=15.2 | Hand:NO | score=0.99 area=0.055 | Buf:'NNNNNNNNNNOO' | L:9 P:7 R:54
+F825: FPS=15.2 | Hand:NO | score=0.99 area=0.057 | Buf:'NNNNNNNNNNOO' | L:9 P:7 R:54
+[PATTERN@832] ✅ 'ON' → 'on' | comp='NON'
+F840: FPS=15.2 | Hand:NO | score=1.00 area=0.038 | Buf:'NO' | L:9 P:8 R:54
+F855: FPS=15.2 | Hand:NO | score=0.99 area=0.043 | Buf:'NO' | L:9 P:8 R:54
+F870: FPS=15.2 | Hand:NO | score=0.99 area=0.044 | Buf:'NO' | L:9 P:8 R:54
+[WORD@876] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F885: FPS=15.2 | Hand:YES | score=0.97 area=0.094 | Buf:'NONNNNNN' | L:9 P:8 R:54
+[LETTER@890] ✅ 'N' conf=0.993
+F900: FPS=15.1 | Hand:YES | score=0.97 area=0.098 | Buf:'NNNNNNNNNNNN' | L:10 P:8 R:54
+[PATTERN@908] ✅ 'NO' → 'no' | comp='NO'
+F915: FPS=15.1 | Hand:YES | score=0.98 area=0.102 | Buf:'NNN' | L:10 P:9 R:55
+F930: FPS=15.1 | Hand:YES | score=0.96 area=0.088 | Buf:'NNNNNNNNNN' | L:10 P:9 R:55
+[LETTER@932] ✅ 'N' conf=0.999
+F945: FPS=15.1 | Hand:YES | score=0.97 area=0.109 | Buf:'NNNNNNNNNNNN' | L:11 P:9 R:55
+[WORD@952] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F960: FPS=15.1 | Hand:YES | score=0.97 area=0.102 | Buf:'NNNNNNNNNNNN' | L:11 P:9 R:55
+F975: FPS=15.1 | Hand:YES | score=0.97 area=0.083 | Buf:'NNNNNNNNNNNN' | L:11 P:9 R:58
+[PATTERN@988] ✅ 'ON' → 'on' | comp='NON'
+F990: FPS=15.1 | Hand:YES | score=0.95 area=0.100 | Buf:'' | L:11 P:10 R:61
+F1005: FPS=15.1 | Hand:YES | score=0.97 area=0.085 | Buf:'NNNNNNN' | L:11 P:10 R:62
+F1020: FPS=15.1 | Hand:YES | score=0.96 area=0.080 | Buf:'NNNNNNNPPP' | L:11 P:10 R:66
+[LETTER@1026] ✅ 'N' conf=0.928
+[WORD@1028] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F1035: FPS=15.1 | Hand:YES | score=0.95 area=0.088 | Buf:'NNNPPPPNNNNN' | L:12 P:10 R:68
+F1050: FPS=15.1 | Hand:YES | score=0.95 area=0.097 | Buf:'NNNNNQNNNNNN' | L:12 P:10 R:68
+F1065: FPS=15.1 | Hand:YES | score=0.97 area=0.092 | Buf:'NNNNNNNNNNNN' | L:12 P:10 R:68
+[LETTER@1070] ✅ 'N' conf=0.950
+F1080: FPS=15.1 | Hand:YES | score=0.96 area=0.116 | Buf:'NNNNNNNNNNNN' | L:13 P:10 R:69
+F1095: FPS=15.1 | Hand:YES | score=0.94 area=0.099 | Buf:'NNNNNNNNNNON' | L:13 P:10 R:75
+[PATTERN@1096] ✅ 'NO' → 'no' | comp='NONO'
+F1110: FPS=15.1 | Hand:NO | score=0.97 area=0.039 | Buf:'NNNSN' | L:13 P:11 R:75
+F1125: FPS=15.1 | Hand:NO | score=0.95 area=0.056 | Buf:'NNNSNNNN' | L:13 P:11 R:77
+[WORD@1138] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F1140: FPS=15.1 | Hand:YES | score=0.98 area=0.085 | Buf:'NNNSNNNNNN' | L:13 P:11 R:77
+F1155: FPS=15.1 | Hand:NO | score=0.98 area=0.044 | Buf:'SNNNNNNNNNON' | L:13 P:11 R:77
+F1170: FPS=15.1 | Hand:NO | score=0.99 area=0.053 | Buf:'SNNNNNNNNNON' | L:13 P:11 R:77
+F1185: FPS=15.1 | Hand:NO | score=0.99 area=0.058 | Buf:'SNNNNNNNNNON' | L:13 P:11 R:77
+[PATTERN@1192] ✅ 'ON' → 'on' | comp='NON'
+F1200: FPS=15.1 | Hand:YES | score=0.99 area=0.062 | Buf:'NNN' | L:13 P:12 R:77
+F1215: FPS=15.1 | Hand:YES | score=0.99 area=0.061 | Buf:'NNNNNNN' | L:13 P:12 R:81
+[LETTER@1228] ✅ 'N' conf=0.994
+F1230: FPS=15.1 | Hand:YES | score=0.99 area=0.059 | Buf:'NNNNNNNONNN' | L:14 P:12 R:84
+[WORD@1236] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F1245: FPS=15.1 | Hand:YES | score=0.99 area=0.094 | Buf:'NONNNNNNNNNN' | L:14 P:12 R:85
+F1260: FPS=15.1 | Hand:YES | score=0.98 area=0.097 | Buf:'NNNNNNNNNNNN' | L:14 P:12 R:85
+[LETTER@1270] ✅ 'N' conf=0.994
+F1275: FPS=15.1 | Hand:YES | score=0.95 area=0.115 | Buf:'NNNNNNNNNNNN' | L:15 P:12 R:85
+[PATTERN@1284] ✅ 'NO' → 'no' | comp='NO'
+F1290: FPS=15.1 | Hand:YES | score=0.96 area=0.130 | Buf:'NO' | L:15 P:13 R:85
+F1305: FPS=15.1 | Hand:YES | score=0.95 area=0.108 | Buf:'NOONOOOOOO' | L:15 P:13 R:85
+[LETTER@1306] ✅ 'O' conf=0.722
+[WORD@1312] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F1320: FPS=15.1 | Hand:YES | score=0.99 area=0.086 | Buf:'NOOOOOOONONN' | L:16 P:13 R:87
+F1335: FPS=15.1 | Hand:YES | score=0.99 area=0.090 | Buf:'NONNNNOONOOO' | L:16 P:13 R:87
+[PATTERN@1344] ✅ 'ON' → 'on' | comp='NONON'
+F1350: FPS=15.1 | Hand:YES | score=0.98 area=0.103 | Buf:'NN' | L:16 P:14 R:88
+F1365: FPS=15.1 | Hand:YES | score=0.98 area=0.109 | Buf:'NNNNNNNNNN' | L:16 P:14 R:88
+[LETTER@1366] ✅ 'N' conf=0.936
+F1380: FPS=15.1 | Hand:YES | score=0.92 area=0.106 | Buf:'NNNNNNNNNNNN' | L:17 P:14 R:88
+[WORD@1388] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F1395: FPS=15.1 | Hand:YES | score=0.92 area=0.103 | Buf:'NNNNNNNNNNNN' | L:17 P:14 R:92
+[PATTERN@1406] ✅ 'NO' → 'no' | comp='NO'
+F1410: FPS=15.1 | Hand:YES | score=0.95 area=0.083 | Buf:'' | L:17 P:15 R:94
+F1425: FPS=15.1 | Hand:YES | score=0.99 area=0.114 | Buf:'ONNOOON' | L:17 P:15 R:95
+[LETTER@1434] ✅ 'N' conf=0.923
+F1440: FPS=15.1 | Hand:YES | score=1.00 area=0.121 | Buf:'ONNOOONNNNN' | L:18 P:15 R:98
+F1455: FPS=15.1 | Hand:YES | score=0.97 area=0.094 | Buf:'NNNNONNNNONN' | L:18 P:15 R:98
+[WORD@1464] ✅ '2' (1.00)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+F1470: FPS=15.1 | Hand:YES | score=0.98 area=0.094 | Buf:'NONNNNONNOOO' | L:18 P:15 R:102
+[PATTERN@1482] ✅ 'ON' → 'on' | comp='NONON'
+F1485: FPS=15.1 | Hand:YES | score=0.98 area=0.132 | Buf:'N' | L:18 P:16 R:107
+F1500: FPS=15.1 | Hand:YES | score=0.99 area=0.121 | Buf:'NNNNNN' | L:18 P:16 R:109
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Duration: 101.0s | Frames: 1512 | FPS: 15.0
+Letters: 18 | Patterns: 16 | Rejections: 112
+Top letter 'N' = 82.1%
+(venv) PS C:\Users\ameli\speakez>
+
+
+
+
+
+
+
+
+

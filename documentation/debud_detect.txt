@@ -1,0 +1,176 @@
+======================================================================
+SpeakEZ Detection Debug Tool
+======================================================================
+
+[1/6] Testing imports...
+2025-10-07 22:24:57.871208: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-07 22:24:59.135034: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-07 22:25:04.856327: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1759847104.983851   27368 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+✓ Letter model loaded: (None, 128, 128, 3) → (None, 29)
+✓ Letter classes: 29 classes
+  Sample: ['A', 'B', 'C'] ... ['DEL', 'SPACE', 'NOTHING']
+W0000 00:00:1759847105.012310   18384 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:348: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+✓ Word model loaded: 170 features → 8 classes
+✓ Word classes: ['yes', 'no', 'please', 'stop', 'bad', 'sorry', 'help', 'hello']
+
+[2/6] Testing camera...
+✓ Camera working: (480, 640, 3)
+  Saved test frame as 'debug_camera_frame.jpg'
+
+[3/6] Testing MediaPipe hand detection...
+W0000 00:00:1759847108.680085   21836 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1759847108.710938   30480 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+⚠️  No hands detected in test frame (this is OK if no hand was visible)
+  Tip: Position your hand in frame and try again
+
+[4/6] Testing preprocessing...
+✓ Preprocessing OK: (480, 640, 3) → (128, 128, 3)
+  Value range: [0.000, 0.741]
+  Saved preprocessed image as 'debug_preprocessed.jpg'
+
+[5/6] Testing model prediction...
+C:\Users\ameli\speakez\venv\Lib\site-packages\keras\src\models\functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.        
+Expected: ['input_layer_4']
+Received: inputs=Tensor(shape=(1, 128, 128, 3))
+  warnings.warn(msg)
+2025-10-07 22:25:08.762203: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+✓ Model inference successful
+
+  Top 5 predictions:
+    1. L          confidence=0.486 (48.6%)
+    2. N          confidence=0.371 (37.1%)
+    3. O          confidence=0.141 (14.1%)
+    4. F          confidence=0.002 (0.2%)
+    5. C          confidence=0.000 (0.0%)
+
+  Testing different confidence thresholds:
+    ✓ threshold=0.05 → prediction='L' (conf=0.486)
+    ✓ threshold=0.10 → prediction='L' (conf=0.486)
+    ✓ threshold=0.15 → prediction='L' (conf=0.486)
+    ✓ threshold=0.20 → prediction='L' (conf=0.486)
+    ✓ threshold=0.25 → prediction='L' (conf=0.486)
+    ✓ threshold=0.30 → prediction='L' (conf=0.486)
+
+[6/6] Live detection test...
+
+Starting live camera feed with debugging...
+Controls:
+  Press 'q' to quit
+  Press 's' to save current frame for analysis
+  Press '+' to increase confidence threshold
+  Press '-' to decrease confidence threshold
+
+======================================================================
+Frame 30: O (conf=0.785)
+Frame 60: F (conf=0.807)
+Frame 90: O (conf=0.602)
+Frame 120: O (conf=0.767)
+Frame 150: O (conf=0.643)
+Frame 180: O (conf=0.931)
+Frame 210: F (conf=0.932)
+Frame 240: F (conf=0.770)
+Frame 270: F (conf=0.814)
+Frame 300: F (conf=0.880)
+C:\Users\ameli\speakez\venv\Lib\site-packages\google\protobuf\symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+Frame 330: O (conf=0.999)
+Frame 360: O (conf=0.985)
+Frame 390: O (conf=0.999)
+Frame 420: O (conf=0.999)
+Frame 450: O (conf=0.752)
+Frame 480: S (conf=0.992)
+Frame 510: N (conf=0.761)
+Frame 540: N (conf=0.864)
+Frame 570: N (conf=0.587)
+Frame 600: O (conf=0.923)
+Frame 630: O (conf=0.946)
+Frame 660: O (conf=0.659)
+Frame 690: O (conf=0.583)
+Frame 720: N (conf=0.545)
+Frame 750: O (conf=0.831)
+Frame 780: O (conf=0.527)
+Frame 810: O (conf=0.755)
+Frame 840: O (conf=0.940)
+Frame 870: O (conf=0.811)
+Frame 900: O (conf=0.784)
+Frame 930: N (conf=0.618)
+Frame 960: O (conf=0.561)
+Frame 990: N (conf=0.523)
+Frame 1020: O (conf=0.839)
+Frame 1050: N (conf=0.849)
+Frame 1080: S (conf=1.000)
+Frame 1110: S (conf=1.000)
+Frame 1140: S (conf=1.000)
+Frame 1170: S (conf=1.000)
+Frame 1200: S (conf=1.000)
+Frame 1230: S (conf=1.000)
+Frame 1260: S (conf=1.000)
+Frame 1290: S (conf=1.000)
+Frame 1320: S (conf=1.000)
+Frame 1350: N (conf=0.951)
+Frame 1380: N (conf=0.613)
+Frame 1410: N (conf=0.838)
+Frame 1440: O (conf=0.778)
+Frame 1470: O (conf=0.879)
+Frame 1500: N (conf=0.851)
+Frame 1530: N (conf=0.719)
+Frame 1560: N (conf=0.724)
+Frame 1590: O (conf=0.550)
+Frame 1620: F (conf=0.976)
+Frame 1650: F (conf=0.992)
+Frame 1680: F (conf=0.978)
+Frame 1710: F (conf=0.913)
+Frame 1740: F (conf=0.861)
+Frame 1770: S (conf=1.000)
+Frame 1800: F (conf=0.798)
+Frame 1830: F (conf=0.988)
+Frame 1860: F (conf=0.893)
+Frame 1890: F (conf=0.865)
+Frame 1920: F (conf=0.963)
+Frame 1950: F (conf=0.950)
+Frame 1980: F (conf=0.966)
+Frame 2010: F (conf=0.976)
+Frame 2040: F (conf=0.971)
+Frame 2070: F (conf=0.917)
+Frame 2100: F (conf=0.938)
+
+✓ Saved frame as 'debug_frame_2127.jpg'
+  Prediction: F (conf=0.983)
+Frame 2130: F (conf=0.973)
+Frame 2160: F (conf=0.975)
+
+✓ Saved frame as 'debug_frame_2184.jpg'
+  Prediction: F (conf=0.976)
+Frame 2190: F (conf=0.969)
+Frame 2220: F (conf=0.987)
+Frame 2250: F (conf=0.992)
+Frame 2280: F (conf=0.981)
+Frame 2310: F (conf=0.986)
+
+✓ Saved frame as 'debug_frame_2312.jpg'
+  Prediction: F (conf=0.985)
+Frame 2340: F (conf=0.980)
+
+======================================================================
+Debug Session Summary
+======================================================================
+Total frames: 2350
+Detections: 2350 (100.0%)
+Final threshold: 0.20
+
+✓ Detection rate looks good!
+
+Generated debug files:
+  - debug_camera_frame.jpg (raw camera input)
+  - debug_preprocessed.jpg (after preprocessing)
+  - debug_frame_*.jpg (any saved frames)
+
+======================================================================
+(venv) PS C:\Users\ameli\speakez> ssssssssssss

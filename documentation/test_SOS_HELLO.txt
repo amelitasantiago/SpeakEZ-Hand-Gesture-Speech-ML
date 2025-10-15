@@ -1,0 +1,118 @@
+📝 Test 1: Spell "SOS" (Easiest - You already did this!)
+Your debug showed 'S' = 100% confidence, so this should be perfect!
+Steps:
+bashpython ui/app_hybrid_simple.py
+When the camera window opens:
+
+Sign 'S'
+
+Make the 'S' hand sign
+Hold steady for 3 seconds (count: 1-Mississippi, 2-Mississippi, 3-Mississippi)
+Watch bottom of screen → should show "Text: S"
+
+
+Return to neutral
+
+Open hand (NOTHING gesture)
+Hold for 1-2 seconds
+
+
+Sign 'O'
+
+Make the 'O' hand sign
+Hold steady for 3 seconds
+Should show "Text: SO"
+
+
+Return to neutral
+
+Open hand again
+
+
+Sign 'S' again
+
+Hold steady for 3 seconds
+Should show "Text: SOS"
+
+
+Press 'S' key on keyboard
+
+Should hear: "S O S"
+
+
+Press 'Q' to quit
+
+
+📝 Test 2: Spell "HELLO"
+This is harder because you need to know all 5 letters!
+ASL Alphabet Quick Reference:
+H = Extended index and middle finger together, horizontal
+E = Closed fist with thumb across fingers
+L = Extended index finger and thumb (L-shape)
+O = All fingertips touching in circle
+Steps:
+
+Run the app
+Sign: H → neutral → E → neutral → L → neutral → L → neutral → O
+Hold each letter for 3 seconds
+Return to neutral between letters
+Watch buffer accumulate: "H" → "HE" → "HEL" → "HELL" → "HELLO"
+Press 'S' to speak "HELLO"
+
+
+📝 Test 3: Use SPACE Between Words
+Let's spell "HI MOM":
+
+Sign: H → I
+Sign SPACE gesture (check your ASL chart for SPACE sign)
+Sign: M → O → M
+Should show: "HI MOM"
+Press 'S' to speak
+
+
+🎯 Tips for Success:
+If letters not appearing:
+
+✅ Hold longer (4-5 seconds)
+✅ Make sign more distinct
+✅ Better lighting
+✅ Position hand center of frame
+✅ Plain background behind hand
+
+If wrong letters detected:
+
+✅ Press 'B' to backspace
+✅ Or press 'C' to clear all
+✅ Try again with clearer sign
+
+If accumulating too fast:
+
+✅ Make sure to return to NOTHING (open palm) between letters
+✅ This prevents repeated letters
+
+
+🎬 Quick Demo Script for Presentation:
+Show this to your professor:
+
+Start the app → Show camera window
+Spell "SOS" → Show real-time accumulation
+Press 'S' → Demonstrate TTS
+Clear buffer (press 'C')
+Spell your name → Shows it works for any word
+Switch to Streamlit → Upload word video → Show word recognition
+Explain: "This combines letter-by-letter (unlimited vocabulary) with word recognition (faster for known signs)"
+
+
+📊 Your System Capabilities:
+✅ Letters: Can spell ANY word (A-Z alphabet)
+✅ Words: Fast recognition of 8 trained words: yes, no, please, stop, bad, sorry, help, hello
+✅ Hybrid: Combine both approaches in one text buffer
+✅ TTS: Speaks everything you spell
+
+Want to try right now? Run the app and:
+
+Spell "SOS" (you know S and O work perfectly!)
+Tell me what appears in the buffer!
+
+Or if you need ASL hand sign images for H-E-L-L-O, I can describe each one! 🚀
+Which word do you want to practice first? "SOS", "HELLO", or your name?

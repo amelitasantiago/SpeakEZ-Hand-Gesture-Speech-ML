@@ -1,0 +1,68 @@
+(venv) PS C:\Users\ameli\speakez> .\launching.bat
+[SYS] TF 2.16.1 | Eager: True
+[SYS] ✓ MediaPipe available
+[SYS] ✓ Loaded config.yaml
+[SYS] ⚠ No user TTS; falling back.
+[SYS] ✓ TTS loaded (Windows SAPI)
+C:\Users\ameli\speakez\venv\Lib\site-packages\sklearn\base.py:347: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.6.1 when using version 1.3.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[SYS] ✓ predict_letter(), predict_word() loaded
+
+[MODEL DETECTION]
+  Scanning: C:\Users\ameli\speakez\models\final
+  Found: asl_baseline_cnn_128_final.h5
+  Found: best_word_cnn_bilstm.h5
+  Found: classes_letters.json
+  Found: history_word.json
+  Found: thresholds - Copy.json
+  Found: thresholds.json
+  Found: word_skel_logreg_8.joblib
+  Found: words_subset.json
+
+[SYS] ✓ Word whitelist loaded (8 items)
+[SYS] ✓ Loaded per-class thresholds (thresholds.json)
+======================================================================
+HYBRID MODE: MediaPipe + Models (letters, words, patterns, wave)
+======================================================================
+Conf>0.72  Window=11  INFER_EVERY=1
+Patterns: ON  Word-ML: ON  Wave: ON
+Press 'q' to quit, 's' to save screenshot
+======================================================================
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1760191982.230125    1708 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1760191982.255849    1708 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+[CAM] ✓ Opened index 0 using backend 700 | shape=(480, 640, 3)
+2025-10-11 22:13:09.522418: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[LETTER@80] ✅ 'N' conf=1.000
+[BUF] Cleared (hand off: streak=17, idle=2.51s)
+[BUF] Cleared (hand off: streak=8, idle=4.71s)
+[LETTER@206] ✅ 'N' conf=0.948
+[LETTER@255] ✅ 'N' conf=0.999
+[PATTERN@312] ✅ 'ON' → 'on' | comp='ONONONONON'
+[LETTER@375] ✅ 'N' conf=0.997
+[LETTER@429] ✅ 'N' conf=0.992
+[LETTER@483] ✅ 'N' conf=0.999
+[LETTER@529] ✅ 'N' conf=0.975
+[PATTERN@584] ✅ 'NO' → 'no' | comp='NO'
+[PATTERN@675] ✅ 'ON' → 'on' | comp='NONONONON'
+[LETTER@694] ✅ 'O' conf=0.965
+[BUF] Cleared (hand off: streak=28, idle=2.53s)
+[LETTER@798] ✅ 'N' conf=0.872
+[BUF] Cleared (hand off: streak=19, idle=2.52s)
+
+======================================================================
+SESSION SUMMARY
+======================================================================
+Duration: 55.9s | Frames: 835 | FPS: 14.9
+Letters: 9 | Patterns: 3 | Rejections: 99
+Top letter 'N' = 82.7%
+Words: 3 | Unique: 2
+  on: 2
+  no: 1
+Letters (top 10):
+  N: 158
+  O: 33
+(venv) PS C:\Users\ameli\speakez> 

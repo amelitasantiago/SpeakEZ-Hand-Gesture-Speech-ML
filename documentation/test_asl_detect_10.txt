@@ -1,0 +1,59 @@
+(venv) PS C:\Users\ameli\speakez> python ui/app_hybrid_simple.py
+2025-10-09 00:35:09.558252: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-09 00:35:10.483306: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[SYS] TF 2.17.1 | Eager: True
+[SYS] Loaded config.yaml
+2025-10-09 00:35:13.442894: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[WORD] Loaded model: C:\Users\ameli\speakez\models\final\word_skel_logreg_8.joblib with labels: [0 1 2 3 4 5 6 7]
+2025-10-09 00:35:17.896305: E tensorflow/core/util/util.cc:131] oneDNN supports DT_HALF only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+[DET] Letter='O' win(5): O,O,O,O,O conf=1.00 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpyjq8q6cm.wav: 'O'
+[TTS] << DONE 'O'
+[DET] Letter='O' win(5): O,O,O,O,O conf=0.97 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp3ejnev_b.wav: 'O'
+[TTS] << DONE 'O'
+Frame 30: FPS=0.0 | Hand:False | m=0.005 s=0.132 | Buffer:'OOOOO'
+[DET] Letter='O' win(5): O,O,O,O,O conf=0.69 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmprke8rybd.wav: 'O'
+[TTS] << DONE 'O'
+Frame 60: FPS=0.0 | Hand:False | m=0.003 s=0.137 | Buffer:'OOOOO'
+[DET] Letter='O' win(5): O,O,O,O,O conf=0.77 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpyu46sog4.wav: 'O'
+[TTS] << DONE 'O'
+[DET] Letter='O' win(5): O,O,O,O,O conf=0.80 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpxhkkbtiy.wav: 'O'
+[TTS] << DONE 'O'
+Frame 90: FPS=0.0 | Hand:False | m=0.011 s=0.136 | Buffer:'OOOOO'
+[DET] Letter='O' win(5): O,O,N,O,O conf=0.52 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp_3skkk1f.wav: 'O'
+[TTS] << DONE 'O'
+[DET] Letter='N' win(5): O,O,N,N,N conf=0.52 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp7m7drx2z.wav: 'N'
+[TTS] << DONE 'N'
+[DET] Letter='N' win(5): N,N,N,N,N conf=0.69 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmp97ib09y6.wav: 'N'
+[TTS] << DONE 'N'
+Frame 120: FPS=0.0 | Hand:False | m=0.002 s=0.139 | Buffer:'NNNNN'
+[DET] Letter='O' win(5): N,N,O,O,O conf=0.54 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpyfdx26jj.wav: 'O'
+[TTS] << DONE 'O'
+[DET] Letter='O' win(5): O,O,O,O,O conf=0.56 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpyf2pj9t7.wav: 'O'
+[TTS] << DONE 'O'
+Frame 150: FPS=0.0 | Hand:False | m=0.002 s=0.140 | Buffer:'OOOON'
+[DET] Letter='N' win(5): O,O,N,N,N conf=0.52 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpooexzxc5.wav: 'N'
+[TTS] << DONE 'N'
+[DET] Letter='O' win(5): O,N,O,N,O conf=0.64 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmph6kxazv1.wav: 'O'
+[TTS] << DONE 'O'
+[DET] Letter='O' win(5): O,O,O,O,O conf=0.87 → SPEAK
+[TTS] >> SYNTH(new eng) to C:\Users\ameli\AppData\Local\Temp\tmpcuhbp9hg.wav: 'O'
+[TTS] << DONE 'O'
+Frame 180: FPS=0.0 | Hand:False | m=0.004 s=0.118 | Buffer:'OOOOO'
+
+[SYS] Interrupted by user; draining TTS queue...
+[TTS] Worker exited.
+[SYS] Clean exit.
+(venv) PS C:\Users\ameli\speakez>
