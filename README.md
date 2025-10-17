@@ -2,7 +2,7 @@
 
 **Transforming Silent Gestures into Speech**
 
-NUS-ISS Pattern Recognition Systems Practice Module | June - November 2025
+NUS-ISS Pattern Recognition Systems Practice Module | July - November 2025
 
 **Developers:** Amelita Santiago | Lee Fang Hui
 
@@ -393,7 +393,7 @@ This project is developed for academic purposes as part of the NUS-ISS Pattern R
 ## Acknowledgments
 
 - **Dataset:** Grassknoted. (2017). ASL Alphabet. Kaggle. https://www.kaggle.com/datasets/grassknoted/asl-alphabet
-- **NUS-ISS Faculty:** Prof. [Name] for guidance and supervision
+- **NUS-ISS Faculty:** For guidance and supervision from: Prof. Zhu Fangming: Prof. Gary Leung: Prof. Ho Jun Hui Nicholas: Prof. Tian Jing: Prof. Charles Pang T-Howe
 - **Open Source Libraries:** TensorFlow, PyTorch, OpenCV, MediaPipe teams
 - **ASL Community:** For dataset contributions and validation feedback
 
