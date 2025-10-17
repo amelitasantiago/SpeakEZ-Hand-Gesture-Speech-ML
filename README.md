@@ -393,7 +393,7 @@ This project is developed for academic purposes as part of the NUS-ISS Pattern R
 ## Acknowledgments
 
 - **Dataset:** Grassknoted. (2017). ASL Alphabet. Kaggle. https://www.kaggle.com/datasets/grassknoted/asl-alphabet
-- **NUS-ISS Faculty:** For guidance and supervision from Prof. Zhu Fangming; Prof. Gary Leung; Prof. Ho Jun Hui Nicholas; Prof. Tian Jing; Prof. Charles Pang T-Howe
+- **NUS-ISS Faculty:** For guidance and supervision from: Prof. Zhu Fangming: Prof. Gary Leung: Prof. Ho Jun Hui Nicholas: Prof. Tian Jing: Prof. Charles Pang T-Howe
 - **Open Source Libraries:** TensorFlow, PyTorch, OpenCV, MediaPipe teams
 - **ASL Community:** For dataset contributions and validation feedback
 
