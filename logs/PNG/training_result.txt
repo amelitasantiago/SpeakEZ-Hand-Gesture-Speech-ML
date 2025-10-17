@@ -1,0 +1,109 @@
+======================================================================
+SPEAKEZ TRAINING - GOOGLE COLAB
+======================================================================
+
+Loading preprocessed data from Google Drive...
+✓ Training data loaded: (60899, 192, 192, 3)
+✓ Training labels loaded: (60899,)
+✓ Validation data loaded: (13050, 192, 192, 3)
+✓ Validation labels loaded: (13050,)
+✓ Test data loaded: (13051, 192, 192, 3)
+✓ Test labels loaded: (13051,)
+
+Data loaded in 362.6 seconds
+
+✓ Labels converted to categorical format
+======================================================================
+TRAINING COMPLETED
+End Time: 2025-10-04 17:05:43
+Total Duration: 64.6 minutes
+Best Val Accuracy: 0.0396
+Final Train Accuracy: 0.0720
+
+======================================================================
+EVALUATING ON TEST SET
+======================================================================
+408/408 ━━━━━━━━━━━━━━━━━━━━ 14s 28ms/step - accuracy: 0.0409 - loss: 3.5368
+
+Test Results:
+  Loss: 3.5454
+  Accuracy: 0.0394 (3.94%)
+408/408 ━━━━━━━━━━━━━━━━━━━━ 10s 22ms/step
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           A       0.00      0.00      0.00       450
+           B       0.00      0.00      0.00       450
+           C       0.05      0.30      0.08       450
+           D       0.00      0.00      0.00       450
+           E       0.00      0.00      0.00       450
+           F       0.00      0.00      0.00       450
+           G       0.00      0.00      0.00       451
+           H       0.00      0.00      0.00       450
+           I       0.00      0.00      0.00       450
+           J       0.03      0.01      0.01       450
+           K       0.00      0.00      0.00       450
+           L       0.04      0.84      0.07       450
+           M       0.00      0.00      0.00       450
+           N       0.00      0.00      0.00       450
+           O       0.00      0.00      0.00       450
+           P       0.00      0.00      0.00       450
+           Q       0.00      0.00      0.00       450
+           R       0.00      0.00      0.00       450
+           S       0.00      0.00      0.00       450
+           T       0.00      0.00      0.00       450
+           U       0.00      0.00      0.00       450
+           V       0.00      0.00      0.00       450
+           W       0.00      0.00      0.00       450
+           X       0.00      0.00      0.00       450
+           Y       0.00      0.00      0.00       450
+           Z       0.00      0.00      0.00       450
+       SPACE       0.00      0.00      0.00       450
+      DELETE       0.00      0.00      0.00       450
+     NOTHING       0.00      0.00      0.00       450
+
+    accuracy                           0.04     13051
+   macro avg       0.00      0.04      0.01     13051
+weighted avg       0.00      0.04      0.01     13051
+
+# ============================================================================
+# FINAL SUMMARY
+# ============================================================================
+print("\n" + "="*70)
+print("TRAINING PIPELINE COMPLETE!")
+print("="*70)
+print(f"\nFinal Results:")
+print(f"  Training Duration: {training_duration.total_seconds()/60:.1f} minutes")
+print(f"  Best Validation Accuracy: {max(history.history['val_accuracy']):.4f}")
+print(f"  Test Accuracy: {test_acc:.4f}")
+print(f"\nFiles saved to Google Drive:")
+print(f"  - speakez_model_final.h5 (trained model)")
+print(f"  - best_model.h5 (best checkpoint)")
+print(f"  - training_history.png")
+print(f"  - confusion_matrix.png")
+print(f"  - sample_predictions.png")
+print(f"  - training_history.json")
+print("\n" + "="*70)
+----
+Few Epoch:
+Epoch 1/50
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 0s 251ms/step - accuracy: 0.0354 - loss: 3.3593
+Epoch 1: val_accuracy improved from -inf to 0.03448, saving model to /content/drive/MyDrive/speakez/models/best_model.h5
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 510s 259ms/step - accuracy: 0.0354 - loss: 3.3593 - val_accuracy: 0.0345 - val_loss: 24.6051 - learning_rate: 1.0000e-04
+Epoch 2/50
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 0s 250ms/step - accuracy: 0.0400 - loss: 3.3398
+Epoch 2: val_accuracy did not improve from 0.03448
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 486s 255ms/step - accuracy: 0.0400 - loss: 3.3398 - val_accuracy: 0.0345 - val_loss: 34.6637 - learning_rate: 1.0000e-04
+Epoch 3/50
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 0s 255ms/step - accuracy: 0.0396 - loss: 3.3378
+Epoch 3: val_accuracy improved from 0.03448 to 0.03471, saving model to /content/drive/MyDrive/speakez/models/best_model.h5
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 496s 260ms/step - accuracy: 0.0396 - loss: 3.3378 - val_accuracy: 0.0347 - val_loss: 92.4448 - learning_rate: 1.0000e-04
+Epoch 4/50
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 0s 254ms/step - accuracy: 0.0402 - loss: 3.3309
+Epoch 4: val_accuracy did not improve from 0.03471
+Epoch 4: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 492s 258ms/step - accuracy: 0.0402 - loss: 3.3309 - val_accuracy: 0.0345 - val_loss: 110.8446 - learning_rate: 1.0000e-04
+Epoch 5/50
+1904/1904 ━━━━━━━━━━━━━━━━━━━━ 0s 251ms/step - accuracy: 0.0463 - loss: 3.3243
+Epoch 5: val_accuracy did not improve from 0.03471

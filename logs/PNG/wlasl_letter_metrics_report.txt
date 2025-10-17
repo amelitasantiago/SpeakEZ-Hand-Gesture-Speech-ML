@@ -1,0 +1,56 @@
+LogReg (8-word)  VAL: 0.875  TEST: 0.75
+
+VAL report:
+               precision    recall  f1-score   support
+
+         yes     1.0000    1.0000    1.0000         1
+          no     1.0000    1.0000    1.0000         1
+      please     0.5000    1.0000    0.6667         1
+        stop     1.0000    1.0000    1.0000         1
+         bad     0.0000    0.0000    0.0000         1
+       sorry     1.0000    1.0000    1.0000         1
+        help     1.0000    1.0000    1.0000         1
+       hello     1.0000    1.0000    1.0000         1
+
+    accuracy                         0.8750         8
+   macro avg     0.8125    0.8750    0.8333         8
+weighted avg     0.8125    0.8750    0.8333         8
+
+
+TEST report:
+               precision    recall  f1-score   support
+
+         yes     0.0000    0.0000    0.0000         1
+          no     0.5000    1.0000    0.6667         1
+      please     1.0000    1.0000    1.0000         1
+        stop     1.0000    1.0000    1.0000         1
+         bad     1.0000    1.0000    1.0000         1
+       sorry     1.0000    1.0000    1.0000         1
+        help     1.0000    1.0000    1.0000         1
+       hello     0.0000    0.0000    0.0000         1
+
+    accuracy                         0.7500         8
+   macro avg     0.6875    0.7500    0.7083         8
+weighted avg     0.6875    0.7500    0.7083         8
+
+
+
+TEST confusion (unknown=-1). Labels: [0, 1, 2, 3, 4, 5, 6, 7, -1]
+[[0 1 0 0 0 0 0 0 0]
+ [0 1 0 0 0 0 0 0 0]
+ [0 0 1 0 0 0 0 0 0]
+ [0 0 0 1 0 0 0 0 0]
+ [0 0 0 0 1 0 0 0 0]
+ [0 0 0 0 0 1 0 0 0]
+ [0 0 0 0 0 0 0 0 1]
+ [1 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0]]
+
+
+Skeletonizing:   0%|          | 0/82 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/google/protobuf/symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+Skeletonizing: 100%|██████████| 82/82 [02:17<00:00,  1.67s/it]
+Skeletonizing: 100%|██████████| 10/10 [00:15<00:00,  1.52s/it]
+Skeletonizing: 100%|██████████| 10/10 [00:15<00:00,  1.55s/it]Skeleton embeddings: (82, 170) (10, 170) (10, 170)
+
+

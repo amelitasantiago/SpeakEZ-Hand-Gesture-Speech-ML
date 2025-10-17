@@ -1,0 +1,91 @@
+(venv) PS C:\Users\ameli\speakez> python -m src.preprocessing_improved
+======================================================================
+SPEAKEZ PREPROCESSING
+======================================================================
+
+======================================================================
+DATASET PREPARATION STARTED
+Start Time: 2025-10-04 16:36:27
+======================================================================
+
+Scanning dataset...
+Found Class [ 1/29]: A        - 3000 images
+Found Class [ 2/29]: B        - 3000 images
+Found Class [ 3/29]: C        - 3000 images
+Found Class [ 4/29]: D        - 3000 images
+Found Class [ 5/29]: E        - 3000 images
+Found Class [ 6/29]: F        - 3000 images
+Found Class [ 7/29]: G        - 3000 images
+Found Class [ 8/29]: H        - 3000 images
+Found Class [ 9/29]: I        - 3000 images
+Found Class [10/29]: J        - 3000 images
+Found Class [11/29]: K        - 3000 images
+Found Class [12/29]: L        - 3000 images
+Found Class [13/29]: M        - 3000 images
+Found Class [14/29]: N        - 3000 images
+Found Class [15/29]: O        - 3000 images
+Found Class [16/29]: P        - 3000 images
+Found Class [17/29]: Q        - 3000 images
+Found Class [18/29]: R        - 3000 images
+Found Class [19/29]: S        - 3000 images
+Found Class [20/29]: T        - 3000 images
+Found Class [21/29]: U        - 3000 images
+Found Class [22/29]: V        - 3000 images
+Found Class [23/29]: W        - 3000 images
+Found Class [24/29]: X        - 3000 images
+Found Class [25/29]: Y        - 3000 images
+Found Class [26/29]: Z        - 3000 images
+Found Class [27/29]: SPACE    - 3000 images
+Found Class [28/29]: DEL      - 3000 images
+Found Class [29/29]: NOTHING  - 3000 images
+
+Total images found: 87000
+
+Split sizes:
+  Train: 60899 images
+  Val:   13050 images
+  Test:  13051 images
+
+Processing Train set...
+  Processed 5000/60899 images...
+  Processed 10000/60899 images...
+  Processed 15000/60899 images...
+  Processed 20000/60899 images...
+  Processed 25000/60899 images...
+  Processed 30000/60899 images...
+  Processed 35000/60899 images...
+  Processed 40000/60899 images...
+  Processed 45000/60899 images...
+  Processed 50000/60899 images...
+  Processed 55000/60899 images...
+  Processed 60000/60899 images...
+  ✓ Train set ready: (60899, 192, 192, 3)
+  ✓ Train set saved
+
+Processing Validation set...
+  Processed 5000/13050 images...
+  Processed 10000/13050 images...
+  ✓ Validation set ready: (13050, 192, 192, 3)
+  ✓ Validation set saved
+
+Processing Test set...
+  Processed 5000/13051 images...
+  Processed 10000/13051 images...
+  ✓ Test set ready: (13051, 192, 192, 3)
+  ✓ Test set saved
+
+======================================================================
+✓ Dataset preparation complete!
+  Saved to: data\splits
+
+End Time: 2025-10-04 17:08:34
+Total Duration: 32.1 minutes
+======================================================================
+
+
+======================================================================
+PREPROCESSING COMPLETE!
+======================================================================
+
+Next step: python -m src.train
+(venv) PS C:\Users\ameli\speakez>

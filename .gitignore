@@ -52,6 +52,12 @@ images/
 outputs/
 test/
 tests/asl_alphabet_test
+models/final/
 documentation/
+logs/PNG/
+logs/videos/
+logs/tensorboard/train/
+logs/tensorboard/validation/
+logs/samples/
 *.mp3  # gTTS audio outputs
 *.mp4  # Recorded gestures
